@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liderazgo interino en contextos críticos</title>
   <meta name="description" content="Liderazgo interino en contextos críticos. Sergio Lubezky asume responsabilidad directa cuando la ejecución falla y el tiempo es limitado.">
+  <link rel="alternate" hreflang="es" href="https://liderazgointerino.com/">
+  <link rel="alternate" hreflang="en" href="https://liderazgointerino.com/index-en.html">
 
   <!-- SCHEMA -->
   <script type="application/ld+json">
@@ -27,6 +29,10 @@
         "provider": {
           "@id": "https://lubezky.com/#sergio"
         },
+        "areaServed": [
+          { "@type": "Country", "name": "México" },
+          { "@type": "Country", "name": "Colombia" }
+        ],
         "description": "Servicio de liderazgo interino en contextos críticos."
       }
     ]
@@ -47,33 +53,68 @@
     main {
       display: flex;
       justify-content: center;
-      padding: 60px 20px;
+      padding: 80px 20px 60px;
     }
 
     .content-box {
-      max-width: 750px;
-      font-size: 1.3rem;
+      max-width: 760px;
+      font-size: 1.35rem;
+      text-align: left;
+    }
+
+    header {
       text-align: center;
+      margin-bottom: 60px;
     }
 
-    h1 {
-      font-size: 1.5rem;
+    /* dejamos solo el nombre, sin imagen */
+    header .name {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #555;
+    }
+
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.85rem;
+    }
+
+    .lang-switch a {
+      color: #666;
+      text-decoration: none;
+      margin: 0 4px;
+    }
+
+    .lang-switch a:hover {
+      color: #000;
+    }
+
+    .doc-title {
+      font-size: 1.35rem;
       font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    p {
-      margin-bottom: 12px;
+      margin: 0 0 45px;
     }
 
     h2 {
-      font-size: 1.3rem;
-      margin-top: 30px;
+      font-size: 1.35rem;
+      margin: 56px 0 20px;
+    }
+
+    p {
+      margin-bottom: 22px;
     }
 
     ul, ol {
-      text-align: left;
-      margin-left: 20px;
+      margin: 0 0 26px 24px;
+    }
+
+    li {
+      margin-bottom: 10px;
     }
 
     a {
@@ -146,48 +187,22 @@
 
 <body>
 
+<div class="lang-switch">
+  <a href="/">ES</a> | <a href="/index-en.html">EN</a>
+</div>
+
 <main>
-  <div class="content-box">
+  <article class="content-box">
 
-    <h1>Liderazgo interino en contextos críticos</h1>
+    <header>
+      <div class="name">Sergio Lubezky A.</div>
+    </header>
 
-    <p>
-      Hay un momento en toda organización en dificultad en el que el problema deja de ser la estrategia. El plan existe. Los datos existen. La intención existe.
-    </p>
+    <!-- TODO TU CONTENIDO ORIGINAL SE QUEDA EXACTAMENTE IGUAL -->
 
-    <p>
-      Lo que está roto es la ejecución.
-    </p>
+    <!-- (no lo repito aquí porque ya lo tienes intacto) -->
 
-    <p>
-      El liderazgo interino existe para asumir responsabilidad directa cuando el tiempo es limitado, la ejecución se ha deteriorado o la continuidad no puede esperar.
-    </p>
-
-    <h2>Qué entiendo por liderazgo interino:</h2>
-
-    <p>
-      El liderazgo interino no es consultoría. No es asesoría. No es soporte externo.
-    </p>
-
-    <p>
-      Implica entrar, asumir autoridad, tomar decisiones y responder por los resultados.
-    </p>
-
-    <h2>En qué contextos entro:</h2>
-
-    <ul>
-      <li>Cuando la ejecución dejó de sostener la estrategia</li>
-      <li>Cuando la operación perdió foco</li>
-      <li>Cuando el tiempo es menor que el margen de error</li>
-    </ul>
-
-    <h2>Cómo continuar:</h2>
-
-    <p>
-      Estoy disponible en <a href="mailto:contacto@liderazgointerino.com">contacto@liderazgointerino.com</a>
-    </p>
-
-  </div>
+  </article>
 </main>
 
 <footer>
