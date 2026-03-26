@@ -8,6 +8,63 @@
   <link rel="alternate" hreflang="es" href="https://liderazgointerino.com/">
   <link rel="alternate" hreflang="en" href="https://liderazgointerino.com/index-en.html">
 
+  <!-- SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+
+      {
+        "@type": "Person",
+        "@id": "https://lubezky.com/#sergio",
+        "name": "Sergio Lubezky",
+        "url": "https://lubezky.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/sergiolubezky/"
+        ]
+      },
+
+      {
+        "@type": "Service",
+        "name": "Liderazgo Interino",
+        "url": "https://liderazgointerino.com",
+        "provider": {
+          "@id": "https://lubezky.com/#sergio"
+        },
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "México"
+          },
+          {
+            "@type": "Country",
+            "name": "Colombia"
+          }
+        ],
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceLocation": {
+            "@type": "Place",
+            "name": "Remoto"
+          }
+        },
+        "description": "Servicio de liderazgo interino en contextos críticos, enfocado en ejecución, toma de decisiones y estabilización organizacional."
+      },
+
+      {
+        "@type": "WebPage",
+        "name": "Liderazgo interino en contextos críticos",
+        "url": "https://liderazgointerino.com",
+        "about": {
+          "@type": "Service",
+          "name": "Liderazgo Interino"
+        }
+      }
+
+    ]
+  }
+  </script>
+
   <style>
     * { box-sizing: border-box; }
 
@@ -55,7 +112,6 @@
       color: #555;
     }
 
-    /* Selector de idioma */
     .lang-switch {
       position: absolute;
       top: 20px;
@@ -140,7 +196,6 @@
 
 <body>
 
-<!-- Selector de idioma -->
 <div class="lang-switch">
   <a href="/">ES</a> | <a href="/index-en.html">EN</a>
 </div>
