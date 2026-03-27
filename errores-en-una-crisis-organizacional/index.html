@@ -1,200 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Errores en una crisis organizacional | Sergio Lubezky A.</title>
-  <meta name="description" content="Errores comunes en una crisis organizacional que agravan la situación y dificultan la recuperación.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errores en una crisis organizacional | Cómo evitar el colapso operativo</title>
+    <meta name="description" content="Análisis de los errores más comunes que agravan una crisis en las empresas: desde la parálisis por análisis hasta la falta de mando único.">
 
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@graph": [
+    <script type="application/ld+json">
     {
-      "@type": "Person",
-      "@id": "https://lubezky.com/#sergio",
-      "name": "Sergio Lubezky",
-      "url": "https://lubezky.com"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://liderazgointerino.com/errores-en-una-crisis-organizacional/#article",
-      "headline": "Errores comunes en una crisis organizacional: cómo evitarlos",
-      "url": "https://liderazgointerino.com/errores-en-una-crisis-organizacional/",
-      "author": { "@id": "https://lubezky.com/#sergio" },
-      "publisher": { 
-        "@type": "Organization",
-        "@id": "https://liderazgointerino.com/#organization" 
-      },
-      "description": "Un análisis profundo sobre los fallos de liderazgo y operativos que hunden a las empresas en crisis.",
-      "about": [
-        { "@type": "Thing", "name": "Crisis Management" },
-        { "@type": "Thing", "name": "Organizational Leadership" }
-      ],
-      "mentions": [
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://lubezky.com/#sergio",
+          "name": "Sergio Lubezky",
+          "url": "https://lubezky.com/",
+          "sameAs": [
+            "https://www.linkedin.com/in/sergiolubezky/",
+            "https://x.com/slubezky",
+            "https://inteligencia.com/",
+            "https://liderazgointerino.com/",
+            "https://coachdefoto.com/",
+            "https://elmismobarco.com/",
+            "https://unnuevopuntodevista.com/"
+          ]
+        },
         {
           "@type": "WebPage",
-          "name": "Análisis de Empresas en Crisis",
-          "url": "https://inteligencia.com/empresa-en-crisis/"
+          "@id": "https://liderazgointerino.com/errores-en-una-crisis-organizacional/#webpage",
+          "url": "https://liderazgointerino.com/errores-en-una-crisis-organizacional/",
+          "name": "Errores en una crisis organizacional",
+          "isPartOf": { "@id": "https://liderazgointerino.com/#website" },
+          "mainEntity": { "@id": "https://lubezky.com/#sergio" },
+          "description": "Un repaso por las decisiones y omisiones que suelen profundizar las crisis dentro de las empresas."
         }
       ]
     }
-  ]
-}
-  </script>
+    </script>
 
-  <style>
-    body {
-      margin: 0;
-      background-color: #fff;
-      color: #1a1a1a;
-      font-family: 'Georgia', serif;
-      line-height: 1.8;
-    }
+    <style>
+        /* --- Estilos Base --- */
+        body {
+            margin: 0;
+            background-color: #fff;
+            color: #1a1a1a;
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            text-align: center;
+        }
 
-    main {
-      display: flex;
-      justify-content: center;
-      padding: 80px 20px 60px;
-    }
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 80px 20px 60px;
+        }
 
-    .content-box {
-      max-width: 700px;
-      font-size: 1.2rem;
-    }
+        .content-box {
+            max-width: 700px;
+            font-size: 1.2rem;
+        }
 
-    .lang-switch {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-family: Arial;
-      font-size: 0.85rem;
-    }
+        h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-    .doc-title {
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin-bottom: 40px;
-    }
+        p { margin-bottom: 16px; }
 
-    h2 {
-      margin-top: 50px;
-      font-size: 1.3rem;
-    }
+        .content-box a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
 
-    p { margin-bottom: 20px; }
+        .content-box a:hover {
+            border-bottom: 1px solid #000;
+        }
 
-    ul {
-      margin-left: 20px;
-    }
+        /* --- Estilos Footer Unificado --- */
+        footer {
+            padding: 60px 20px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            border-top: 1px solid #f5f5f5;
+        }
 
-    li {
-      margin-bottom: 10px;
-    }
+        .profile-img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
 
-    a {
-      color: #000;
-      text-decoration: none;
-      border-bottom: 1px solid #ddd;
-    }
+        .name-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            margin-bottom: 2px;
+        }
 
-    a:hover {
-      border-bottom: 1px solid #000;
-    }
+        .name {
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
 
-    footer {
-      padding: 60px 20px;
-      text-align: center;
-      font-family: Arial;
-    }
+        .footer-bio {
+            max-width: 650px;
+            margin: 0 auto 30px auto;
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.7;
+        }
 
-    .profile-img {
-      width: 75px;
-      height: 75px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-  </style>
+        .footer-bio p { margin: 0; }
+
+        .footer-bio a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .footer-bio a:hover {
+            border-bottom: 1px solid #1a1a1a;
+            background-color: #f9f9f9;
+        }
+
+        .social-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            font-size: 0.85rem;
+        }
+
+        .social-nav a { color: #666; text-decoration: none; }
+        .social-nav a:hover { color: #000; }
+        .social-nav li:not(:last-child)::after {
+            content: "-";
+            margin-left: 12px;
+            color: #ccc;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="lang-switch">
-  <a href="/">ES</a> | <a href="/index-en.html">EN</a>
-</div>
-
 <main>
-  <article class="content-box">
+    <article class="content-box">
+        <h1>Errores en una crisis organizacional</h1>
 
-    <h1 class="doc-title">Errores en una crisis organizacional</h1>
+        <p>
+            Cuando una empresa entra en crisis, la presión por obtener resultados inmediatos suele nublar el juicio de quienes deben tomar las decisiones. En este contexto, ciertos patrones de error se repiten con una frecuencia alarmante.
+        </p>
 
-    <p>
-      Una crisis organizacional rara vez se define por un solo evento. En la mayoría de los casos, es el resultado de decisiones acumuladas que, en conjunto, debilitan la capacidad de respuesta de la organización.
-    </p>
+        <p>
+            Reconocer estos errores a tiempo es el primer paso para detener el deterioro y comenzar la recuperación de la claridad operativa.
+        </p>
 
-    <p>
-      El problema no es solo lo que ocurre, sino cómo se responde a ello. Y en ese proceso, existen errores que tienden a repetirse.
-    </p>
+        <p><strong>Los fallos más críticos:</strong></p>
 
-    <h2>Errores frecuentes</h2>
+        <p>
+            <strong>Negación y optimismo infundado:</strong> El error más común es ignorar las señales tempranas de crisis, esperando que la situación se resuelva sola. Esto solo permite que el problema crezca hasta volverse sistémico.
+        </p>
 
-    <ul>
-      <li>Postergar decisiones esperando mayor claridad</li>
-      <li>Intentar proteger estructuras que ya no funcionan</li>
-      <li>Evitar conversaciones necesarias</li>
-      <li>Multiplicar el análisis sin traducirlo en acción</li>
-      <li>Confiar en que la situación se estabilizará por sí sola</li>
-      <li>Actuar sin alineación entre quienes toman decisiones</li>
-    </ul>
-
-    <p>
-      Estos errores no suelen percibirse como tales en el momento en que ocurren. De hecho, muchas veces se sienten razonables. Sin embargo, en conjunto, erosionan la capacidad de ejecución y aumentan el impacto de la crisis.
-    </p>
-
-    <h2>Cómo escalan los problemas</h2>
-
-    <p>
-      Cuando estos patrones se mantienen, lo que inicialmente era un problema manejable se convierte en una situación donde la organización pierde control y claridad.
-    </p>
-
-    <p>
-      En ese punto, ya no se trata de entender mejor lo que ocurre, sino de intervenir de forma directa, como sucede en <a href="/cuando-se-necesita-un-director-interino/">cuándo se necesita un director interino</a>.
-    </p>
-
-    <h2>Lo que cambia con una intervención</h2>
-
-    <p>
-      Corregir estos errores requiere algo más que intención. Requiere asumir responsabilidad sobre las decisiones y su ejecución, estableciendo prioridades claras y actuando dentro de las restricciones existentes.
-    </p>
-
-    <p>
-      Ese es precisamente el rol que cumple un director interino: entrar en un momento crítico, tomar decisiones y restablecer dirección, como se explica en <a href="/que-hace-un-director-interino/">qué hace un director interino</a>.
-    </p>
-
-    <h2>Un error menos evidente</h2>
-
-    <p>
-      Existe otro error que rara vez se reconoce como tal: intentar resolver la situación únicamente con los mismos recursos y perspectivas que contribuyeron a generarla.
-    </p>
-
-    <p>
-      No pedir ayuda a tiempo no siempre se percibe como una decisión, pero en contextos críticos puede marcar la diferencia entre contener una situación o permitir que escale.
-    </p>
-
-    <p>
-      En muchos casos, intervenir a tiempo no implica debilidad, sino claridad sobre lo que está en juego. Si estás enfrentando una situación de este tipo, puedes escribir a <a href="mailto:contacto@liderazgointerino.com">contacto@liderazgointerino.com</a>.
-    </p>
-
-    <p>
-      Reconocer estos errores no es una señal de debilidad. Es, en muchos casos, el primer paso para recuperar control sobre lo que está ocurriendo.
-    </p>
-
-  </article>
-</main>
-
-<footer>
-  <img src="/foto-sergio.jpg" class="profile-img">
-</footer>
-
-</body>
-</html>
+        <p>
+            <strong>Parálisis por análisis:</strong> Ante la incertidumbre, muchas organizaciones se refugian en la recolección de datos
