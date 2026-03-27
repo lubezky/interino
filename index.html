@@ -34,225 +34,71 @@
           "logo": "https://lubezky.com/foto-sergio.jpg",
           "founder": { "@id": "https://lubezky.com/#sergio" },
           "description": "Servicios profesionales de dirección interina y gestión de crisis organizacional.",
-          "sameAs": [
-            "https://www.linkedin.com/in/sergiolubezky/"
-          ]
+          "sameAs": ["https://www.linkedin.com/in/sergiolubezky/"]
         },
         {
           "@type": "WebSite",
           "@id": "https://liderazgointerino.com/#website",
           "url": "https://liderazgointerino.com/",
           "name": "Liderazgo Interino",
-          "publisher": { "@id": "https://liderazgointerino.com/#organization" },
-          "description": "Plataforma de servicios de dirección transicional y resolución de crisis operativas."
+          "publisher": { "@id": "https://liderazgointerino.com/#organization" }
         }
       ]
     }
     </script>
 
     <style>
-        /* --- Estilos Base (Cuerpo y Texto) --- */
-        body {
-            margin: 0;
-            background-color: #fff;
-            color: #1a1a1a;
-            font-family: 'Georgia', serif;
-            line-height: 1.8;
-            text-align: center;
-        }
-
-        main {
-            display: flex;
-            justify-content: center;
-            padding: 80px 20px 60px;
-        }
-
-        .content-box {
-            max-width: 700px;
-            font-size: 1.2rem;
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 16px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
+        body { margin: 0; background-color: #fff; color: #1a1a1a; font-family: 'Georgia', serif; line-height: 1.8; text-align: center; }
+        main { display: flex; justify-content: center; padding: 80px 20px 60px; }
+        .content-box { max-width: 700px; font-size: 1.2rem; }
+        h1 { font-size: 1.5rem; font-weight: bold; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
         p { margin-bottom: 12px; }
+        .content-box a { color: #000; text-decoration: none; font-weight: bold; border-bottom: 1px solid #ddd; }
+        .content-box a:hover { border-bottom: 1px solid #000; }
 
-        .content-box a {
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-bottom: 1px solid #ddd;
-            transition: border-color 0.3s ease;
-        }
+        /* BLOQUE DE VENTA (CTA) */
+        .cta-section { margin: 50px 0; padding: 40px; background-color: #f9f9f9; border: 1px solid #000; }
+        .cta-button { display: inline-block; padding: 15px 30px; background-color: #000; color: #fff; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-top: 20px; font-family: sans-serif; }
 
-        .content-box a:hover {
-            border-bottom: 1px solid #000;
-        }
-
-        /* --- Estilos Footer Unificado (Sergio Lubezky Style) --- */
-        footer {
-            padding: 60px 20px;
-            text-align: center;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            border-top: 1px solid #f5f5f5;
-        }
-
-        .profile-img {
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            object-fit: cover;
-            border: 1px solid #eee;
-        }
-
-        .name-link {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            margin-bottom: 2px; /* Micro-ajuste: abraza la bio */
-        }
-
-        .name {
-            font-weight: 600;
-            font-size: 1rem;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
-
-        .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto;
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.7;
-        }
-
-        .footer-bio p { margin: 0; }
-
-        .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid #eee;
-            transition: all 0.3s ease;
-        }
-
-        .footer-bio a:hover {
-            border-bottom: 1px solid #1a1a1a;
-            background-color: #f9f9f9;
-        }
-
-        .social-nav {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            font-size: 0.85rem;
-        }
-
-        .social-nav a {
-            color: #666;
-            text-decoration: none;
-        }
-
-        .social-nav a:hover {
-            color: #000;
-        }
-
-        .social-nav li:not(:last-child)::after {
-            content: "-";
-            margin-left: 12px;
-            color: #ccc;
-        }
+        /* FOOTER SERGIO */
+        footer { padding: 60px 20px; text-align: center; font-family: 'Helvetica Neue', Arial, sans-serif; border-top: 1px solid #f5f5f5; }
+        .profile-img { width: 75px; height: 75px; border-radius: 50%; margin-bottom: 10px; object-fit: cover; border: 1px solid #eee; }
+        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; }
+        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
+        .footer-bio { max-width: 650px; margin: 0 auto 30px auto; font-size: 0.95rem; color: #444; line-height: 1.7; }
+        .footer-bio a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; }
+        .social-nav { list-style: none; padding: 0; display: flex; justify-content: center; gap: 12px; font-size: 0.85rem; }
+        .social-nav a { color: #666; text-decoration: none; }
     </style>
 </head>
 
 <body>
-
 <main>
     <article class="content-box">
         <h1>Liderazgo interino</h1>
+        <p>Hay momentos en una organización en los que el problema no es la falta de estrategia, sino la incapacidad de ejecutar con claridad.</p>
+        <p>Las decisiones se retrasan y lo que antes funcionaba deja de sostener la operación. Lo que se requiere es intervenir.</p>
+        <p>Saber cuándo intervenir es clave. Puedes ver las señales en <a href="/cuando-se-necesita-un-director-interino/">cuándo se necesita un director interino</a>, entender <a href="/que-hace-un-director-interino/">qué hace un director interino</a> o reconocer los <a href="/errores-en-una-crisis-organizacional/">errores en una crisis</a>.</p>
 
-        <p>
-            Hay momentos en una organización en los que el problema no es la falta de estrategia, ni la falta de información, sino la incapacidad de ejecutar con claridad.
-        </p>
-
-        <p>
-            Las decisiones se retrasan, las prioridades cambian constantemente y lo que antes funcionaba deja de sostener la operación.
-        </p>
-
-        <p>
-            En esos momentos, agregar más análisis rara vez resuelve el problema. De hecho, muchas veces lo agrava.
-        </p>
-
-        <p><strong>Lo que se requiere es intervenir.</strong></p>
-
-        <p>
-            El liderazgo interino no es una función permanente ni una recomendación externa. Es la capacidad de entrar en una organización, asumir responsabilidad directa sobre lo que está ocurriendo y restablecer orden, claridad y dirección en un momento crítico.
-        </p>
-
-        <p>
-            No se trata de observar, sino de actuar.
-        </p>
-
-        <p>
-            Saber cuándo intervenir es clave. Puedes identificar algunas de esas señales en <a href="/cuando-se-necesita-un-director-interino/">cuándo se necesita un director interino</a>.
-        </p>
-
-        <p>
-            Entender lo que implica esa intervención es igualmente importante, y se desarrolla en <a href="/que-hace-un-director-interino/">qué hace un director interino</a>.
-        </p>
-
-        <p>
-            Y reconocer los errores que suelen agravar una situación permite actuar con mayor claridad, como se describe en <a href="/errores-en-una-crisis-organizacional/">errores en una crisis organizacional</a>.
-        </p>
-
-        <p>
-            Si estás enfrentando una situación de este tipo, puedes escribirme a <a href="mailto:contacto@liderazgointerino.com">contacto@liderazgointerino.com</a>.
-        </p>
-
-        <p>
-            Este tipo de intervención forma parte de una visión más amplia sobre cómo entender, actuar y sostener procesos complejos en organizaciones, que se desarrolla en <a href="https://lubezky.com">lubezky.com</a>.
-        </p>
+        <div class="cta-section">
+            <h3 style="margin-top:0;">¿Tu organización no puede esperar?</h3>
+            <p>Si enfrentas un vacío de poder o una crisis operativa, actuamos en menos de 48 horas.</p>
+            <a href="/atencion-ya" class="cta-button">Solicitar Intervención Inmediata</a>
+        </div>
     </article>
 </main>
 
 <footer>
     <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
-
+    <a href="https://lubezky.com" class="name-link"><span class="name">Sergio Lubezky A.</span></a>
     <div class="footer-bio">
-        <p>
-            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
-            la <a href="https://liderazgointerino.com">Dirección Interina</a> en crisis 
-            y la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a>. 
-            Todo bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
-            para entender que todos estamos en <a href="https://elmismobarco.com" target="_blank">el mismo barco</a>.
-        </p>
+        <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro la <a href="https://inteligencia.com">Inteligencia</a>, la <a href="https://liderazgointerino.com">Dirección Interina</a> y la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a>. Bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.</p>
     </div>
-    
     <ul class="social-nav">
-        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
-        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
+        <li><a href="https://www.linkedin.com/in/sergiolubezky/">LinkedIn</a></li>
+        <li><a href="https://x.com/slubezky">X</a></li>
+        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk">Podcast</a></li>
     </ul>
 </footer>
-
 </body>
 </html>
