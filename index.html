@@ -8,21 +8,36 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": "https://lubezky.com/#sergio",
-        "name": "Sergio Lubezky",
-        "url": "https://lubezky.com"
-      },
-      {
-        "@type": "WebSite",
-        "name": "Liderazgo Interino",
-        "url": "https://liderazgointerino.com/"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://liderazgointerino.com/#organization",
+      "name": "Liderazgo Interino",
+      "url": "https://liderazgointerino.com/",
+      "logo": "URL_DE_TU_LOGO", 
+      "founder": { "@id": "https://lubezky.com/#sergio" },
+      "description": "Servicios profesionales de dirección interina y gestión de crisis organizacional liderados por Sergio Lubezky.",
+      "sameAs": [
+        "https://www.linkedin.com/in/sergiolubezky/",
+        "https://lubezky.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://liderazgointerino.com/#website",
+      "url": "https://liderazgointerino.com/",
+      "name": "Liderazgo Interino",
+      "publisher": { "@id": "https://liderazgointerino.com/#organization" }
+    }
+  ]
+}
   </script>
 
   <style>
