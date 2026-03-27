@@ -9,21 +9,35 @@
   <!-- SCHEMA -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": "https://lubezky.com/#sergio",
-        "name": "Sergio Lubezky",
-        "url": "https://lubezky.com"
-      },
-      {
-        "@type": "WebPage",
-        "name": "Qué hace un director interino",
-        "url": "https://liderazgointerino.com/que-hace-un-director-interino/"
-      }
-    ]
-  }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://liderazgointerino.com/que-hace-un-director-interino/#service",
+      "name": "Dirección Interina y Gestión de Transición",
+      "provider": { "@id": "https://lubezky.com/#sergio" },
+      "description": "Servicio de liderazgo temporal para ejecutar cambios estratégicos, cubrir vacantes críticas o gestionar crisis.",
+      "mainEntityOfPage": { "@id": "https://liderazgointerino.com/que-hace-un-director-interino/" },
+      "hasPart": [
+        { "@type": "CreativeWork", "name": "Metodología de Inteligencia Aplicada", "url": "https://inteligencia.com" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://liderazgointerino.com/que-hace-un-director-interino/#webpage",
+      "url": "https://liderazgointerino.com/que-hace-un-director-interino/",
+      "name": "Funciones y responsabilidades de un Director Interino",
+      "about": { "@id": "https://lubezky.com/#sergio" },
+      "breadcrumb": { "@id": "https://liderazgointerino.com/que-hace-un-director-interino/#breadcrumb" }
+    }
+  ]
+}
   </script>
 
   <style>
