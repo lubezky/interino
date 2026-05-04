@@ -1,169 +1,235 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intervención Inmediata | Liderazgo Interino Sergio Lubezky</title>
-    <meta name="description" content="Dirección interina y gestión de crisis para organizaciones que no pueden permitirse un vacío de poder. Actuamos hoy.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Interim Management / Gestión de Crisis",
-      "provider": { "@id": "https://lubezky.com/#sergio" },
-      "areaServed": "Global",
-      "description": "Intervención ejecutiva para estabilizar organizaciones, cubrir vacantes críticas y ejecutar cambios estructurales en tiempos récord.",
-      "offers": {
-        "@type": "Offer",
-        "name": "Sesión de Diagnóstico de Emergencia",
-        "url": "https://liderazgointerino.com/atencion-ya"
-      }
-    }
-    </script>
+<title>Intervención inmediata | Liderazgo interino</title>
 
-    <style>
-        body {
-            margin: 0;
-            background-color: #fff;
-            color: #1a1a1a;
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-        }
+<style>
+* { box-sizing: border-box; }
 
-        /* Sección de Venta (Hero) */
-        .landing-hero {
-            padding: 100px 20px;
-            text-align: center;
-            background-color: #1a1a1a;
-            color: #fff;
-        }
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 1.8;
+}
 
-        .landing-hero h1 {
-            font-size: 2.5rem;
-            max-width: 800px;
-            margin: 0 auto 20px;
-            line-height: 1.2;
-        }
+/* BANDA SUPERIOR */
+.top-bar {
+    background-color: #d62828;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
 
-        .landing-hero p {
-            font-size: 1.3rem;
-            color: #ccc;
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
+/* CONTENIDO */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
 
-        .cta-button {
-            display: inline-block;
-            background-color: #fff;
-            color: #000;
-            padding: 20px 40px;
-            text-decoration: none;
-            font-weight: bold;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: transform 0.3s;
-        }
+.content-box {
+    max-width: 650px;
+    width: 100%;
+    font-size: 1.2rem;
+}
 
-        .cta-button:hover {
-            transform: scale(1.05);
-            background-color: #eee;
-        }
+h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
 
-        /* Contenido de Autoridad */
-        .value-props {
-            max-width: 800px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
+p {
+    margin-bottom: 16px;
+}
 
-        .prop-item {
-            margin-bottom: 40px;
-        }
+/* FORM */
+form {
+    margin-top: 30px;
+    text-align: left;
+}
 
-        .prop-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            border-left: 4px solid #000;
-            padding-left: 15px;
-        }
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
 
-        /* Footer Unificado (El que ya tenemos) */
-        footer {
-            padding: 60px 20px;
-            text-align: center;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            border-top: 1px solid #eee;
-        }
+textarea, input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-size: 1rem;
+}
 
-        .profile-img {
-            width: 75px; height: 75px;
-            border-radius: 50%; margin-bottom: 10px;
-            object-fit: cover; border: 1px solid #eee;
-        }
+/* BOTÓN */
+button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 18px;
 
-        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; }
-        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
-        .footer-bio { max-width: 650px; margin: 0 auto 30px auto; font-size: 0.95rem; color: #444; }
-        .footer-bio a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; }
-        .social-nav { list-style: none; padding: 0; display: flex; justify-content: center; gap: 12px; font-size: 0.85rem; }
-        .social-nav a { color: #666; text-decoration: none; }
-    </style>
+    background-color: #d62828;
+    color: #fff;
+
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+/* FOOTER */
+footer {
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.profile-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+.name-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.footer-bio {
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+.footer-bio a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+}
+
+.social-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    font-size: 0.85rem;
+}
+
+.social-nav a {
+    color: #666;
+    text-decoration: none;
+}
+</style>
 </head>
 
 <body>
 
-    <section class="landing-hero">
-        <h1>Cuando el costo de no decidir es superior al riesgo de intervenir.</h1>
-        <p>Intervención ejecutiva inmediata para organizaciones en crisis, transición o vacío de poder.</p>
-        <a href="mailto:contacto@liderazgointerino.com" class="cta-button">Hablemos ahora</a>
-    </section>
+<div class="top-bar">
+Intervención activa en menos de 48 horas
+</div>
 
-    <main class="value-props">
-        <div class="prop-item">
-            <h3>No soy un consultor. Soy un Director.</h3>
-            <p>A diferencia de la consultoría tradicional, mi enfoque no es entregar un reporte, sino asumir la responsabilidad de la ejecución. Entro en la operación para estabilizar el sistema y tomar las decisiones que la organización ha postergado.</p>
-        </div>
+<main>
+<div class="content-box">
 
-        <div class="prop-item">
-            <h3>Atención a la Urgencia</h3>
-            <p>Vacantes críticas inesperadas, crisis operativa o procesos de fusión. Actúo como el puente necesario para que la organización no pierda tracción mientras se define el futuro a largo plazo.</p>
-        </div>
+<h1>Vamos a empezar ahora</h1>
 
-        <div class="prop-item">
-            <h3>Visión de Ecosistema</h3>
-            <p>Utilizo herramientas de inteligencia estratégica y narrativa visual para entender no solo el síntoma, sino la causa raíz del bloqueo organizacional.</p>
-        </div>
-        
-        <div style="text-align: center; margin-top: 60px;">
-            <p><em>"En una crisis, la claridad es el activo más valioso."</em></p>
-            <a href="mailto:contacto@liderazgointerino.com" style="color: #000; font-weight: bold;">Escríbeme a contacto@liderazgointerino.com</a>
-        </div>
-    </main>
+<p>
+Si llegaste hasta aquí, probablemente no necesitas más diagnóstico. Ya sabes que algo no está funcionando como debería.
+</p>
 
-    <footer>
-        <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-        <a href="https://lubezky.com" class="name-link"><span class="name">Sergio Lubezky A.</span></a>
-        <div class="footer-bio">
-            <p>
-                Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-                Exploro la <a href="https://inteligencia.com">Inteligencia</a>, 
-                la <a href="https://liderazgointerino.com">Dirección Interina</a> 
-                y la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a>. 
-                Bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> 
-                para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
-            </p>
-        </div>
-        <ul class="social-nav">
-            <li><a href="https://www.linkedin.com/in/sergiolubezky/">LinkedIn</a></li>
-            <li><a href="https://x.com/slubezky">X</a></li>
-            <li><a href="https://www.facebook.com/sergiolubezky/">Facebook</a></li>
-            <li><a href="https://www.instagram.com/sergiolubezky/">Instagram</a></li>
-            <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk">Podcast</a></li>
-        </ul>
-    </footer>
+<p>
+Antes de hablar, hay algo que podemos hacer desde este momento.
+</p>
+
+<p>
+Para poder entrar con claridad, necesito entender tres cosas. No tiene que ser perfecto, solo directo.
+</p>
+
+<form>
+
+<label>¿Qué está pasando hoy?</label>
+<textarea rows="3" placeholder="Describe brevemente qué está ocurriendo"></textarea>
+
+<label>¿Dónde se está rompiendo?</label>
+<textarea rows="3" placeholder="¿En qué parte se pierde el control o la ejecución?"></textarea>
+
+<label>¿Qué tiene que cambiar ya?</label>
+<textarea rows="3" placeholder="¿Qué resultado necesitas ver en el corto plazo?"></textarea>
+
+<label>Tu email o teléfono</label>
+<input type="text" placeholder="Para contactarte directamente">
+
+<button type="submit">
+Iniciar intervención
+</button>
+
+</form>
+
+</div>
+</main>
+
+<footer>
+    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    
+    <a href="https://lubezky.com" class="name-link">
+        <span class="name">Sergio Lubezky A.</span>
+    </a>
+
+    <div class="footer-bio">
+    <p>
+        Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+        Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
+        la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
+        la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
+        y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
+        bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
+        para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
+    </p>
+</div>
+    
+    <ul class="social-nav">
+        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
+        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
+        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
+        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
+    </ul>
+</footer>
 
 </body>
 </html>
