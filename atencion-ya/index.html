@@ -17,13 +17,13 @@ body {
     line-height: 1.8;
 }
 
-/* BANDA SUPERIOR */
+/* BANDA ROJA (más presente, pero elegante) */
 .top-bar {
     background-color: #d62828;
     color: #fff;
-    padding: 10px 20px;
+    padding: 16px 20px;
     font-family: sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     letter-spacing: 1px;
 }
 
@@ -31,11 +31,11 @@ body {
 main {
     display: flex;
     justify-content: center;
-    padding: 60px 20px;
+    padding: 70px 20px 60px;
 }
 
 .content-box {
-    max-width: 650px;
+    max-width: 680px;
     width: 100%;
     font-size: 1.2rem;
 }
@@ -49,47 +49,35 @@ p {
     margin-bottom: 16px;
 }
 
-/* FORM */
-form {
-    margin-top: 30px;
-    text-align: left;
-}
-
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 6px;
-}
-
-textarea, input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    font-family: inherit;
-    font-size: 1rem;
-}
-
 /* BOTÓN */
-button {
+.cta-button {
     display: block;
     width: 100%;
-    margin-top: 30px;
-    padding: 18px;
+    max-width: 420px;
+    margin: 35px auto 10px;
+    padding: 18px 20px;
 
     background-color: #d62828;
     color: #fff;
 
-    border: none;
+    text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
-    cursor: pointer;
+
+    border: none;
+    transition: all 0.2s ease;
 }
 
-button:hover {
+.cta-button:hover {
     background-color: #b71c1c;
+}
+
+.response-note {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 8px;
 }
 
 /* FOOTER */
@@ -137,6 +125,10 @@ footer {
     border-bottom: 1px solid #eee;
 }
 
+.footer-bio a:hover {
+    border-bottom: 1px solid #1a1a1a;
+}
+
 .social-nav {
     list-style: none;
     padding: 0;
@@ -151,6 +143,10 @@ footer {
 .social-nav a {
     color: #666;
     text-decoration: none;
+}
+
+.social-nav a:hover {
+    color: #000;
 }
 </style>
 </head>
@@ -175,28 +171,39 @@ Antes de hablar, hay algo que podemos hacer desde este momento.
 </p>
 
 <p>
-Para poder entrar con claridad, necesito entender tres cosas. No tiene que ser perfecto, solo directo.
+Entendemos que este tipo de situaciones son delicadas. Toda la información se maneja de forma estrictamente confidencial y, si lo necesitas, podemos trabajar bajo un acuerdo de confidencialidad (NDA) desde el inicio.
 </p>
 
-<form>
+<p>
+Para poder entrar con claridad, envíanos un correo con tres puntos. No tiene que ser perfecto, solo directo:
+</p>
 
-<label>¿Qué está pasando hoy?</label>
-<textarea rows="3" placeholder="Describe brevemente qué está ocurriendo"></textarea>
+<p>
+<strong>1. ¿Qué está pasando hoy?</strong><br>
+¿Qué está ocurriendo en la organización que hace necesario intervenir?
+</p>
 
-<label>¿Dónde se está rompiendo?</label>
-<textarea rows="3" placeholder="¿En qué parte se pierde el control o la ejecución?"></textarea>
+<p>
+<strong>2. ¿Dónde se está rompiendo?</strong><br>
+¿En qué parte se pierde el control, la ejecución o la toma de decisiones?
+</p>
 
-<label>¿Qué tiene que cambiar ya?</label>
-<textarea rows="3" placeholder="¿Qué resultado necesitas ver en el corto plazo?"></textarea>
+<p>
+<strong>3. ¿Qué tiene que cambiar ya?</strong><br>
+¿Qué tendría que estar funcionando distinto en el corto plazo para considerar que esto se estabilizó?
+</p>
 
-<label>Tu email o teléfono</label>
-<input type="text" placeholder="Para contactarte directamente">
+<p>
+Con esto, la conversación deja de ser exploratoria y empieza a ser acción.
+</p>
 
-<button type="submit">
-Iniciar intervención
-</button>
+<a href="mailto:contacto@liderazgointerino.com?subject=Intervención%20urgente&body=1.%20¿Qué%20está%20pasando%20hoy?%0A%0A2.%20¿Dónde%20se%20está%20rompiendo?%0A%0A3.%20¿Qué%20tiene%20que%20cambiar%20ya?" class="cta-button">
+Enviar información confidencial
+</a>
 
-</form>
+<div class="response-note">
+Respuesta en menos de 24 horas
+</div>
 
 </div>
 </main>
