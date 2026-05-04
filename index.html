@@ -37,11 +37,11 @@ h1 {
 
 p { margin-bottom: 14px; }
 
-a {
+.content-box a {
     color: #000;
     text-decoration: none;
-    border-bottom: 1px solid #ddd;
     font-weight: bold;
+    border-bottom: 1px solid #ddd;
 }
 
 /* CTA limpio */
@@ -67,52 +67,70 @@ a {
     text-transform: uppercase;
 
     border: none;
-
-    transition: all 0.2s ease;
 }
 
-/* hover elegante */
 .cta-button:hover {
     background-color: #b71c1c;
 }
 
-/* móvil */
-@media (max-width: 600px) {
-    .cta-button {
-        font-size: 0.95rem;
-        padding: 16px;
-    }
-}
-
 footer {
     padding: 60px 20px;
+    text-align: center;
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* FOOTER (idéntico) */
 .profile-img {
     width: 75px;
+    height: 75px;
     border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+.name-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 2px;
 }
 
 .name {
-    text-transform: uppercase;
+    font-weight: 600;
     font-size: 1rem;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .footer-bio {
     max-width: 650px;
-    margin: 20px auto;
+    margin: 0 auto 30px auto;
     font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+.footer-bio a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
 }
 
 .social-nav {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
+    font-size: 0.85rem;
+}
+
+.social-nav a {
+    color: #666;
+    text-decoration: none;
 }
 </style>
 </head>
@@ -158,20 +176,33 @@ Solicitar intervención inmediata
 </main>
 
 <footer>
+    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    
+    <a href="https://lubezky.com" class="name-link">
+        <span class="name">Sergio Lubezky A.</span>
+    </a>
 
-<img src="https://lubezky.com/foto-sergio.jpg" class="profile-img">
-
-<div class="name">Sergio Lubezky A.</div>
-
-<div class="footer-bio">
-Estratega enfocado en liderazgo, percepción y ejecución.
+    <div class="footer-bio">
+    <p>
+        Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+        Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
+        la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
+        la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
+        y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
+        bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
+        para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
+    </p>
 </div>
-
-<ul class="social-nav">
-<li><a href="#">LinkedIn</a></li>
-<li><a href="#">X</a></li>
-</ul>
-
+    
+    <ul class="social-nav">
+        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
+        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
+        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
+        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
+    </ul>
 </footer>
 
 </body>
