@@ -1,237 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liderazgo interino | Intervención Estratégica Sergio Lubezky A.</title>
-    <meta name="description" content="Intervención directa en organizaciones que han perdido control, claridad o capacidad de ejecución. Dirección interina y gestión de crisis.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com/"
-        },
-        {
-          "@type": "ProfessionalService",
-          "@id": "https://liderazgointerino.com/#service",
-          "name": "Liderazgo Interino",
-          "provider": { "@id": "https://lubezky.com/#sergio" }
-        }
-      ]
+<title>Liderazgo interino | Intervención Estratégica Sergio Lubezky A.</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 1.8;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px 60px;
+}
+
+.content-box {
+    max-width: 700px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p { margin-bottom: 14px; }
+
+a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+/* CTA limpio */
+.cta-section {
+    margin: 60px 0 40px;
+}
+
+/* BOTÓN URGENTE */
+.cta-button {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 30px auto 0;
+    padding: 18px 20px;
+
+    background-color: #d62828;
+    color: #fff;
+
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    border: none;
+
+    transition: all 0.2s ease;
+}
+
+/* hover elegante */
+.cta-button:hover {
+    background-color: #b71c1c;
+}
+
+/* móvil */
+@media (max-width: 600px) {
+    .cta-button {
+        font-size: 0.95rem;
+        padding: 16px;
     }
-    </script>
+}
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+footer {
+    padding: 60px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
 
-        body { 
-            margin: 0; 
-            background-color: #fff; 
-            color: #1a1a1a; 
-            font-family: 'Georgia', serif; 
-            line-height: 1.8; 
-            text-align: center; 
-        }
+/* FOOTER (idéntico) */
+.profile-img {
+    width: 75px;
+    border-radius: 50%;
+}
 
-        main { 
-            display: flex; 
-            justify-content: center; 
-            padding: 80px 20px 60px; 
-        }
+.name {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
 
-        .content-box { 
-            max-width: 700px; 
-            width: 100%;
-            font-size: 1.2rem; 
-        }
+.footer-bio {
+    max-width: 650px;
+    margin: 20px auto;
+    font-size: 0.95rem;
+}
 
-        h1 { 
-            font-size: 1.5rem; 
-            font-weight: bold; 
-            margin-bottom: 16px; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
-        }
-
-        p { margin-bottom: 12px; }
-
-        .content-box a { 
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 1px solid #ddd; 
-        }
-
-        .content-box a:hover { 
-            border-bottom: 1px solid #000; 
-        }
-
-        .cta-section { 
-            margin: 50px auto; 
-            padding: 40px; 
-            background-color: #f9f9f9; 
-            border: 1px solid #000; 
-            max-width: 700px;
-            width: 100%;
-        }
-
-        .cta-button { 
-            display: inline-block; 
-            padding: 15px 30px; 
-            border: 1px solid #000;
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
-            margin-top: 20px; 
-            font-family: sans-serif;
-        }
-
-        footer { 
-            padding: 60px 20px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-        }
-
-        .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
-        }
-
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 2px; 
-        }
-
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
-        }
-
-        .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto; 
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.7;
-        }
-
-        .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid #eee;
-        }
-
-        .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
-        }
-
-        .social-nav a { 
-            color: #666; 
-            text-decoration: none; 
-        }
-    </style>
+.social-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+</style>
 </head>
 
 <body>
 
 <main>
-    <div class="content-box">
-        <h1>Liderazgo interino</h1>
+<div class="content-box">
 
-        <p>
-            Hay momentos en una organización en los que el problema no es la falta de estrategia, sino la incapacidad de ejecutar con claridad. Las decisiones se retrasan, la operación se vuelve inconsistente y lo que antes funcionaba deja de sostener el negocio.
-        </p>
+<h1>Liderazgo interino</h1>
 
-        <p>
-            Si estás aquí, es probable que ya los estés viviendo. Tu equipo no avanza al ritmo que debería, las prioridades cambian constantemente y nadie está tomando las decisiones que realmente importan. No es un problema aislado, es una señal de que tu organización necesita dirección activa.
-        </p>
+<p>
+Hay momentos en una organización en los que el problema no es la falta de estrategia, sino la incapacidad de ejecutar con claridad.
+</p>
 
-        <p>
-            En este tipo de situaciones, analizar no es suficiente. Lo que se requiere es intervenir. Tomar control, ordenar la operación y restablecer la capacidad de ejecución sin detener el negocio.
-        </p>
+<p>
+Si estás aquí, es probable que ya los estés viviendo. Tu equipo no avanza al ritmo que debería y nadie está tomando las decisiones que realmente importan.
+</p>
 
-        <p>
-            Esto es lo que hago desde el liderazgo interino. No se trata de observar desde fuera ni de entregar recomendaciones, sino de entrar, asumir responsabilidad y tomar decisiones donde hoy no las hay.
-        </p>
+<p>
+Esto es lo que hago desde el liderazgo interino: entrar, asumir responsabilidad y tomar decisiones donde hoy no las hay.
+</p>
 
-        <p>
-            Si quieres profundizar un poco, puedes ver las señales en 
-            <a href="/cuando-se-necesita-un-director-interino/">¿Cuándo se necesita un director interino?</a>, 
-            entender <a href="/que-hace-un-director-interino/">¿Qué hace un director interino?</a> 
-            o reconocer los <a href="/errores-en-una-crisis-organizacional/">Errores en una crisis organizacional</a>.
-        </p>
+<div class="cta-section">
 
-        <div class="cta-section">
-            <h3 style="margin-top:0;">¿Tu organización no puede esperar?</h3>
+<h3>¿Tu organización no puede esperar?</h3>
 
-            <p>
-                Si hay un vacío de liderazgo o una crisis operativa en curso, esperar solo agrava el problema. Aquí no se trata de evaluar durante semanas, sino de actuar.
-            </p>
+<p>
+Si hay un vacío de liderazgo o una crisis operativa, esperar solo agrava el problema.
+</p>
 
-            <p>
-                Si lo que necesitas es a alguien que entre, tome decisiones y estabilice la operación, podemos intervenir en menos de 48 horas.
-            </p>
+<p>
+Podemos intervenir en menos de 48 horas.
+</p>
 
-            <a href="/atencion-ya" class="cta-button">Solicitar intervención inmediata</a>
-        </div>
-    </div>
+<a href="/atencion-ya" class="cta-button">
+Solicitar intervención inmediata
+</a>
+
+</div>
+
+</div>
 </main>
 
 <footer>
-    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
 
-    <div class="footer-bio">
-    <p>
-        Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-        Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
-        la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
-        la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
-        y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
-        bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
-        para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
-    </p>
+<img src="https://lubezky.com/foto-sergio.jpg" class="profile-img">
+
+<div class="name">Sergio Lubezky A.</div>
+
+<div class="footer-bio">
+Estratega enfocado en liderazgo, percepción y ejecución.
 </div>
-    
-    <ul class="social-nav">
-        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
-        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
-        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
-    </ul>
+
+<ul class="social-nav">
+<li><a href="#">LinkedIn</a></li>
+<li><a href="#">X</a></li>
+</ul>
+
 </footer>
 
 </body>
 </html>
-<!-- rebuild -->
