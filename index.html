@@ -7,69 +7,129 @@
 <title>Liderazgo interino | Intervención estratégica</title>
 
 <style>
+* { box-sizing: border-box; }
+
 body {
     margin:0;
     font-family: Georgia, serif;
-    text-align:center;
-    line-height:1.8;
     color:#1a1a1a;
+    text-align:center;
+    line-height:1.9;
+    font-size:19px;
 }
 
-/* selector idioma */
+/* idioma */
 .lang {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-family: sans-serif;
-    font-size: 0.8rem;
+    position:absolute;
+    top:20px;
+    right:20px;
+    font-family:sans-serif;
+    font-size:0.85rem;
 }
 
 .lang a {
-    text-decoration: none;
-    color:#333;
-    margin-left:8px;
+    text-decoration:none;
+    color:#444;
+    margin-left:10px;
 }
 
+/* contenido */
 main {
-    max-width:720px;
+    max-width:760px;
     margin:0 auto;
-    padding:80px 20px;
+    padding:100px 20px 60px;
 }
 
 h1 {
-    font-size:2rem;
-    margin-bottom:30px;
+    font-size:2.2rem;
+    margin-bottom:40px;
 }
 
 p {
-    margin-bottom:20px;
+    margin-bottom:22px;
 }
 
+/* CTA */
 .cta-button {
     display:block;
-    max-width:420px;
-    margin:40px auto;
-    padding:20px;
+    max-width:460px;
+    margin:50px auto;
+    padding:22px;
     background:#d62828;
     color:#fff;
     text-decoration:none;
     font-weight:bold;
     text-transform:uppercase;
+    letter-spacing:1px;
 }
 
-/* footer EXACTO */
+/* link artículo */
+.article {
+    margin-top:60px;
+}
+
+.article a {
+    color:#000;
+    text-decoration:underline;
+}
+
+/* FOOTER (MISMO ESTILO QUE TU BASE) */
 footer {
-    text-align:center;
-    padding:100px 20px 80px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
-    background:#fafafa;
+    text-align: center;
+    padding: 80px 20px 60px;
+    font-family: Arial, sans-serif;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #444;
+    padding: 3px;
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+.name-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.name {
+    font-size: 0.95rem;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display:block;
+}
+
+.footer-bio {
+    max-width: 620px;
+    margin: 0 auto 30px auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.footer-bio a {
+    color:#000;
+    text-decoration:none;
+    border-bottom:1px solid #ddd;
+}
+
+.social-nav {
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    list-style:none;
+    padding:0;
+    font-size:0.85rem;
 }
 </style>
 </head>
 
 <body>
 
-<!-- selector idioma -->
 <div class="lang">
 <a href="/">🇲🇽 ES</a>
 <a href="/index-en.html">🇺🇸 EN</a>
@@ -100,6 +160,10 @@ Esto es lo que hago desde el liderazgo interino. No se trata de observar desde f
 </p>
 
 <p>
+Trabajar con lo que existe, corregir lo que no está funcionando y alinear al equipo hacia resultados concretos.
+</p>
+
+<p>
 No es acompañamiento. No es asesoría. Es ejecución con responsabilidad directa.
 </p>
 
@@ -107,30 +171,49 @@ No es acompañamiento. No es asesoría. Es ejecución con responsabilidad direct
 Solicitar intervención inmediata
 </a>
 
+<div class="article">
+<p>
+Si quieres entender por qué actuar de inmediato suele ser más efectivo que esperar, puedes leer:
+</p>
+
+<p>
+<a href="/interim-leadership-strategic-advantage/">
+Interim Leadership as a Strategic Advantage
+</a>
+</p>
+</div>
+
 </main>
 
 <footer>
 
-<img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky"
-style="width:90px;height:90px;border-radius:50%;border:1px solid #ccc;padding:3px;background:#fff;margin-bottom:18px;">
+<img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    
+<a href="https://lubezky.com" class="name-link">
+    <span class="name">Sergio Lubezky A.</span>
+</a>
 
-<div style="font-size:0.9rem; letter-spacing:2.5px; text-transform:uppercase; margin-bottom:18px;">
-Sergio Lubezky
-</div>
-
-<div style="max-width:520px; margin:0 auto 30px auto; font-size:1.05rem; line-height:1.7;">
-<p style="margin:0;">
-La música es otra forma de comunicar lo que no siempre se puede decir con palabras.
+<div class="footer-bio">
+<p>
+    Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+    Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a>, 
+    la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
+    la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
+    y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
+    bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
+    para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
 </p>
 </div>
-
-<div style="font-size:0.85rem;">
-<a href="https://music.amazon.com.mx/artists/B0GDNRJZJ8/sergio-lubezky">Amazon Music</a> ·
-<a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434">Apple Music</a> ·
-<a href="https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ">Spotify</a> ·
-<a href="https://www.youtube.com/@SergioLubezkyMusic">YouTube Oficial</a> ·
-<a href="https://lubezky.com">Ecosistema Sergio Lubezky</a>
-</div>
+    
+<ul class="social-nav">
+    <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
+    <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
+    <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
+    <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+    <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
+    <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
+</ul>
 
 </footer>
 
