@@ -4,18 +4,70 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Liderazgo interino | Intervención estratégica</title>
+<title>Sergio Lubezky | Entender, ver y actuar</title>
+<meta name="description" content="Una forma de entender, ver y actuar con claridad, teniendo presente el bien común. Trayectoria de Sergio Lubezky.">
+
+<!-- JSON-LD (SOLO PERSON, LIMPIO Y FUERTE) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com/",
+      "image": "https://lubezky.com/foto-sergio.jpg",
+      "description": "Estratega, creativo y consultor enfocado en la intersección entre tecnología, liderazgo y narrativa visual.",
+      "jobTitle": [
+        "Estratega",
+        "Músico",
+        "Fotógrafo"
+      ],
+      "knowsAbout": [
+        "Inteligencia Artificial Aplicada",
+        "Liderazgo Interino",
+        "Estrategia de Negocios",
+        "Narrativa Visual",
+        "Gestión de Crisis"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/sergiolubezky/",
+        "https://x.com/slubezky",
+        "https://www.facebook.com/sergiolubezky/",
+        "https://www.instagram.com/sergiolubezky/",
+        "https://elmismobarco.com/",
+        "https://inteligencia.com/",
+        "https://unnuevopuntodevista.com/",
+        "https://liderazgointerino.com/",
+        "https://coachdefoto.com/",
+        "https://musica.sergiolubezky.com/"
+      ]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://lubezky.com/#website",
+      "url": "https://lubezky.com/",
+      "name": "Sergio Lubezky",
+      "about": { "@id": "https://lubezky.com/#sergio" },
+      "inLanguage": "es",
+      "primaryImageOfPage": "https://lubezky.com/foto-sergio.jpg"
+    }
+  ]
+}
+</script>
 
 <style>
-* { box-sizing: border-box; }
-
-body {
-    margin:0;
-    font-family: Georgia, serif;
-    color:#1a1a1a;
-    text-align:center;
-    line-height:1.9;
-    font-size:19px;
+body { 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    background-color: #fff; 
+    color: #1a1a1a; 
+    font-family: 'Georgia', serif; 
+    line-height: 1.8; 
 }
 
 /* idioma */
@@ -33,189 +85,179 @@ body {
     margin-left:10px;
 }
 
-/* contenido */
-main {
-    max-width:760px;
-    margin:0 auto;
-    padding:100px 20px 60px;
+main { 
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 60px 20px; 
 }
 
-h1 {
-    font-size:2.2rem;
-    margin-bottom:40px;
+.content-box { 
+    max-width: 700px; 
+    text-align: center; 
+    font-size: 1.2rem; 
 }
 
-p {
-    margin-bottom:22px;
-}
-
-/* CTA */
-.cta-button {
-    display:block;
-    max-width:460px;
-    margin:50px auto;
-    padding:22px;
-    background:#d62828;
-    color:#fff;
-    text-decoration:none;
-    font-weight:bold;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
-/* artículo */
-.article {
-    margin-top:60px;
-}
-
-.article a {
-    color:#000;
-    text-decoration:underline;
-}
-
-/* ===== FOOTER EXACTO (CSS NECESARIO) ===== */
-
-footer {
-    text-align: center;
-    padding: 80px 20px 60px;
-    font-family: Arial, sans-serif;
-}
-
-.profile-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid #444;
-    padding: 3px;
-    background: #fff;
-    margin-bottom: 12px;
-}
-
-.name-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.name {
-    font-size: 0.95rem;
-    letter-spacing: 1.8px;
+h1 { 
+    font-size: 1.5rem;
+    font-weight: bold; 
+    margin-bottom: 16px; 
     text-transform: uppercase;
-    margin-bottom: 20px;
-    display: block;
+    letter-spacing: 2px;
+}
+
+p { margin-bottom: 12px; }
+
+.content-box a { 
+    color: #000; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.content-box a:hover { border-bottom: 1px solid #000; }
+
+/* ===== FOOTER EXACTO ===== */
+
+.profile-img { 
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+    object-fit: cover; 
+    border: 1px solid #eee; 
+}
+
+.name-link { 
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    margin-bottom: 2px; 
+}
+
+.name { 
+    font-weight: 600; 
+    font-size: 1rem; 
+    letter-spacing: 1.5px; 
+    text-transform: uppercase; 
+}
+
+footer { 
+    padding: 60px 20px; 
+    text-align: center; 
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
 }
 
 .footer-bio {
-    max-width: 620px;
-    margin: 0 auto 30px auto;
-    font-size: 1.05rem;
+    max-width: 650px;
+    margin: 0 auto 30px auto; 
+    font-size: 0.95rem;
+    color: #444;
     line-height: 1.7;
-    color: #333;
 }
 
 .footer-bio a {
-    color:#000;
-    text-decoration:none;
-    border-bottom:1px solid #ddd;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
 }
 
-.social-nav {
-    display:flex;
-    justify-content:center;
-    gap:16px;
-    list-style:none;
-    padding:0;
-    font-size:0.85rem;
+.footer-bio a:hover {
+    border-bottom: 1px solid #1a1a1a;
 }
 
+.social-nav { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 12px; 
+    font-size: 0.85rem; 
+}
+
+.social-nav a { color: #666; text-decoration: none; }
+.social-nav a:hover { color: #000; }
+
+.social-nav li:not(:last-child)::after { 
+    content: "-"; 
+    margin-left: 12px; 
+    color: #ccc; 
+}
 </style>
 </head>
 
 <body>
 
+<!-- selector idioma -->
 <div class="lang">
 <a href="/">🇲🇽 ES</a>
-<a href="/index-en.html">🇺🇸 EN</a>
+<a href="/en/">🇺🇸 EN</a>
 </div>
 
 <main>
+<div class="content-box">
 
-<h1>Liderazgo interino</h1>
+<h1>Sergio Lubezky</h1>
 
 <p>
-Hay momentos en una organización en los que el problema no es la falta de estrategia, sino la incapacidad de ejecutar con claridad.
+Gracias por estar aquí. A lo largo del tiempo he llegado a una idea que se ha vuelto central en mi forma de entender la vida: no basta con evitar hacer daño, también es necesario hacer todo el bien que sea posible.
 </p>
 
 <p>
-Las decisiones se retrasan, la operación pierde consistencia y lo que antes funcionaba deja de sostener el negocio.
+Este espacio reúne distintas formas de aproximarse a una misma pregunta: cómo entender mejor lo que ocurre, cómo verlo con claridad y cómo actuar cuando realmente importa.
 </p>
 
 <p>
-Si estás aquí, es probable que ya los estés viviendo. Tu equipo no avanza al ritmo que debería, las prioridades cambian constantemente y nadie está tomando las decisiones que realmente importan.
+Cuando lo que ocurre no está claro, el trabajo comienza en <a href="https://inteligencia.com/">inteligencia</a>.  
+Cuando se trata de ver con mayor profundidad, aparece <a href="https://unnuevopuntodevista.com/">un nuevo punto de vista</a>.  
+Y cuando llega el momento de actuar, eso se traduce en <a href="https://liderazgointerino.com/">liderazgo interino</a>.
 </p>
 
 <p>
-En este tipo de situaciones, analizar no es suficiente. Lo que se requiere es intervenir. Tomar control, ordenar la operación y restablecer la capacidad de ejecución sin detener el negocio.
+Todo esto forma parte de algo más amplio: <a href="https://elmismobarco.com/">el mismo barco</a>.  
+También se expresa en <a href="https://coachdefoto.com/">la fotografía</a> y <a href="https://musica.sergiolubezky.com/">la música</a>.
 </p>
 
 <p>
-Esto es lo que hago desde el liderazgo interino. No se trata de observar desde fuera ni de entregar recomendaciones, sino de entrar, asumir responsabilidad y tomar decisiones donde hoy no las hay.
+Si quieres compartir algo, puedes escribirme a <a href="mailto:sergio@lubezky.com">sergio@lubezky.com</a>.
 </p>
 
-<p>
-Trabajar con lo que existe, corregir lo que no está funcionando y alinear al equipo hacia resultados concretos.
-</p>
-
-<p>
-No es acompañamiento. No es asesoría. Es ejecución con responsabilidad directa.
-</p>
-
-<a href="/atencion-ya" class="cta-button">
-Solicitar intervención inmediata
-</a>
-
-<div class="article">
-<p>
-Si quieres entender por qué actuar de inmediato suele ser más efectivo que esperar, puedes leer:
-</p>
-
-<p>
-<a href="/interim-leadership-strategic-advantage/">
-Interim Leadership as a Strategic Advantage
-</a>
-</p>
 </div>
-
 </main>
 
 <footer>
 
-    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
+<img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
 
-    <div class="footer-bio">
-    <p>
-        Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-        Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a>, 
-        la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
-        la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
-        y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
-        bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
-        para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
-    </p>
+<a href="https://lubezky.com" class="name-link">
+<span class="name">Sergio Lubezky A.</span>
+</a>
+
+<div class="footer-bio">
+<p>
+Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+Exploro la <a href="https://inteligencia.com">Inteligencia</a>, 
+la <a href="https://liderazgointerino.com">Dirección Interina</a>, 
+la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a> 
+y la música como otra forma de <a href="https://musica.sergiolubezky.com">comunicar</a>, 
+bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> 
+para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
+</p>
 </div>
-    
-    <ul class="social-nav">
-        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
-        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
-        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
-    </ul>
+
+<ul class="social-nav">
+<li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
+<li><a href="https://x.com/slubezky" target="_blank">X</a></li>
+<li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
+<li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
+<li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+<li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
+<li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
+</ul>
 
 </footer>
 
