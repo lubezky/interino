@@ -9,18 +9,25 @@
 <style>
 body {
     margin:0;
-    font-family:Georgia, serif;
+    font-family: Georgia, serif;
     text-align:center;
     line-height:1.8;
     color:#1a1a1a;
 }
 
+/* selector idioma */
 .lang {
-    position:absolute;
-    top:20px;
-    right:20px;
-    font-family:sans-serif;
-    font-size:0.85rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+.lang a {
+    text-decoration: none;
+    color:#333;
+    margin-left:8px;
 }
 
 main {
@@ -50,6 +57,7 @@ p {
     text-transform:uppercase;
 }
 
+/* footer EXACTO */
 footer {
     text-align:center;
     padding:100px 20px 80px;
@@ -61,9 +69,10 @@ footer {
 
 <body>
 
+<!-- selector idioma -->
 <div class="lang">
-<a href="/" onclick="localStorage.setItem('lang','es')">ES</a> |
-<a href="/index-en.html" onclick="localStorage.setItem('lang','en')">EN</a>
+<a href="/">🇲🇽 ES</a>
+<a href="/index-en.html">🇺🇸 EN</a>
 </div>
 
 <main>
@@ -102,7 +111,8 @@ Solicitar intervención inmediata
 
 <footer>
 
-<img src="https://lubezky.com/foto-sergio.jpg" style="width:90px;height:90px;border-radius:50%;border:1px solid #ccc;padding:3px;background:#fff;margin-bottom:18px;">
+<img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky"
+style="width:90px;height:90px;border-radius:50%;border:1px solid #ccc;padding:3px;background:#fff;margin-bottom:18px;">
 
 <div style="font-size:0.9rem; letter-spacing:2.5px; text-transform:uppercase; margin-bottom:18px;">
 Sergio Lubezky
@@ -123,15 +133,6 @@ La música es otra forma de comunicar lo que no siempre se puede decir con palab
 </div>
 
 </footer>
-
-<script>
-(function(){
-if(localStorage.getItem("lang")) return;
-if(!navigator.language.toLowerCase().startsWith("es")){
-window.location.href="/index-en.html";
-}
-})();
-</script>
 
 </body>
 </html>
