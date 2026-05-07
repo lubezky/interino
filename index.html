@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dirección Interina | Sergio Lubezky</title>
     <meta name="description" content="Dirección interina y continuidad operativa para organizaciones atravesando transición, incertidumbre, crisis o crecimiento en México y Latinoamérica.">
-    <meta name="keywords" content="director interino, liderazgo interino, dirección interina, continuidad operativa, transición organizacional, crisis organizacional, interim CEO, liderazgo ejecutivo, México, Latinoamérica">
     
     <script type="application/ld+json">
     {
@@ -15,7 +14,6 @@
       "url": "https://liderazgointerino.com",
       "image": "https://lubezky.com/foto-sergio.jpg",
       "jobTitle": "Director Interino y Líder de Transformación",
-      "description": "Dirección interina y continuidad operativa para organizaciones en transición o crisis.",
       "sameAs": [
         "https://www.linkedin.com/in/sergiolubezky/",
         "https://lubezky.com"
@@ -36,73 +34,53 @@
             line-height: 1.8; 
         }
 
-        /* Barra de Idiomas y Nav */
         header {
-            padding: 20px;
+            padding: 30px 20px 10px 20px;
             text-align: center;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
         }
-
-        .top-nav {
-            margin-top: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .top-nav a {
-            text-decoration: none;
-            color: #666;
-        }
-
-        .top-nav a:hover { color: #000; }
 
         .flags {
-            font-size: 0.9rem;
-            margin-bottom: 10px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
         }
 
         .flags a {
             text-decoration: none;
-            margin: 0 5px;
-            opacity: 0.6;
+            margin: 0 10px;
+            opacity: 0.5;
+            color: #000;
             transition: opacity 0.3s;
         }
 
         .flags a.active { opacity: 1; font-weight: bold; }
 
-        /* Contenedor Principal */
         main { 
             flex: 1; 
             display: flex; 
             flex-direction: column;
             align-items: center; 
-            padding: 40px 20px 80px 20px; 
+            padding: 20px 20px 60px 20px; 
         }
 
         .content-box { 
             max-width: 700px; 
             text-align: center; 
-            font-size: 1.2rem; 
-            margin-bottom: 60px;
+            font-size: 1.15rem; 
+            margin-bottom: 35px; /* Espaciado reducido */
         }
 
         h1, h2 { 
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: bold; 
-            margin-bottom: 24px; 
+            margin-bottom: 20px; 
             text-transform: uppercase;
             letter-spacing: 2px;
             line-height: 1.3;
         }
 
-        p { margin-bottom: 20px; }
+        p { margin-bottom: 15px; }
 
-        /* Enlaces estilo Lubezky */
         a.styled-link, .content-box a { 
             color: #000; 
             text-decoration: none; 
@@ -114,9 +92,8 @@
         .content-box a:hover { border-bottom: 1px solid #000; }
 
         .image-container {
-            margin: 40px 0;
+            margin: 30px 0;
             width: 100%;
-            max-width: 700px;
         }
 
         .image-container img {
@@ -125,11 +102,94 @@
             border: 1px solid #eee;
         }
 
-        .statement {
-            font-style: italic;
-            font-size: 1.4rem;
-            margin: 40px 0;
-            color: #000;
+        /* --- COMPONENTES DE ACCIÓN (NUEVOS) --- */
+        .action-area {
+            width: 100%;
+            max-width: 750px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .sub-text {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .btn-red {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: #fff !important;
+            padding: 22px 45px;
+            text-decoration: none;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: none !important;
+            transition: background 0.3s;
+        }
+
+        .btn-red:hover {
+            background-color: #b71c1c;
+        }
+
+        .whitepaper-box {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            padding: 50px 40px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .wp-label {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .wp-title {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .wp-description {
+            font-size: 1.05rem;
+            color: #444;
+            max-width: 550px;
+            margin: 0 auto 30px auto;
+        }
+
+        .wp-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline {
+            display: inline-block;
+            border: 1px solid #1a1a1a;
+            padding: 12px 25px;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .btn-outline:hover {
+            background-color: #1a1a1a;
+            color: #fff;
         }
 
         /* --- FOOTER IDENTICO --- */
@@ -215,53 +275,51 @@
         <a href="https://liderazgointerino.com/" class="active">🇲🇽 ES</a>
         <a href="https://liderazgointerino.com/en/">🇺🇸 EN</a>
     </div>
-    <nav class="top-nav">
-        <a href="/">Inicio</a>
-        <a href="/que-hace-un-director-interino/">Qué Hace</a>
-        <a href="/cuando-se-necesita-un-director-interino/">Cuándo</a>
-        <a href="/errores-en-una-crisis-organizacional/">Crisis</a>
-        <a href="/atencion-ya/">Atención</a>
-        <a href="https://lubezky.com">Lubezky.com</a>
-    </nav>
 </header>
 
 <main>
     <div class="content-box">
         <h1>Dirección interina para momentos donde la continuidad importa más que la perfección</h1>
-        
         <p>Las organizaciones rara vez se detienen completamente durante periodos de transición, incertidumbre, crisis o cambios de liderazgo.</p>
-        
         <p>Primero se ralentizan las decisiones. Después se fragmenta la coordinación. Finalmente, la operación comienza a perder claridad.</p>
-        
         <p>La dirección interina existe para restaurar continuidad, estabilizar operaciones y proteger el impulso organizacional mientras las decisiones de largo plazo se toman cuidadosamente.</p>
     </div>
 
     <div class="content-box">
         <h2>No es consultoría</h2>
         <p>La dirección interina no es observación desde la distancia. Es involucramiento operativo directo durante momentos donde una organización necesita continuidad, claridad ejecutiva y liderazgo sereno bajo presión.</p>
-        
         <p>Ya sea crecimiento acelerado, transición ejecutiva, sobrecarga operativa o manejo de crisis, el objetivo sigue siendo el mismo:</p>
-        
-        <div class="statement">Proteger la continuidad mientras la organización recupera claridad.</div>
+        <p><strong>Proteger la continuidad mientras la organización recupera claridad.</strong></p>
     </div>
 
     <div class="content-box">
         <h2>El costo de esperar</h2>
         <p>La disrupción de liderazgo rara vez genera colapso inmediato. Mientras más tiempo continúa la incertidumbre, más difícil se vuelve la recuperación.</p>
-        
         <div class="image-container">
             <img src="/images/leadership-vacuum-curve.jpg" alt="Leadership Vacuum Curve">
         </div>
     </div>
 
     <div class="content-box">
-        <h2>Explorar</h2>
+        <h2>Lecturas recomendadas</h2>
+        <p><a href="/errores-en-una-crisis-organizacional/">Errores en una Crisis Organizacional</a></p>
+        <p><a href="/cuando-se-necesita-un-director-interino/">Cuándo se necesita un Director Interino</a></p>
         <p><a href="/que-hace-un-director-interino/">Qué Hace un Director Interino</a></p>
-        <p><a href="/cuando-se-necesita-un-director-interino/">Cuándo se Necesita</a></p>
-        <p><a href="/errores-en-una-crisis-organizacional/">Errores en una Crisis</a></p>
-        <p><a href="/atencion-ya/">Atención Inmediata</a></p>
-        <p><a href="/interim-leadership-strategic-advantage/">Ventaja Estratégica</a></p>
-        <p><a href="/executive-profile/">Perfil Ejecutivo</a></p>
+    </div>
+
+    <div class="action-area">
+        <p class="sub-text">Intervención inmediata para organizaciones que no pueden detener ejecución.</p>
+        <a href="/atencion-ya/" class="btn-red">Solicitar intervención inmediata</a>
+
+        <div class="whitepaper-box">
+            <span class="wp-label">Strategic Whitepaper</span>
+            <h2 class="wp-title">Interim Leadership as a Strategic Advantage</h2>
+            <p class="wp-description">Un análisis sobre cómo el liderazgo interino permite preservar ejecución, estabilidad y capacidad de decisión durante momentos de incertidumbre organizacional.</p>
+            <div class="wp-buttons">
+                <a href="/interim-leadership-strategic-advantage/" class="btn-outline">Leer artículo</a>
+                <a href="/pdf/interim-leadership-whitepaper.pdf" class="btn-outline">Descargar PDF</a>
+            </div>
+        </div>
     </div>
 </main>
 
