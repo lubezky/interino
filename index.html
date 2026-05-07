@@ -67,7 +67,7 @@
             max-width: 700px; 
             text-align: center; 
             font-size: 1.15rem; 
-            margin-bottom: 35px; /* Espaciado reducido */
+            margin-bottom: 35px;
         }
 
         h1, h2 { 
@@ -102,7 +102,7 @@
             border: 1px solid #eee;
         }
 
-        /* --- COMPONENTES DE ACCIÓN (NUEVOS) --- */
+        /* --- ACCIÓN Y WHITEPAPER --- */
         .action-area {
             width: 100%;
             max-width: 750px;
@@ -127,13 +127,10 @@
             font-size: 1.1rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            border: none !important;
             transition: background 0.3s;
         }
 
-        .btn-red:hover {
-            background-color: #b71c1c;
-        }
+        .btn-red:hover { background-color: #b71c1c; }
 
         .whitepaper-box {
             background-color: #f9f9f9;
@@ -153,24 +150,13 @@
             display: block;
         }
 
-        .wp-title {
-            font-size: 1.6rem;
-            margin-bottom: 20px;
-            font-weight: normal;
-        }
+        .wp-title { font-size: 1.6rem; margin-bottom: 20px; font-weight: normal; }
 
         .wp-description {
             font-size: 1.05rem;
             color: #444;
             max-width: 550px;
             margin: 0 auto 30px auto;
-        }
-
-        .wp-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
         }
 
         .btn-outline {
@@ -187,9 +173,34 @@
             transition: all 0.3s;
         }
 
-        .btn-outline:hover {
-            background-color: #1a1a1a;
-            color: #fff;
+        .btn-outline:hover { background-color: #1a1a1a; color: #fff; }
+
+        /* --- NUEVA SECCIÓN BIO PROFESIONAL --- */
+        .professional-bio {
+            max-width: 700px;
+            margin: 80px auto 40px auto;
+            padding-top: 40px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .bio-text {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .cv-link {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #000;
+            text-decoration: none;
+            border-bottom: 2px solid #000;
+            padding-bottom: 4px;
         }
 
         /* --- FOOTER IDENTICO --- */
@@ -201,70 +212,28 @@
         }
 
         .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
+            width: 75px; height: 75px; 
+            border-radius: 50%; margin-bottom: 10px; 
+            object-fit: cover; border: 1px solid #eee; 
         }
 
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 2px; 
-        }
-
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
-        }
+        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; }
+        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
 
         .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto; 
-            font-size: 0.95rem;
-            color: #444;
-            line-height: 1.7;
-        }
-
-        .footer-bio p { margin: 0; }
-
-        .footer-bio a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 1px solid #eee;
-            transition: all 0.3s ease;
-        }
-
-        .footer-bio a:hover {
-            border-bottom: 1px solid #1a1a1a;
-            background-color: #f9f9f9;
-            color: #000;
+            max-width: 650px; margin: 0 auto 30px auto; 
+            font-size: 0.95rem; color: #444; line-height: 1.7;
         }
 
         .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
+            list-style: none; padding: 0; margin: 0; 
+            display: flex; flex-wrap: wrap; justify-content: center; 
+            gap: 12px; font-size: 0.85rem; 
         }
 
         .social-nav a { color: #666; text-decoration: none; }
         .social-nav a:hover { color: #000; }
-        .social-nav li:not(:last-child)::after { 
-            content: "-"; 
-            margin-left: 12px; 
-            color: #ccc; 
-        }
+        .social-nav li:not(:last-child)::after { content: "-"; margin-left: 12px; color: #ccc; }
     </style>
 </head>
 
@@ -294,7 +263,6 @@
 
     <div class="content-box">
         <h2>El costo de esperar</h2>
-        <p>La disrupción de liderazgo rara vez genera colapso inmediato. Mientras más tiempo continúa la incertidumbre, más difícil se vuelve la recuperación.</p>
         <div class="image-container">
             <img src="/images/leadership-vacuum-curve.jpg" alt="Leadership Vacuum Curve">
         </div>
@@ -317,31 +285,26 @@
             <p class="wp-description">Un análisis sobre cómo el liderazgo interino permite preservar ejecución, estabilidad y capacidad de decisión durante momentos de incertidumbre organizacional.</p>
             <div class="wp-buttons">
                 <a href="/interim-leadership-strategic-advantage/" class="btn-outline">Leer artículo</a>
-                <a href="/pdf/interim-leadership-whitepaper.pdf" class="btn-outline">Descargar PDF</a>
+                <a href="/pdf/interim-leadership-whitepaper-sergio-lubezky.pdf" class="btn-outline">Descargar PDF</a>
             </div>
         </div>
+    </div>
+
+    <div class="professional-bio">
+        <div class="bio-text">
+            <p><strong>Sergio Lubezky</strong> es ejecutivo interino y líder de transformación con más de 30 años de trayectoria apoyando a organizaciones en procesos de complejidad operativa, transición y cambio organizacional en México y Latinoamérica.</p>
+            <p>Su experiencia abarca operaciones internacionales, emprendimientos SaaS, liderazgo en organizaciones sin fines de lucro y gestión de continuidad en crisis. Reconocido por su capacidad de integración rápida y ejecución serena bajo presión, su trabajo se enfoca en preservar la estabilidad operativa mientras se desarrollan las decisiones de liderazgo a largo plazo.</p>
+        </div>
+        <a href="/pdf/cv-sergio-lubezky.pdf" class="cv-link">Descargar Perfil Ejecutivo (CV)</a>
     </div>
 </main>
 
 <footer>
     <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
-
+    <a href="https://lubezky.com" class="name-link"><span class="name">Sergio Lubezky A.</span></a>
     <div class="footer-bio">
-        <p>
-            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a>, 
-            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
-            la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
-            y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
-            bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
-            para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
-        </p>
+        <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro la <a href="https://inteligencia.com">Inteligencia</a>, la <a href="https://liderazgointerino.com">Dirección Interina</a> y la narrativa visual bajo una misma premisa: entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.</p>
     </div>
-    
     <ul class="social-nav">
         <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
         <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
