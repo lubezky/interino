@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dirección Interina | Sergio Lubezky</title>
     <meta name="description" content="Dirección interina y continuidad operativa para organizaciones atravesando transición, incertidumbre, crisis o crecimiento en México y Latinoamérica.">
-    
+    <meta name="author" content="Sergio Lubezky">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -14,6 +15,7 @@
       "url": "https://liderazgointerino.com",
       "image": "https://lubezky.com/foto-sergio.jpg",
       "jobTitle": "Director Interino y Líder de Transformación",
+      "description": "Estratega enfocado en la intersección entre tecnología, liderazgo y percepción.",
       "sameAs": [
         "https://www.linkedin.com/in/sergiolubezky/",
         "https://lubezky.com"
@@ -32,6 +34,7 @@
             color: #1a1a1a; 
             font-family: 'Georgia', serif; 
             line-height: 1.8; 
+            -webkit-font-smoothing: antialiased;
         }
 
         header {
@@ -67,7 +70,7 @@
             max-width: 700px; 
             text-align: center; 
             font-size: 1.15rem; 
-            margin-bottom: 35px;
+            margin-bottom: 35px; /* Espaciado reducido entre bloques */
         }
 
         h1, h2 { 
@@ -102,7 +105,7 @@
             border: 1px solid #eee;
         }
 
-        /* --- ACCIÓN Y WHITEPAPER --- */
+        /* --- ACCIÓN Y WHITEPAPER (SEGÚN IMAGEN) --- */
         .action-area {
             width: 100%;
             max-width: 750px;
@@ -127,6 +130,7 @@
             font-size: 1.1rem;
             text-transform: uppercase;
             letter-spacing: 2px;
+            border: none;
             transition: background 0.3s;
         }
 
@@ -159,6 +163,13 @@
             margin: 0 auto 30px auto;
         }
 
+        .wp-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
         .btn-outline {
             display: inline-block;
             border: 1px solid #1a1a1a;
@@ -175,10 +186,10 @@
 
         .btn-outline:hover { background-color: #1a1a1a; color: #fff; }
 
-        /* --- NUEVA SECCIÓN BIO PROFESIONAL --- */
+        /* --- SECCIÓN BIO PROFESIONAL --- */
         .professional-bio {
             max-width: 700px;
-            margin: 80px auto 40px auto;
+            margin: 60px auto 20px auto;
             padding-top: 40px;
             border-top: 1px solid #eee;
             text-align: center;
@@ -191,19 +202,32 @@
             margin-bottom: 25px;
         }
 
+        .download-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
         .cv-link {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: #000;
             text-decoration: none;
-            border-bottom: 2px solid #000;
+            border-bottom: 2px solid #eee;
             padding-bottom: 4px;
+            transition: border-color 0.3s;
         }
 
-        /* --- FOOTER IDENTICO --- */
+        .cv-link:hover { border-bottom: 2px solid #000; }
+
+        .separator { color: #ccc; font-weight: lighter; }
+
+        /* --- FOOTER IDENTICO LUBEZKY.COM --- */
         footer { 
             padding: 60px 20px; 
             text-align: center; 
@@ -225,6 +249,22 @@
             font-size: 0.95rem; color: #444; line-height: 1.7;
         }
 
+        .footer-bio p { margin: 0; }
+
+        .footer-bio a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .footer-bio a:hover {
+            border-bottom: 1px solid #1a1a1a;
+            background-color: #f9f9f9;
+            color: #000;
+        }
+
         .social-nav { 
             list-style: none; padding: 0; margin: 0; 
             display: flex; flex-wrap: wrap; justify-content: center; 
@@ -234,6 +274,13 @@
         .social-nav a { color: #666; text-decoration: none; }
         .social-nav a:hover { color: #000; }
         .social-nav li:not(:last-child)::after { content: "-"; margin-left: 12px; color: #ccc; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .download-container { flex-direction: column; gap: 15px; }
+            .separator { display: none; }
+            .wp-buttons { flex-direction: column; }
+        }
     </style>
 </head>
 
@@ -263,6 +310,7 @@
 
     <div class="content-box">
         <h2>El costo de esperar</h2>
+        <p>La disrupción de liderazgo rara vez genera colapso inmediato. Mientras más tiempo continúa la incertidumbre, más difícil se vuelve la recuperación.</p>
         <div class="image-container">
             <img src="/images/leadership-vacuum-curve.jpg" alt="Leadership Vacuum Curve">
         </div>
@@ -271,8 +319,8 @@
     <div class="content-box">
         <h2>Lecturas recomendadas</h2>
         <p><a href="/errores-en-una-crisis-organizacional/">Errores en una Crisis Organizacional</a></p>
-        <p><a href="/cuando-se-necesita-un-director-interino/">Cuándo se necesita un Director Interino</a></p>
-        <p><a href="/que-hace-un-director-interino/">Qué Hace un Director Interino</a></p>
+        <p><a href="/cuando-se-necesita-un-director-interino/">Cuando se necesita un Director Interino</a></p>
+        <p><a href="/que-hace-un-director-interino/">Que Hace un Director Interino</a></p>
     </div>
 
     <div class="action-area">
@@ -295,16 +343,34 @@
             <p><strong>Sergio Lubezky</strong> es ejecutivo interino y líder de transformación con más de 30 años de trayectoria apoyando a organizaciones en procesos de complejidad operativa, transición y cambio organizacional en México y Latinoamérica.</p>
             <p>Su experiencia abarca operaciones internacionales, emprendimientos SaaS, liderazgo en organizaciones sin fines de lucro y gestión de continuidad en crisis. Reconocido por su capacidad de integración rápida y ejecución serena bajo presión, su trabajo se enfoca en preservar la estabilidad operativa mientras se desarrollan las decisiones de liderazgo a largo plazo.</p>
         </div>
-        <a href="/pdf/cv-sergio-lubezky.pdf" class="cv-link">Descargar Perfil Ejecutivo (CV)</a>
+        
+        <div class="download-container">
+            <a href="/pdf/sergio-lubezky-perfil-ejecutivo.pdf" class="cv-link">Perfil Ejecutivo (Resumen)</a>
+            <span class="separator">|</span>
+            <a href="/pdf/sergio-lubezky-executive-profile.pdf" class="cv-link">Perfil Completo</a>
+        </div>
     </div>
 </main>
 
 <footer>
     <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    <a href="https://lubezky.com" class="name-link"><span class="name">Sergio Lubezky A.</span></a>
+    
+    <a href="https://lubezky.com" class="name-link">
+        <span class="name">Sergio Lubezky A.</span>
+    </a>
+
     <div class="footer-bio">
-        <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro la <a href="https://inteligencia.com">Inteligencia</a>, la <a href="https://liderazgointerino.com">Dirección Interina</a> y la narrativa visual bajo una misma premisa: entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.</p>
+        <p>
+            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a>, 
+            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
+            la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
+            y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
+            bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
+            para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
+        </p>
     </div>
+    
     <ul class="social-nav">
         <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
         <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
