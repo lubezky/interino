@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,9 +17,6 @@
 
 <link rel="canonical" href="https://liderazgointerino.com/">
 
-<link rel="alternate" hreflang="es" href="https://liderazgointerino.com/">
-<link rel="alternate" hreflang="en" href="https://liderazgointerino.com/en/">
-
 <meta property="og:title" content="Dirección Interina | Sergio Lubezky">
 <meta property="og:description" content="Continuidad operativa y liderazgo ejecutivo durante periodos de transición, incertidumbre o crisis organizacional.">
 <meta property="og:type" content="website">
@@ -31,6 +29,9 @@
 <meta name="twitter:image" content="https://liderazgointerino.com/images/leadership-vacuum-curve.jpg">
 
 <link rel="icon" href="/favicon.ico">
+
+<link rel="alternate" hreflang="es" href="https://liderazgointerino.com/">
+<link rel="alternate" hreflang="en" href="https://liderazgointerino.com/en/">
 
 <script type="application/ld+json">
 {
@@ -57,12 +58,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background: #ffffff;
   color: #1a1a1a;
-  font-family: Georgia, serif;
-  line-height: 1.85;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  line-height: 1.85;
 }
 
 a {
@@ -72,7 +73,7 @@ a {
 
 .page {
   width: 88%;
-  max-width: 700px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
@@ -90,7 +91,6 @@ header {
   display: flex;
   gap: 14px;
   font-size: 0.92rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #888888;
 }
 
@@ -107,157 +107,131 @@ header {
   opacity: 1;
 }
 
+nav {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  font-size: 0.95rem;
+  color: #666666;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #111111;
+}
+
 .hero {
-  padding-top: 140px;
-  padding-bottom: 120px;
+  padding-top: 150px;
+  padding-bottom: 130px;
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 8vw, 5.4rem);
+  font-size: clamp(3rem, 8vw, 5.7rem);
   line-height: 0.98;
   letter-spacing: -0.055em;
   font-weight: 400;
   margin: 0 0 60px 0;
+  max-width: 720px;
 }
 
 .hero p {
   font-size: 1.18rem;
-  color: #444444;
+  color: #4a4a4a;
+  max-width: 650px;
   margin-bottom: 34px;
 }
 
-.inline-links {
-  margin-top: 70px;
+.section {
+  padding: 130px 0;
 }
 
-.inline-links p {
-  margin-bottom: 24px;
-}
-
-.inline-links a {
-  border-bottom: 1px solid #dddddd;
-  transition: border-color 0.3s ease;
-}
-
-.inline-links a:hover {
-  border-bottom: 1px solid #111111;
-}
-
-.statement {
-  margin-top: 70px;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  letter-spacing: -0.03em;
-  color: #222222;
-}
-
-.image-section {
-  padding-top: 80px;
-  padding-bottom: 120px;
-}
-
-.image-section h2 {
+.section h2 {
   font-size: 2rem;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.03em;
   font-weight: 400;
   margin-bottom: 50px;
 }
 
-.image-section p {
+.section p {
+  font-size: 1.08rem;
+  color: #4a4a4a;
+  margin-bottom: 34px;
+  max-width: 680px;
+}
+
+.statement {
+  margin-top: 70px;
+  font-size: 1.55rem;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: #222222;
+  max-width: 650px;
+}
+
+.links {
+  margin-top: 70px;
+}
+
+.links a {
+  display: block;
+  margin-bottom: 34px;
   font-size: 1.08rem;
   color: #444444;
-  margin-bottom: 34px;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #111111;
+}
+
+.image-section {
+  padding-top: 110px;
 }
 
 .image-section img {
   width: 100%;
   height: auto;
   display: block;
-  margin-top: 60px;
-}
-
-.secondary-links {
-  margin-top: 70px;
-}
-
-.secondary-links p {
-  margin-bottom: 20px;
-}
-
-.secondary-links a {
-  border-bottom: 1px solid #dddddd;
-  transition: border-color 0.3s ease;
-}
-
-.secondary-links a:hover {
-  border-bottom: 1px solid #111111;
+  margin-top: 50px;
 }
 
 footer {
-  padding: 100px 0 80px;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 140px;
+  padding-bottom: 90px;
 }
 
-.profile-img {
-  width: 76px;
-  height: 76px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 14px;
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  margin-bottom: 60px;
 }
 
-.name-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.name {
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-}
-
-.footer-bio {
-  max-width: 640px;
-  margin: 34px auto 36px auto;
-  font-size: 0.95rem;
-  line-height: 1.75;
-  color: #555555;
-}
-
-.footer-bio a {
-  border-bottom: 1px solid #eeeeee;
-}
-
-.footer-bio a:hover {
-  border-bottom: 1px solid #111111;
-}
-
-.social-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.footer-grid {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  font-size: 0.84rem;
+  gap: 30px;
 }
 
-.social-nav li:not(:last-child)::after {
-  content: "-";
-  margin-left: 12px;
-  color: #cccccc;
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.social-nav a {
+.footer-column a,
+.footer-column span {
+  font-size: 0.94rem;
   color: #666666;
 }
 
-.social-nav a:hover {
+.footer-column a:hover {
   color: #111111;
 }
 
@@ -268,17 +242,25 @@ footer {
     padding-bottom: 90px;
   }
 
+  .section {
+    padding: 90px 0;
+  }
+
   .hero h1 {
-    font-size: clamp(2.7rem, 13vw, 4.8rem);
+    font-size: clamp(2.8rem, 13vw, 4.7rem);
   }
 
   .hero p,
-  .image-section p {
+  .section p {
     font-size: 1.02rem;
   }
 
   .statement {
     font-size: 1.3rem;
+  }
+
+  .footer-grid {
+    flex-direction: column;
   }
 
 }
@@ -293,206 +275,163 @@ footer {
 
 <header>
 
-<div class="topbar">
+  <div class="topbar">
 
-<div class="flags">
-<a href="/" class="active">🇲🇽 ES</a>
-<a href="/en/">🇺🇸 EN</a>
-</div>
+    <div class="flags">
+      <a href="https://liderazgointerino.com/" class="active">🇲🇽 ES</a>
+      <a href="https://liderazgointerino.com/en/">🇺🇸 EN</a>
+    </div>
 
-</div>
+  </div>
+
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="/que-hace-un-director-interino/">Qué Hace</a>
+    <a href="/cuando-se-necesita-un-director-interino/">Cuándo se Necesita</a>
+    <a href="/errores-en-una-crisis-organizacional/">Crisis Organizacional</a>
+    <a href="/atencion-ya/">Atención Inmediata</a>
+    <a href="/interim-leadership-strategic-advantage/">Whitepaper</a>
+    <a href="/executive-profile/">Perfil</a>
+    <a href="https://lubezky.com">Lubezky.com</a>
+  </nav>
 
 </header>
 
 <section class="hero">
 
-<h1>
-Dirección interina para momentos donde la continuidad importa más que la perfección.
-</h1>
+  <h1>
+    Dirección interina para momentos donde la continuidad importa más que la perfección.
+  </h1>
 
-<p>
-Las organizaciones rara vez se detienen completamente durante periodos de transición, incertidumbre, crisis o cambios de liderazgo.
-</p>
+  <p>
+    Las organizaciones rara vez se detienen completamente durante periodos de transición, incertidumbre, crisis o cambios de liderazgo.
+  </p>
 
-<p>
-Primero se ralentizan las decisiones.
-</p>
+  <p>
+    Primero se ralentizan las decisiones.
+  </p>
 
-<p>
-Después se fragmenta la coordinación.
-</p>
+  <p>
+    Después se fragmenta la coordinación.
+  </p>
 
-<p>
-Finalmente, la operación comienza a perder claridad.
-</p>
+  <p>
+    Finalmente, la operación comienza a perder claridad.
+  </p>
 
-<p>
-Cuando eso ocurre, el problema no siempre es visible de inmediato. Pero sus consecuencias comienzan a acumularse silenciosamente: desgaste interno, pérdida de alineación, retrasos operativos y una creciente dificultad para actuar con claridad.
-</p>
-
-<p>
-La dirección interina existe para intervenir precisamente en esos momentos.
-</p>
-
-<p>
-No como consultoría desde la distancia, sino como involucramiento operativo directo cuando una organización necesita continuidad, claridad ejecutiva y capacidad de decisión mientras las soluciones de largo plazo se desarrollan cuidadosamente.
-</p>
-
-<p>
-A veces eso implica estabilizar una operación bajo presión. Otras veces significa sostener el rumbo mientras se encuentra al líder adecuado, preparar una transición interna o ayudar a recuperar claridad en medio de una crisis organizacional.
-</p>
-
-<p>
-El objetivo sigue siendo el mismo:
-</p>
-
-<div class="statement">
-Proteger la continuidad mientras la organización recupera claridad.
-</div>
-
-<div class="inline-links">
-
-<p>
-Hay momentos donde una organización necesita actuar rápidamente.
-</p>
-
-<p>
-Otros donde necesita entender qué está ocurriendo antes de tomar decisiones permanentes.
-</p>
-
-<p>
-Y otros donde el verdadero riesgo no es la crisis visible, sino el vacío de liderazgo que comienza a formarse lentamente.
-</p>
-
-<p>
-<a href="/cuando-se-necesita-un-director-interino/">
-Cuándo se necesita un director interino
-</a>
-</p>
-
-<p>
-<a href="/errores-en-una-crisis-organizacional/">
-Errores comunes en una crisis organizacional
-</a>
-</p>
-
-<p>
-<a href="/que-hace-un-director-interino/">
-Qué hace realmente un director interino
-</a>
-</p>
-
-</div>
+  <p>
+    La dirección interina existe para restaurar continuidad, estabilizar operaciones y proteger el impulso organizacional mientras las decisiones de largo plazo se toman cuidadosamente.
+  </p>
 
 </section>
 
-<section class="image-section">
+<section class="section">
 
-<h2>
-El costo de esperar
-</h2>
+  <h2>
+    No es consultoría.
+  </h2>
 
-<p>
-La disrupción de liderazgo rara vez genera colapso inmediato.
-</p>
+  <p>
+    La dirección interina no es observación desde la distancia.
+  </p>
 
-<p>
-Primero se ralentizan las decisiones.
-</p>
+  <p>
+    Es involucramiento operativo directo durante momentos donde una organización necesita continuidad, claridad ejecutiva y liderazgo sereno bajo presión.
+  </p>
 
-<p>
-Después se debilita la alineación.
-</p>
+  <p>
+    Ya sea crecimiento acelerado, transición ejecutiva, sobrecarga operativa, incertidumbre organizacional o manejo de crisis, el objetivo sigue siendo el mismo.
+  </p>
 
-<p>
-Eventualmente, la claridad organizacional comienza a desaparecer.
-</p>
+  <div class="statement">
+    Proteger la continuidad mientras la organización recupera claridad.
+  </div>
 
-<p>
-Mientras más tiempo continúa la incertidumbre, más difícil se vuelve la recuperación.
-</p>
+</section>
 
-<img src="/images/leadership-vacuum-curve.jpg" alt="Leadership Vacuum Curve">
+<section class="section">
 
-<div class="secondary-links">
+  <h2>
+    Explorar
+  </h2>
 
-<p>
-<a href="/interim-leadership-strategic-advantage/">
-Interim Leadership Strategic Advantage
-</a>
-</p>
+  <div class="links">
 
-<p>
-<a href="/executive-profile/">
-Perfil Ejecutivo
-</a>
-</p>
+    <a href="/que-hace-un-director-interino/">
+      Qué Hace un Director Interino
+    </a>
 
-<p>
-<a href="/atencion-ya/">
-Atención inmediata
-</a>
-</p>
+    <a href="/cuando-se-necesita-un-director-interino/">
+      Cuándo se Necesita un Director Interino
+    </a>
 
-</div>
+    <a href="/errores-en-una-crisis-organizacional/">
+      Errores en una Crisis Organizacional
+    </a>
+
+    <a href="/atencion-ya/">
+      Atención Inmediata
+    </a>
+
+    <a href="/interim-leadership-strategic-advantage/">
+      Ventaja Estratégica del Liderazgo Interino
+    </a>
+
+    <a href="/executive-profile/">
+      Perfil Ejecutivo
+    </a>
+
+  </div>
+
+</section>
+
+<section class="section image-section">
+
+  <h2>
+    El costo de esperar
+  </h2>
+
+  <p>
+    La disrupción de liderazgo rara vez genera colapso inmediato.
+  </p>
+
+  <p>
+    Primero se ralentizan las decisiones.
+  </p>
+
+  <p>
+    Después se debilita la alineación.
+  </p>
+
+  <p>
+    Eventualmente, la claridad organizacional comienza a desaparecer.
+  </p>
+
+  <p>
+    Mientras más tiempo continúa la incertidumbre, más difícil se vuelve la recuperación.
+  </p>
+
+  <img src="/images/leadership-vacuum-curve.jpg" alt="Leadership Vacuum Curve">
 
 </section>
 
 <footer>
 
-<img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky" class="profile-img">
+  <div class="footer-divider"></div>
 
-<p>
-<a href="https://lubezky.com" class="name-link">
-<span class="name">Sergio Lubezky A.</span>
-</a>
-</p>
+  <div class="footer-grid">
 
-<div class="footer-bio">
+    <div class="footer-column">
+      <span>© Sergio Lubezky</span>
+    </div>
 
-<p>
-Estratega enfocado en la intersección entre tecnología, liderazgo y percepción.
-Exploro la <a href="https://inteligencia.com">Inteligencia</a>,
-la <a href="https://liderazgointerino.com">Dirección Interina</a>,
-la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a>
-y la música como otra forma de <a href="https://musica.sergiolubezky.com">comunicar</a>,
-bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a>
-para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
-</p>
+    <div class="footer-column">
+      <a href="https://lubezky.com">Lubezky.com</a>
+      <a href="https://liderazgointerino.com">Dirección Interina</a>
+      <a href="https://linkedin.com/in/sergiolubezky">LinkedIn</a>
+    </div>
 
-</div>
-
-<ul class="social-nav">
-
-<li>
-<a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a>
-</li>
-
-<li>
-<a href="https://x.com/slubezky" target="_blank">X</a>
-</li>
-
-<li>
-<a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a>
-</li>
-
-<li>
-<a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a>
-</li>
-
-<li>
-<a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a>
-</li>
-
-<li>
-<a href="https://musica.sergiolubezky.com" target="_blank">Música</a>
-</li>
-
-<li>
-<a href="https://coachdefoto.com" target="_blank">Fotografía</a>
-</li>
-
-</ul>
+  </div>
 
 </footer>
 
