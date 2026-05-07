@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 
 <meta charset="UTF-8">
@@ -9,21 +9,19 @@
 
 <meta name="description" content="Interim executive leadership and operational continuity for organizations navigating transition, uncertainty, crisis, or growth across Mexico and Latin America.">
 
-<meta name="keywords" content="interim executive leadership, interim CEO, director interino, liderazgo interino, operational continuity, organizational transition, crisis leadership, executive transition, Mexico, Latin America">
+<meta name="keywords" content="interim executive leadership, interim CEO, interim director, operational continuity, organizational transition, crisis leadership, executive transition, Mexico, Latin America">
 
 <meta name="author" content="Sergio Lubezky">
 <meta name="robots" content="index, follow">
 
-<link rel="canonical" href="https://liderazgointerino.com/">
+<link rel="canonical" href="https://liderazgointerino.com/en/">
 
-<!-- OPEN GRAPH -->
 <meta property="og:title" content="Interim Executive Leadership | Sergio Lubezky">
-<meta property="og:description" content="Operational continuity and executive leadership during organizational transition and uncertainty.">
+<meta property="og:description" content="Operational continuity and executive leadership during periods of transition, uncertainty, or organizational crisis.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://liderazgointerino.com/">
+<meta property="og:url" content="https://liderazgointerino.com/en/">
 <meta property="og:image" content="https://liderazgointerino.com/images/leadership-vacuum-curve.jpg">
 
-<!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Interim Executive Leadership | Sergio Lubezky">
 <meta name="twitter:description" content="Operational continuity and executive leadership during transition, crisis, or organizational uncertainty.">
@@ -31,27 +29,21 @@
 
 <link rel="icon" href="/favicon.ico">
 
-<!-- JSON-LD -->
+<link rel="alternate" hreflang="es" href="https://liderazgointerino.com/">
+<link rel="alternate" hreflang="en" href="https://liderazgointerino.com/en/">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Sergio Lubezky",
-  "url": "https://liderazgointerino.com",
+  "url": "https://liderazgointerino.com/en/",
   "image": "https://liderazgointerino.com/images/sergio-lubezky.jpg",
   "jobTitle": "Interim Executive & Transformation Leader",
   "description": "Interim executive leadership and operational continuity for organizations navigating transition, crisis, growth, or organizational uncertainty across Mexico and Latin America.",
   "sameAs": [
     "https://www.linkedin.com/in/sergiolubezky/",
     "https://lubezky.com"
-  ],
-  "knowsAbout": [
-    "Interim Leadership",
-    "Operational Continuity",
-    "Executive Transition",
-    "Organizational Transformation",
-    "Crisis Leadership",
-    "Cross-Border Operations"
   ]
 }
 </script>
@@ -64,7 +56,7 @@ body {
   background: #ffffff;
   color: #111111;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-  line-height: 1.75;
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -74,21 +66,46 @@ a {
 }
 
 .container {
-  width: 90%;
-  max-width: 920px;
+  width: 88%;
+  max-width: 760px;
   margin: auto;
 }
 
 header {
-  padding: 38px 0;
-  border-bottom: 1px solid #eeeeee;
+  padding: 36px 0;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.flags {
+  display: flex;
+  gap: 14px;
+  font-size: 0.95rem;
+}
+
+.flags a {
+  opacity: 0.55;
+  transition: opacity 0.3s ease;
+}
+
+.flags a.active {
+  opacity: 1;
+}
+
+.flags a:hover {
+  opacity: 1;
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
-  font-size: 0.95rem;
+  font-size: 0.94rem;
 }
 
 nav a {
@@ -101,93 +118,71 @@ nav a:hover {
 }
 
 .hero {
-  padding: 120px 0 100px;
+  padding: 140px 0 120px;
 }
 
 .hero h1 {
-  font-size: clamp(2.7rem, 6vw, 5rem);
+  font-size: clamp(2.8rem, 7vw, 5.4rem);
   font-weight: 400;
-  line-height: 1.08;
-  letter-spacing: -0.04em;
-  max-width: 920px;
-  margin-bottom: 42px;
+  line-height: 1.04;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
 }
 
 .hero p {
-  max-width: 760px;
   font-size: 1.18rem;
   color: #444444;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .section {
-  padding: 110px 0;
-  border-top: 1px solid #eeeeee;
+  padding: 120px 0;
 }
 
 .section h2 {
   font-size: 2rem;
   font-weight: 400;
-  letter-spacing: -0.02em;
-  margin-bottom: 34px;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
 }
 
 .section p {
-  max-width: 760px;
   color: #444444;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
-.quote {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
+.statement {
+  font-size: 1.45rem;
+  line-height: 1.55;
   color: #222222;
-  max-width: 760px;
-  margin-top: 50px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 28px;
+  letter-spacing: -0.02em;
   margin-top: 60px;
 }
 
-.card {
-  border: 1px solid #eeeeee;
-  padding: 30px;
-  transition: border-color 0.3s ease;
+.links {
+  margin-top: 70px;
 }
 
-.card:hover {
-  border-color: #bbbbbb;
-}
-
-.card h3 {
+.links a {
+  display: block;
+  margin-bottom: 26px;
   font-size: 1.08rem;
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 16px;
+  opacity: 0.82;
+  transition: opacity 0.3s ease;
 }
 
-.card p {
-  font-size: 0.96rem;
-  color: #555555;
-  margin-bottom: 0;
+.links a:hover {
+  opacity: 1;
 }
 
 img {
   width: 100%;
   height: auto;
-  margin-top: 50px;
-  border: 1px solid #eeeeee;
+  margin-top: 60px;
 }
 
 footer {
-  margin-top: 120px;
-  padding: 70px 0 100px;
-  border-top: 1px solid #eeeeee;
+  padding: 120px 0 100px;
   font-size: 0.95rem;
   color: #666666;
 }
@@ -210,11 +205,11 @@ footer {
 @media (max-width: 768px) {
 
   .hero {
-    padding: 90px 0 70px;
+    padding: 100px 0 80px;
   }
 
   .section {
-    padding: 70px 0;
+    padding: 80px 0;
   }
 
   .hero p {
@@ -232,14 +227,23 @@ footer {
 <header>
   <div class="container">
 
+    <div class="topbar">
+
+      <div class="flags">
+        <a href="https://liderazgointerino.com/">🇲🇽 ES</a>
+        <a href="https://liderazgointerino.com/en/" class="active">🇺🇸 EN</a>
+      </div>
+
+    </div>
+
     <nav>
-      <a href="/">Home</a>
-      <a href="/que-hace-un-director-interino/">What Interim Leadership Is</a>
-      <a href="/cuando-se-necesita-un-director-interino/">When It Is Needed</a>
-      <a href="/errores-en-una-crisis-organizacional/">Organizational Crisis</a>
-      <a href="/atencion-ya/">Immediate Attention</a>
-      <a href="/interim-leadership-strategic-advantage/">Whitepaper</a>
-      <a href="/executive-profile/">Executive Profile</a>
+      <a href="/en/">Home</a>
+      <a href="/en/what-an-interim-executive-does/">What an Interim Executive Does</a>
+      <a href="/en/when-interim-leadership-is-needed/">When It Is Needed</a>
+      <a href="/en/organizational-crisis-mistakes/">Organizational Crisis</a>
+      <a href="/en/immediate-attention/">Immediate Attention</a>
+      <a href="/en/interim-leadership-strategic-advantage/">Whitepaper</a>
+      <a href="/en/executive-profile/">Profile</a>
       <a href="https://lubezky.com">Lubezky.com</a>
     </nav>
 
@@ -258,11 +262,19 @@ footer {
     </p>
 
     <p>
-      But clarity slows. Decisions become fragmented. Operational friction grows quietly.
+      First, decisions begin to slow.
     </p>
 
     <p>
-      Interim leadership exists to restore continuity, stabilize operations, and protect momentum while long-term decisions are made carefully.
+      Then coordination starts to fragment.
+    </p>
+
+    <p>
+      Eventually, operational clarity begins to disappear.
+    </p>
+
+    <p>
+      Interim leadership exists to restore continuity, stabilize operations, and protect organizational momentum while long-term decisions are made carefully.
     </p>
 
   </div>
@@ -272,22 +284,22 @@ footer {
   <div class="container">
 
     <h2>
-      Not consulting. Operational leadership.
+      Not consulting.
     </h2>
 
     <p>
-      Interim leadership is not advisory work from the sidelines.
+      Interim leadership is not observation from the sidelines.
     </p>
 
     <p>
-      It is direct operational involvement during moments when organizations require continuity, executive clarity, structured decision-making, and calm leadership under pressure.
+      It is direct operational involvement during moments when organizations need continuity, executive clarity, and calm leadership under pressure.
     </p>
 
     <p>
       Whether the challenge is rapid growth, executive transition, operational overload, organizational uncertainty, or crisis response, the objective remains the same:
     </p>
 
-    <div class="quote">
+    <div class="statement">
       Protect continuity while the organization regains clarity.
     </div>
 
@@ -301,48 +313,30 @@ footer {
       Explore
     </h2>
 
-    <div class="grid">
+    <div class="links">
 
-      <a class="card" href="/que-hace-un-director-interino/">
-        <h3>What an Interim Executive Does</h3>
-        <p>
-          Executive continuity, operational stabilization, leadership coordination, and practical decision support.
-        </p>
+      <a href="/en/what-an-interim-executive-does/">
+        What an Interim Executive Does
       </a>
 
-      <a class="card" href="/cuando-se-necesita-un-director-interino/">
-        <h3>When Interim Leadership Is Needed</h3>
-        <p>
-          Executive departures, operational pressure, rapid growth, organizational transition, or internal uncertainty.
-        </p>
+      <a href="/en/when-interim-leadership-is-needed/">
+        When Interim Leadership Is Needed
       </a>
 
-      <a class="card" href="/errores-en-una-crisis-organizacional/">
-        <h3>Organizational Crisis Mistakes</h3>
-        <p>
-          The most common errors organizations make under pressure — and why continuity matters early.
-        </p>
+      <a href="/en/organizational-crisis-mistakes/">
+        Organizational Crisis Mistakes
       </a>
 
-      <a class="card" href="/atencion-ya/">
-        <h3>Immediate Attention</h3>
-        <p>
-          Rapid-response executive continuity and operational stabilization across Mexico and Latin America.
-        </p>
+      <a href="/en/immediate-attention/">
+        Immediate Attention
       </a>
 
-      <a class="card" href="/interim-leadership-strategic-advantage/">
-        <h3>The Strategic Advantage of Interim Leadership</h3>
-        <p>
-          Whitepaper exploring leadership vacuum, operational drag, and continuity under uncertainty.
-        </p>
+      <a href="/en/interim-leadership-strategic-advantage/">
+        The Strategic Advantage of Interim Leadership
       </a>
 
-      <a class="card" href="/executive-profile/">
-        <h3>Executive Profile</h3>
-        <p>
-          Experience in operational continuity, transformation, international growth, and organizational transition.
-        </p>
+      <a href="/en/executive-profile/">
+        Executive Profile
       </a>
 
     </div>
@@ -362,7 +356,15 @@ footer {
     </p>
 
     <p>
-      First, decision-making slows. Then alignment weakens. Eventually, organizational clarity begins to disappear.
+      First, decision-making slows.
+    </p>
+
+    <p>
+      Then alignment weakens.
+    </p>
+
+    <p>
+      Eventually, organizational clarity begins to disappear.
     </p>
 
     <p>
@@ -377,15 +379,13 @@ footer {
 <footer>
   <div class="container">
 
-    <!-- REPLACE THIS FOOTER WITH THE EXACT FOOTER FROM LUBEZKY.COM -->
-
     <p>
       © Sergio Lubezky
     </p>
 
     <div class="footer-links">
       <a href="https://lubezky.com">Lubezky.com</a>
-      <a href="https://liderazgointerino.com">Interim Leadership</a>
+      <a href="https://liderazgointerino.com/en/">Interim Leadership</a>
       <a href="https://linkedin.com/in/sergiolubezky">LinkedIn</a>
     </div>
 
