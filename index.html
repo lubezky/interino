@@ -23,12 +23,12 @@
 <meta property="og:description" content="Continuidad operativa y liderazgo ejecutivo durante periodos de transición, incertidumbre o crisis organizacional.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://liderazgointerino.com/">
-<meta property="og:image" content="https://liderazgointerino.com/leadership-vacuum-curve.jpg">
+<meta property="og:image" content="https://liderazgointerino.com/images/leadership-vacuum-curve.jpg">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dirección Interina | Sergio Lubezky">
 <meta name="twitter:description" content="Continuidad operativa y liderazgo ejecutivo durante transición, crisis o incertidumbre organizacional.">
-<meta name="twitter:image" content="https://liderazgointerino.com/leadership-vacuum-curve.jpg">
+<meta name="twitter:image" content="https://liderazgointerino.com/images/leadership-vacuum-curve.jpg">
 
 <link rel="icon" href="/favicon.ico">
 
@@ -36,22 +36,11 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": "https://liderazgointerino.com/#sergio",
   "name": "Sergio Lubezky",
-  "url": "https://liderazgointerino.com/",
-  "image": "https://liderazgointerino.com/foto-sergio.jpg",
-  "description": "Dirección interina y continuidad operativa para organizaciones atravesando transición, crisis o incertidumbre organizacional.",
-  "jobTitle": [
-    "Director Interino",
-    "Líder de Transformación"
-  ],
-  "knowsAbout": [
-    "Dirección Interina",
-    "Continuidad Operativa",
-    "Gestión de Crisis",
-    "Transición Organizacional",
-    "Liderazgo Ejecutivo"
-  ],
+  "url": "https://liderazgointerino.com",
+  "image": "https://liderazgointerino.com/images/sergio-lubezky.jpg",
+  "jobTitle": "Director Interino y Líder de Transformación",
+  "description": "Dirección interina y continuidad operativa para organizaciones atravesando transición, crisis, crecimiento o incertidumbre organizacional en México y Latinoamérica.",
   "sameAs": [
     "https://www.linkedin.com/in/sergiolubezky/",
     "https://lubezky.com"
@@ -61,158 +50,237 @@
 
 <style>
 
-body { 
-    margin: 0; 
-    display: flex; 
-    flex-direction: column; 
-    min-height: 100vh; 
-    background-color: #fff; 
-    color: #1a1a1a; 
-    font-family: 'Georgia', serif; 
-    line-height: 1.8; 
+html {
+  scroll-behavior: smooth;
 }
 
-main { 
-    flex: 1; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    padding: 60px 20px; 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: Georgia, serif;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-.content-box { 
-    max-width: 700px; 
-    text-align: center; 
-    font-size: 1.2rem; 
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.language-switch {
-    margin-bottom: 40px;
-    font-size: 0.9rem;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+.page {
+  width: 88%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.language-switch a {
-    text-decoration: none;
-    color: #777;
-    margin: 0 6px;
+header {
+  padding-top: 34px;
 }
 
-.language-switch a:hover {
-    color: #000;
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1 { 
-    font-size: 1.5rem;
-    font-weight: bold; 
-    margin-bottom: 16px; 
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.flags {
+  display: flex;
+  gap: 14px;
+  font-size: 0.92rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888888;
 }
 
-p { 
-    margin-bottom: 14px; 
+.flags a {
+  opacity: 0.55;
+  transition: opacity 0.3s ease;
 }
 
-.content-box a { 
-    color: #000; 
-    text-decoration: none; 
-    font-weight: bold; 
-    border-bottom: 1px solid #ddd; 
-    transition: border-color 0.3s;
+.flags a.active {
+  opacity: 1;
 }
 
-.content-box a:hover { 
-    border-bottom: 1px solid #000; 
+.flags a:hover {
+  opacity: 1;
 }
 
-.section-links {
-    margin-top: 40px;
+.hero {
+  padding-top: 140px;
+  padding-bottom: 120px;
 }
 
-.section-links p {
-    margin-bottom: 10px;
+.hero h1 {
+  font-size: clamp(2.8rem, 8vw, 5.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  font-weight: 400;
+  margin: 0 0 60px 0;
 }
 
-.profile-img { 
-    width: 75px; 
-    height: 75px; 
-    border-radius: 50%; 
-    margin-bottom: 10px; 
-    object-fit: cover; 
-    border: 1px solid #eee; 
+.hero p {
+  font-size: 1.18rem;
+  color: #444444;
+  margin-bottom: 34px;
 }
 
-.name-link { 
-    text-decoration: none; 
-    color: inherit; 
-    display: block; 
-    margin-bottom: 2px; 
+.inline-links {
+  margin-top: 70px;
 }
 
-.name { 
-    font-weight: 600; 
-    font-size: 1rem; 
-    letter-spacing: 1.5px; 
-    text-transform: uppercase; 
+.inline-links p {
+  margin-bottom: 24px;
 }
 
-footer { 
-    padding: 60px 20px; 
-    text-align: center; 
-    font-family: 'Helvetica Neue', Arial, sans-serif; 
+.inline-links a {
+  border-bottom: 1px solid #dddddd;
+  transition: border-color 0.3s ease;
+}
+
+.inline-links a:hover {
+  border-bottom: 1px solid #111111;
+}
+
+.statement {
+  margin-top: 70px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: #222222;
+}
+
+.image-section {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.image-section h2 {
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.image-section p {
+  font-size: 1.08rem;
+  color: #444444;
+  margin-bottom: 34px;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 60px;
+}
+
+.secondary-links {
+  margin-top: 70px;
+}
+
+.secondary-links p {
+  margin-bottom: 20px;
+}
+
+.secondary-links a {
+  border-bottom: 1px solid #dddddd;
+  transition: border-color 0.3s ease;
+}
+
+.secondary-links a:hover {
+  border-bottom: 1px solid #111111;
+}
+
+footer {
+  padding: 100px 0 80px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.profile-img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.name-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 .footer-bio {
-    max-width: 650px;
-    margin: 0 auto 30px auto; 
-    font-size: 0.95rem;
-    color: #444;
-    line-height: 1.7;
-}
-
-.footer-bio p { 
-    margin: 0; 
+  max-width: 640px;
+  margin: 34px auto 36px auto;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #555555;
 }
 
 .footer-bio a {
-    color: #1a1a1a;
-    text-decoration: none;
-    font-weight: 600;
-    border-bottom: 1px solid #eee;
-    transition: all 0.3s ease;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .footer-bio a:hover {
-    border-bottom: 1px solid #1a1a1a;
-    background-color: #f9f9f9;
-    color: #000;
+  border-bottom: 1px solid #111111;
 }
 
-.social-nav { 
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 12px; 
-    font-size: 0.85rem; 
+.social-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.84rem;
 }
 
-.social-nav a { 
-    color: #666; 
-    text-decoration: none; 
+.social-nav li:not(:last-child)::after {
+  content: "-";
+  margin-left: 12px;
+  color: #cccccc;
 }
 
-.social-nav a:hover { 
-    color: #000; 
+.social-nav a {
+  color: #666666;
 }
 
-.social-nav li:not(:last-child)::after { 
-    content: "-"; 
-    margin-left: 12px; 
-    color: #ccc; 
+.social-nav a:hover {
+  color: #111111;
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 13vw, 4.8rem);
+  }
+
+  .hero p,
+  .image-section p {
+    font-size: 1.02rem;
+  }
+
+  .statement {
+    font-size: 1.3rem;
+  }
+
 }
 
 </style>
@@ -221,16 +289,26 @@ footer {
 
 <body>
 
-<main>
+<div class="page">
 
-<div class="content-box">
+<header>
 
-<div class="language-switch">
-<a href="/" title="Español">🇲🇽 ES</a> · 
-<a href="/en/" title="English">🇺🇸 EN</a>
+<div class="topbar">
+
+<div class="flags">
+<a href="/" class="active">🇲🇽 ES</a>
+<a href="/en/">🇺🇸 EN</a>
 </div>
 
-<h1>Dirección Interina</h1>
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>
+Dirección interina para momentos donde la continuidad importa más que la perfección.
+</h1>
 
 <p>
 Las organizaciones rara vez se detienen completamente durante periodos de transición, incertidumbre, crisis o cambios de liderazgo.
@@ -268,16 +346,22 @@ A veces eso implica estabilizar una operación bajo presión. Otras veces signif
 El objetivo sigue siendo el mismo:
 </p>
 
+<div class="statement">
+Proteger la continuidad mientras la organización recupera claridad.
+</div>
+
+<div class="inline-links">
+
 <p>
-entender lo que está ocurriendo, recuperar claridad y actuar cuando realmente importa.
+Hay momentos donde una organización necesita actuar rápidamente.
 </p>
 
-<div class="section-links">
+<p>
+Otros donde necesita entender qué está ocurriendo antes de tomar decisiones permanentes.
+</p>
 
 <p>
-<a href="/que-hace-un-director-interino/">
-Qué hace un director interino
-</a>
+Y otros donde el verdadero riesgo no es la crisis visible, sino el vacío de liderazgo que comienza a formarse lentamente.
 </p>
 
 <p>
@@ -293,10 +377,44 @@ Errores comunes en una crisis organizacional
 </p>
 
 <p>
-<a href="/atencion-ya/">
-Atención inmediata
+<a href="/que-hace-un-director-interino/">
+Qué hace realmente un director interino
 </a>
 </p>
+
+</div>
+
+</section>
+
+<section class="image-section">
+
+<h2>
+El costo de esperar
+</h2>
+
+<p>
+La disrupción de liderazgo rara vez genera colapso inmediato.
+</p>
+
+<p>
+Primero se ralentizan las decisiones.
+</p>
+
+<p>
+Después se debilita la alineación.
+</p>
+
+<p>
+Eventualmente, la claridad organizacional comienza a desaparecer.
+</p>
+
+<p>
+Mientras más tiempo continúa la incertidumbre, más difícil se vuelve la recuperación.
+</p>
+
+<img src="/images/leadership-vacuum-curve.jpg" alt="Leadership Vacuum Curve">
+
+<div class="secondary-links">
 
 <p>
 <a href="/interim-leadership-strategic-advantage/">
@@ -306,51 +424,79 @@ Interim Leadership Strategic Advantage
 
 <p>
 <a href="/executive-profile/">
-Perfil ejecutivo
+Perfil Ejecutivo
+</a>
+</p>
+
+<p>
+<a href="/atencion-ya/">
+Atención inmediata
 </a>
 </p>
 
 </div>
 
-<p style="margin-top:40px;">
-<img src="/leadership-vacuum-curve.jpg" alt="Leadership Vacuum Curve" style="width:100%; height:auto;">
-</p>
-
-</div>
-
-</main>
+</section>
 
 <footer>
 
-<img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+<img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky" class="profile-img">
 
+<p>
 <a href="https://lubezky.com" class="name-link">
-    <span class="name">Sergio Lubezky A.</span>
+<span class="name">Sergio Lubezky A.</span>
 </a>
+</p>
 
 <div class="footer-bio">
+
 <p>
-Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a>, 
-la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
-la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
-y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
-bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
+Estratega enfocado en la intersección entre tecnología, liderazgo y percepción.
+Exploro la <a href="https://inteligencia.com">Inteligencia</a>,
+la <a href="https://liderazgointerino.com">Dirección Interina</a>,
+la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a>
+y la música como otra forma de <a href="https://musica.sergiolubezky.com">comunicar</a>,
+bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a>
 para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
 </p>
+
 </div>
 
 <ul class="social-nav">
-<li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
-<li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-<li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
-<li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
-<li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-<li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
-<li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
+
+<li>
+<a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a>
+</li>
+
+<li>
+<a href="https://x.com/slubezky" target="_blank">X</a>
+</li>
+
+<li>
+<a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a>
+</li>
+
+<li>
+<a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a>
+</li>
+
+<li>
+<a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a>
+</li>
+
+<li>
+<a href="https://musica.sergiolubezky.com" target="_blank">Música</a>
+</li>
+
+<li>
+<a href="https://coachdefoto.com" target="_blank">Fotografía</a>
+</li>
+
 </ul>
 
 </footer>
+
+</div>
 
 </body>
 </html>
