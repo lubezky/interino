@@ -7,23 +7,45 @@
     <meta name="description" content="Dirección interina y continuidad operativa para organizaciones atravesando transición, incertidumbre, crisis o crecimiento en México y Latinoamérica.">
     <meta name="author" content="Sergio Lubezky">
 
+    <link rel="canonical" href="https://liderazgointerino.com/">
+
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dirección Interina | Sergio Lubezky" />
+    <meta property="og:description" content="Proteger la continuidad operativa mientras la organización recupera claridad estratégica." />
+    <meta property="og:url" content="https://liderazgointerino.com/" />
+    <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Sergio Lubezky",
-      "url": "https://liderazgointerino.com",
-      "image": "https://lubezky.com/foto-sergio.jpg",
-      "jobTitle": "Director Interino y Líder de Transformación",
-      "sameAs": [
-        "https://www.linkedin.com/in/sergiolubezky/",
-        "https://lubezky.com"
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://lubezky.com/#sergio",
+          "name": "Sergio Lubezky",
+          "url": "https://lubezky.com/",
+          "sameAs": [
+            "https://www.linkedin.com/in/sergiolubezky/",
+            "https://liderazgointerino.com/",
+            "https://inteligencia.com/",
+            "https://unnuevopuntodevista.com/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://liderazgointerino.com/#website",
+          "url": "https://liderazgointerino.com/",
+          "name": "Liderazgo Interino",
+          "publisher": { "@id": "https://lubezky.com/#sergio" },
+          "description": "Servicios de Dirección Interina y Transformación Organizacional."
+        }
       ]
     }
     </script>
 
     <style>
-        /* --- ESTÉTICA MASTER LUBEZKY.COM --- */
+        /* --- ESTÉTICA MASTER LUBEZKY --- */
         body { 
             margin: 0; 
             display: flex; 
@@ -36,10 +58,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        header {
-            padding: 25px 20px 5px 20px;
-            text-align: center;
-        }
+        header { padding: 25px 20px 5px 20px; text-align: center; }
 
         .flags {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -47,230 +66,79 @@
             letter-spacing: 1px;
         }
 
-        .flags a {
-            text-decoration: none;
-            margin: 0 10px;
-            opacity: 0.5;
-            color: #000;
-            transition: opacity 0.3s;
-        }
+        .flags a { text-decoration: none; margin: 0 10px; opacity: 0.4; color: #000; transition: opacity 0.3s; }
+        .flags a.active { opacity: 1; font-weight: bold; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px; }
 
-        .flags a.active { opacity: 1; font-weight: bold; }
+        main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 10px 20px 60px 20px; }
 
-        main { 
-            flex: 1; 
-            display: flex; 
-            flex-direction: column;
-            align-items: center; 
-            padding: 10px 20px 20px 20px; 
-        }
-
-        .content-box { 
-            width: 100%;
-            max-width: 700px; 
-            text-align: center; 
-            font-size: 1.15rem; 
-            margin-bottom: 20px; 
-        }
+        .content-box { width: 100%; max-width: 700px; text-align: center; font-size: 1.15rem; margin-bottom: 40px; }
 
         h1, h2 { 
-            font-size: 1.4rem;
-            font-weight: bold; 
-            margin-bottom: 15px; 
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            line-height: 1.3;
+            font-size: 1.5rem; font-weight: bold; margin-bottom: 20px; 
+            text-transform: uppercase; letter-spacing: 2px; line-height: 1.3;
         }
 
-        p { margin-bottom: 10px; }
+        p { margin-bottom: 16px; }
 
         .content-box a { 
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 1px solid #ddd; 
-            transition: border-color 0.3s;
+            color: #000; text-decoration: none; font-weight: bold; 
+            border-bottom: 1px solid #ddd; transition: border-color 0.3s;
         }
-
         .content-box a:hover { border-bottom: 1px solid #000; }
 
-        .image-container {
-            margin: 10px 0;
-            width: 100%;
-        }
+        .image-container { margin: 30px 0; width: 100%; }
+        .image-container img { width: 100%; height: auto; border: 1px solid #eee; }
+        .graph-caption { font-size: 0.9rem; color: #666; font-style: italic; margin-top: 10px; line-height: 1.5; }
 
-        .image-container img {
-            width: 100%;
-            height: auto;
-            border: 1px solid #eee;
-        }
-
-        .graph-caption {
-            font-size: 0.9rem;
-            color: #555;
-            font-style: italic;
-            margin-top: 8px;
-            line-height: 1.5;
-        }
-
-        /* --- ACCIÓN Y WHITEPAPER --- */
-        .action-area {
-            width: 100%;
-            max-width: 750px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .sub-text {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 12px;
-        }
-
+        /* BOTONES Y ACCIÓN */
         .btn-red {
-            display: inline-block;
-            background-color: #d32f2f;
-            color: #fff !important;
-            padding: 18px 35px;
-            text-decoration: none;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-weight: bold;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: background 0.3s;
+            display: inline-block; background-color: #d32f2f; color: #fff !important;
+            padding: 20px 40px; text-decoration: none; font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold; text-transform: uppercase; letter-spacing: 2px;
+            transition: background 0.3s; border: none;
         }
-
         .btn-red:hover { background-color: #b71c1c; }
 
         .whitepaper-box {
-            background-color: #f9f9f9;
-            border: 1px solid #eee;
-            padding: 25px 20px;
-            margin-top: 25px;
-            text-align: center;
+            background-color: #f9f9f9; border: 1px solid #eee; padding: 40px 20px;
+            margin-top: 50px; text-align: center; width: 100%; max-width: 750px;
         }
 
-        .wp-label {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.7rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #888;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .wp-title { font-size: 1.3rem; margin-bottom: 10px; font-weight: normal; }
-
-        .wp-description {
-            font-size: 0.95rem;
-            color: #444;
-            max-width: 550px;
-            margin: 0 auto 18px auto;
-        }
-
-        .wp-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
+        .wp-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: #888; margin-bottom: 10px; display: block; }
+        .wp-title { font-size: 1.3rem; margin-bottom: 15px; font-weight: normal; text-transform: none; letter-spacing: 0; }
+        
         .btn-outline {
-            display: inline-block;
-            border: 1px solid #1a1a1a;
-            padding: 8px 18px;
-            text-decoration: none;
-            color: #1a1a1a;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.75rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s;
+            display: inline-block; border: 1px solid #1a1a1a; padding: 10px 20px;
+            text-decoration: none; color: #1a1a1a; font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;
+            margin: 5px; transition: all 0.3s;
         }
-
         .btn-outline:hover { background-color: #1a1a1a; color: #fff; }
 
-        /* --- BIO PROFESIONAL --- */
+        /* BIO SECCION */
         .professional-bio {
-            max-width: 700px;
-            margin: 25px auto 0 auto; 
-            padding-top: 25px;
-            border-top: 1px solid #eee;
-            text-align: center;
-        }
-
-        .bio-text {
-            font-size: 1.05rem;
-            color: #333;
-            line-height: 1.7;
-            margin-bottom: 12px;
-        }
-
-        .download-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            margin-top: 10px;
+            max-width: 700px; margin: 60px auto 0 auto; padding-top: 40px;
+            border-top: 1px solid #eee; text-align: center;
         }
 
         .cv-link {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.8rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #000;
-            text-decoration: none;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 3px;
-            transition: border-color 0.3s;
+            font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.8rem;
+            font-weight: bold; text-transform: uppercase; letter-spacing: 1px;
+            color: #000; text-decoration: none; border-bottom: 2px solid #eee;
+            padding-bottom: 3px; transition: border-color 0.3s; margin: 0 10px;
         }
-
         .cv-link:hover { border-bottom: 2px solid #000; }
 
-        .separator { color: #ccc; font-weight: lighter; }
-
-        /* --- FOOTER --- */
-        footer { 
-            padding: 20px 20px 40px 20px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            border-top: 1px solid #f2f2f2;
-        }
-
-        .profile-img { 
-            width: 70px; height: 70px; 
-            border-radius: 50%; margin-bottom: 8px; 
-            object-fit: cover; border: 1px solid #eee; 
-        }
-
+        /* FOOTER MAESTRO LUBEZKY */
+        footer { padding: 60px 20px; text-align: center; font-family: 'Helvetica Neue', Arial, sans-serif; border-top: 1px solid #f2f2f2; }
+        .profile-img { width: 75px; height: 75px; border-radius: 50%; margin-bottom: 10px; object-fit: cover; border: 1px solid #eee; }
         .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; }
-        .name { font-weight: 600; font-size: 0.95rem; letter-spacing: 1.5px; text-transform: uppercase; }
-
-        .footer-bio {
-            max-width: 650px; margin: 0 auto 20px auto; 
-            font-size: 0.9rem; color: #444; line-height: 1.6;
-        }
-
-        .social-nav { 
-            list-style: none; padding: 0; margin: 0; 
-            display: flex; flex-wrap: wrap; justify-content: center; 
-            gap: 10px; font-size: 0.8rem; 
-        }
-
+        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
+        .footer-bio { max-width: 650px; margin: 0 auto 30px auto; font-size: 0.95rem; color: #444; line-height: 1.7; }
+        .social-nav { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; font-size: 0.85rem; }
         .social-nav a { color: #666; text-decoration: none; }
         .social-nav a:hover { color: #000; }
-        .social-nav li:not(:last-child)::after { content: "-"; margin-left: 10px; color: #ccc; }
-
-        @media (max-width: 768px) {
-            .download-container { flex-direction: column; gap: 12px; }
-            .separator { display: none; }
-            .wp-buttons { flex-direction: column; }
-        }
+        .social-nav li:not(:last-child)::after { content: "-"; margin-left: 12px; color: #ccc; }
     </style>
 </head>
 
@@ -279,100 +147,75 @@
 <header>
     <div class="flags">
         <a href="/" class="active">🇲🇽 ES</a>
-        <a href="index-en.html">🇺🇸 EN</a>
+        <a href="/en/">🇺🇸 EN</a>
     </div>
 </header>
 
 <main>
     <div class="content-box">
         <h1>Dirección interina para momentos donde la continuidad importa más que la perfección</h1>
-        <p>Las organizaciones rara vez se detienen completamente durante periodos de transición, incertidumbre, crisis o cambios de liderazgo.</p>
+        <p>Las organizaciones rara vez se detienen completamente durante periodos de transición, incertidumbre o crisis.</p>
         <p>Primero se ralentizan las decisiones. Después se fragmenta la coordinación. Finalmente, la operación comienza a perder claridad.</p>
-        <p>La dirección interina existe para restaurar continuidad, estabilizar operaciones y proteger el impulso organizacional mientras las decisiones de largo plazo se toman cuidadosamente.</p>
+        <p>La dirección interina existe para restaurar continuidad y proteger el impulso organizacional mientras las decisiones de largo plazo se toman cuidadosamente.</p>
     </div>
 
     <div class="content-box">
         <h2>No es consultoría</h2>
-        <p>La dirección interina no es observación desde la distancia. Es involucramiento operativo directo durante momentos donde una organización necesita continuidad, claridad ejecutiva y liderazgo sereno bajo presión.</p>
-        <p>Ya sea crecimiento acelerado, transición ejecutiva, sobrecarga operativa o manejo de crisis, el objetivo sigue siendo el mismo:</p>
+        <p>La dirección interina no es observación desde la distancia. Es involucramiento operativo directo durante momentos donde una organización necesita continuidad y liderazgo sereno bajo presión.</p>
         <p><strong>Proteger la continuidad mientras la organización recupera claridad.</strong></p>
     </div>
 
     <div class="content-box">
         <h2>El costo de esperar</h2>
         <div class="image-container">
-            <img src="leadership-vacuum-curve-interim-leadership.png" alt="Leadership Vacuum Curve">
+            <img src="leadership-vacuum-curve-interim-leadership.png" alt="Curva de deterioro por vacío de liderazgo">
         </div>
         <p class="graph-caption">
-            Esta curva ilustra cómo el vacío de liderazgo genera un deterioro progresivo: primero se pierde la agilidad en las decisiones, luego se debilita la alineación estratégica y, finalmente, se erosiona la capacidad operativa. Intervenir a tiempo detiene esta inercia.
+            Esta curva ilustra cómo el vacío de liderazgo genera un deterioro progresivo en la capacidad operativa. Intervenir a tiempo detiene esta inercia.
         </p>
     </div>
 
     <div class="content-box">
-        <h2>Lecturas recomendadas</h2>
+        <h2>Lecturas estratégicas</h2>
         <p><a href="/errores-en-una-crisis-organizacional/">Errores en una Crisis Organizacional</a></p>
         <p><a href="/cuando-se-necesita-un-director-interino/">Cuándo se necesita un Director Interino</a></p>
         <p><a href="/que-hace-un-director-interino/">Qué Hace un Director Interino</a></p>
     </div>
 
-    <div class="action-area">
-        <p class="sub-text">Intervención inmediata para organizaciones que no pueden detener ejecución.</p>
-        <a href="/atencion-ya/" class="btn-red">Solicitar intervención inmediata</a>
+    <a href="/atencion-ya/" class="btn-red">Solicitar intervención inmediata</a>
 
-        <div class="whitepaper-box">
-            <span class="wp-label">Strategic Whitepaper</span>
-            <h2 class="wp-title">Interim Leadership as a Strategic Advantage</h2>
-            <p class="wp-description">Un análisis sobre cómo el liderazgo interino permite preservar ejecución, estabilidad y capacidad de decisión durante momentos de incertidumbre organizacional.</p>
-            <div class="wp-buttons">
-                <a href="/interim-leadership-strategic-advantage/" class="btn-outline">Leer artículo</a>
-                <a href="/pdf/interim-leadership-whitepaper-sergio-lubezky.pdf" class="btn-outline">Descargar PDF</a>
-            </div>
+    <div class="whitepaper-box">
+        <span class="wp-label">Strategic Whitepaper</span>
+        <h2 class="wp-title">Interim Leadership as a Strategic Advantage</h2>
+        <p>Análisis sobre cómo el liderazgo interino permite preservar ejecución y estabilidad durante momentos de incertidumbre organizacional.</p>
+        <div class="wp-buttons">
+            <a href="/interim-leadership-strategic-advantage/" class="btn-outline">Leer artículo</a>
+            <a href="/pdf/interim-leadership-whitepaper-sergio-lubezky.pdf" class="btn-outline">Descargar PDF</a>
         </div>
     </div>
 
     <div class="professional-bio">
-        <div class="bio-text">
-            <p><strong>Sergio Lubezky</strong> es ejecutivo interino y líder de transformación con más de 30 años de trayectoria apoyando a organizaciones en procesos de complejidad operativa, transición y cambio organizacional en México y Latinoamérica.</p>
-            <p>Reconocido por su capacidad de integración rápida y ejecución serena bajo presión, su trabajo se enfoca en preservar la estabilidad operativa mientras se desarrollan las decisiones de liderazgo a largo plazo.</p>
-        </div>
-        
+        <p><strong>Sergio Lubezky</strong> es ejecutivo interino con más de 30 años de trayectoria apoyando a organizaciones en procesos de complejidad operativa y cambio organizacional en México y Latinoamérica.</p>
         <div class="download-container">
-            <a href="/pdf/sergio-lubezky-perfil-ejecutivo.pdf" class="cv-link">Perfil Ejecutivo (Resumen)</a>
-            <span class="separator">|</span>
-            <a href="/pdf/sergio-lubezky-executive-profile.pdf" class="cv-link">Perfil Completo</a>
+            <a href="/pdf/sergio-lubezky-perfil-ejecutivo.pdf" class="cv-link">Perfil Ejecutivo</a>
+            <a href="/pdf/sergio-lubezky-executive-profile.pdf" class="cv-link">Full Executive Profile</a>
         </div>
     </div>
 </main>
 
 <footer>
     <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
-
+    <a href="https://lubezky.com" class="name-link"><span class="name">Sergio Lubezky A.</span></a>
     <div class="footer-bio">
-    <p>
-        Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-        Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a>, 
-        la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
-        la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
-        y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
-        bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
-        para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
-    </p>
-</div>
-    
+        <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro la <a href="https://inteligencia.com">Inteligencia</a>, la <a href="https://liderazgointerino.com">Dirección Interina</a>, la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a> y la música como otra forma de <a href="https://musica.sergiolubezky.com">comunicar</a>, bajo la premisa de encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a>.</p>
+    </div>
     <ul class="social-nav">
         <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
         <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
         <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
         <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
         <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
     </ul>
 </footer>
-
 </body>
 </html>
