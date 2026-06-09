@@ -64,18 +64,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        header { padding: 25px 20px 5px 20px; text-align: center; }
-
-        .flags {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-        }
-
-        .flags a { text-decoration: none; margin: 0 10px; opacity: 0.4; color: #000; transition: opacity 0.3s; }
-        .flags a.active { opacity: 1; font-weight: bold; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px; }
-
-        main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 10px 20px 60px 20px; }
+        main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 60px 20px 60px 20px; }
 
         .content-box { width: 100%; max-width: 700px; text-align: center; font-size: 1.15rem; margin-bottom: 40px; }
 
@@ -84,7 +73,8 @@
             text-transform: uppercase; letter-spacing: 2px; line-height: 1.3;
         }
 
-        p { margin-bottom: 16px; }
+        p { margin-bottom: 16px; text-align: justify; }
+        .content-box p { text-align: center; }
 
         .content-box a { 
             color: #000; text-decoration: none; font-weight: bold; 
@@ -94,7 +84,7 @@
 
         .image-container { margin: 30px 0; width: 100%; }
         .image-container img { width: 100%; height: auto; border: 1px solid #eee; }
-        .graph-caption { font-size: 0.9rem; color: #666; font-style: italic; margin-top: 10px; line-height: 1.5; }
+        .graph-caption { font-size: 0.9rem; color: #666; font-style: italic; margin-top: 10px; line-height: 1.5; text-align: center; }
 
         /* BOTONES Y ACCIÓN */
         .btn-red {
@@ -150,13 +140,6 @@
 
 <body>
 
-<header>
-    <div class="flags">
-        <a href="/" class="active">🇲🇽 ES</a>
-        <a href="/en/">🇺🇸 EN</a>
-    </div>
-</header>
-
 <main>
     <div class="content-box">
         <h1>Dirección Interina y Ejecución Ágil para corporaciones expandiéndose en Latinoamérica</h1>
@@ -183,19 +166,19 @@
 
     <div class="content-box">
         <h2>Lecturas estratégicas</h2>
-        <p><a href="/errores-en-una-crisis-organizacional/">Errores comunes en la expansión regional corporativa</a></p>
-        <p><a href="/cuando-se-necesita-un-director-interino/">Cuándo se requiere un Director Interino para Soft Landing</a></p>
-        <p><a href="/que-hace-un-director-interino/">El alcance de la Dirección Interina en Operaciones Transfronterizas</a></p>
+        <p><a href="/errores-en-una-crisis-organizacional/">Errores críticos en la ejecución de la expansión regional</a></p>
+        <p><a href="/cuando-se-necesita-un-director-interino/">¿Cuándo se requiere un director interino? Escenarios corporativos</a></p>
+        <p><a href="/que-hace-un-director-interino/">¿Qué hace realmente un director interino? Alcance operativo</a></p>
     </div>
 
-    <a href="/atencion-ya/" class="btn-red">Solicitar Despliegue u Operación Interina</a>
+    <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="btn-red">Solicitar Despliegue u Operación Interina</a>
 
     <div class="whitepaper-box">
         <span class="wp-label">Strategic Whitepaper</span>
         <h2 class="wp-title">Agile Execution & Interim Leadership as a Strategic Advantage in Latam</h2>
         <p>Análisis sobre cómo el liderazgo interino minimiza los riesgos de ejecución y acelera el retorno de inversión durante fases de expansión transfronteriza y apertura de mercados.</p>
         <div class="wp-buttons">
-            <a href="/interim-leadership-strategic-advantage/" class="btn-outline">Leer artículo</a>
+            <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="btn-outline">Leer artículo</a>
             <a href="/pdf/interim-leadership-whitepaper-sergio-lubezky.pdf" class="btn-outline">Descargar PDF</a>
         </div>
     </div>
