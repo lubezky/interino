@@ -9,36 +9,8 @@
 
     <link rel="canonical" href="https://liderazgointerino.com/que-hace-un-director-interino/" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com/",
-          "sameAs": [
-            "https://www.linkedin.com/in/sergiolubezky/",
-            "https://liderazgointerino.com/",
-            "https://inteligencia.com/"
-          ],
-          "knowsAbout": ["Interim Management", "Cross-Border Operations", "Operational Control", "Market Entry"]
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://liderazgointerino.com/que-hace-un-director-interino/#webpage",
-          "url": "https://liderazgointerino.com/que-hace-un-director-interino/",
-          "name": "Funciones y responsabilidades de un Director Interino en Expansión",
-          "isPartOf": { "@id": "https://liderazgointerino.com/#website" },
-          "mainEntity": { "@id": "https://lubezky.com/#sergio" }
-        }
-      ]
-    }
-    </script>
-
     <style>
-        /* --- ESTÉTICA MASTER LUBEZKY --- */
+        /* --- ESTÉTICA MASTER CORPORATIVA --- */
         body { 
             margin: 0; 
             display: flex; 
@@ -51,50 +23,81 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        /* Selector de Idioma Superior Minimalista */
+        .lang-selector { 
+            max-width: 750px; 
+            margin: 30px auto 0 auto; 
+            text-align: right; 
+            padding: 0 20px; 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+        }
+        .lang-link { 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            color: #888; 
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: color 0.3s; 
+        }
+        .lang-link:hover { color: #000; }
+
         main { 
             flex: 1; 
             display: flex; 
             justify-content: center; 
-            padding: 60px 20px 60px; 
+            padding: 40px 20px 80px 20px; 
         }
 
         .content-box { 
-            max-width: 700px; 
-            text-align: center; 
-            font-size: 1.2rem; 
+            width: 100%;
+            max-width: 750px; 
+            text-align: left; 
+            font-size: 1.15rem; 
         }
 
         h1 { 
-            font-size: 1.5rem; 
+            font-size: 2rem;
             font-weight: bold; 
-            margin-bottom: 30px; 
+            margin-bottom: 10px; 
             text-transform: uppercase; 
             letter-spacing: 2px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.3;
         }
 
+        .subtitle { 
+            font-size: 1.1rem; 
+            color: #666; 
+            text-align: center; 
+            margin-bottom: 50px; 
+            font-style: italic; 
+        }
+
         h2 { 
-            margin-top: 50px; 
-            font-size: 0.9rem; 
-            letter-spacing: 2px; 
-            text-transform: uppercase; 
-            color: #888;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.4rem; 
+            font-weight: bold; 
+            margin-top: 40px; 
+            margin-bottom: 25px; 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #1a1a1a;
         }
 
         p { margin-bottom: 20px; text-align: justify; }
+        em { font-style: italic; }
 
-        /* LISTA DE ACCIONES */
+        /* Lista de Acciones Indentada y Estilizada */
         .action-list {
-            text-align: left;
-            margin: 40px auto;
-            max-width: 600px;
+            margin: 30px 0 40px 30px;
         }
 
         .action-item {
             margin-bottom: 30px;
             padding-left: 20px;
-            border-left: 2px solid #eee;
+            border-left: 4px solid #1a1a1a;
             text-align: justify;
         }
 
@@ -105,7 +108,7 @@
             font-size: 0.85rem;
             letter-spacing: 1px;
             color: #1a1a1a;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         .content-box a { 
@@ -115,128 +118,119 @@
             border-bottom: 1px solid #ddd; 
             transition: border-color 0.3s;
         }
+        .content-box a:hover { 
+            border-bottom: 1px solid #1a1a1a; 
+        }
 
-        .content-box a:hover { border-bottom: 1px solid #000; }
-
-        /* BOTÓN DE INTERVENCIÓN */
-        .cta-button { 
+        /* BOTÓN DE INTERVENCIÓN (CTA LINKEDIN) */
+        .cta-action-container { text-align: center; margin: 40px 0; }
+        .btn-red {
             display: inline-block; 
-            padding: 18px 35px; 
             background-color: #d32f2f; 
             color: #fff !important; 
-            text-decoration: none; 
+            padding: 15px 35px; 
+            text-decoration: none !important; 
             font-weight: bold; 
             text-transform: uppercase; 
             letter-spacing: 2px; 
-            margin-top: 30px; 
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.85rem;
+            font-size: 0.95rem;
+            border-radius: 4px;
             transition: background 0.3s;
             border: none;
         }
-
-        .cta-button:hover { background-color: #b71c1c; }
-
-        /* FOOTER STANDARDIZADO LUBEZKY */
-        footer { 
-            padding: 60px 20px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            border-top: 1px solid #f2f2f2;
-        }
-
-        .profile-img { 
-            width: 75px; height: 75px; 
-            border-radius: 50%; margin-bottom: 10px; 
-            object-fit: cover; border: 1px solid #eee; 
-        }
-
-        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; }
-        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
-
-        .footer-bio {
-            max-width: 650px; margin: 0 auto 30px auto; 
-            font-size: 0.95rem; color: #444; line-height: 1.7;
-        }
-
-        .social-nav { 
-            list-style: none; padding: 0; margin: 0; 
-            display: flex; flex-wrap: wrap; justify-content: center; 
-            gap: 12px; font-size: 0.85rem; 
-        }
-
-        .social-nav a { color: #666; text-decoration: none; }
-        .social-nav a:hover { color: #000; }
-        .social-nav li:not(:last-child)::after { content: "-"; margin-left: 12px; color: #ccc; }
+        .btn-red:hover { background-color: #b71c1c; }
+        
+        .navigation-notes { margin-top: 40px; text-align: center; font-size: 1rem; color: #666; }
     </style>
 </head>
 
 <body>
 
+<!-- Selector de Idioma -->
+<nav class="lang-selector">
+    <a href="/en/what-does/" class="lang-link">English</a>
+</nav>
+
 <main>
     <article class="content-box">
-        <h1>¿Qué hace realmente un director interino?</h1>
+        <h1>¿Qué hace realmente un Director Interino?</h1>
+        <div class="subtitle">Funciones ejecutivas avanzadas y responsabilidades en el terreno de juego regional.</div>
 
-        <p>A diferencia de un consultor tradicional, un director interino no entrega un reporte metodológico ni recomendaciones sobre un papel; se integra en la estructura organizacional para entregar una operación estabilizada, gobernanza local y resultados comerciales ejecutados.</p>
+        <p>A diferencia de un consultor de negocios tradicional, un Director Interino no limita su alcance a la entrega de reportes metodológicos detallados o recomendaciones teóricas sobre un papel. Su valor radica en la capacidad para integrarse de inmediato en las entrañas de la estructura organizacional de la filial con un objetivo muy claro: entregar una operación completamente estabilizada, gobernanza corporativa férrea y resultados comerciales medibles ejecutados sobre la marcha.</p>
         
-        <p>Su función primordial en procesos de Soft Landing y expansión internacional es **asumir el control operativo de la filial** con plena autoridad delegada por la matriz corporativa durante una ventana temporal estratégica.</p>
+        <p>Su función primordial durante procesos críticos de <em>Soft Landing</em> y expansión internacional consiste en asumir el control operativo absoluto de la filial en cuestión de días, respaldado por una plena autoridad delegada de manera directa por la matriz o junta corporativa durante una ventana temporal estratégica de transición.</p>
 
         <h2>Responsabilidades de Alto Impacto</h2>
 
         <div class="action-list">
             <div class="action-item">
                 <strong>Auditoría operativa de alta velocidad</strong>
-                Evaluar la situación legal, los cuellos de botella en la cadena de suministro y los riesgos regulatorios locales del mercado destino dentro de los primeros días de despliegue.
+                Evaluar con precisión milimétrica la situación legal, los cuellos de botella críticos en la cadena de suministro, las debilidades logísticas y los riesgos regulatorios latentes del mercado destino dentro de los primeros días de despliegue sobre el terreno.
             </div>
             <div class="action-item">
                 <strong>Gobernanza y control del P&L local</strong>
-                Desbloquear la toma de decisiones críticas bajo presión, administrar presupuestos de infraestructura (CapEx) y alinear la ejecución de los equipos regionales con las metas de la casa matriz.
+                Desbloquear la toma de decisiones estratégicas bajo entornos de alta presión, administrar presupuestos asignados de infraestructura (<em>CapEx</em>) y alinear la ejecución diaria de los equipos regionales con las metas macroeconómicas fijadas por la casa matriz.
             </div>
             <div class="action-item">
-                <strong>Estabilización de redes comerciales</strong>
-                Auditar y reestructurar las relaciones de la corporación con sus socios comerciales, máster franquicias y redes de distribución locales, mitigando riesgos operativos inmediatos.
-            </p>
+                <strong>Estabilización estructural de redes comerciales</strong>
+                Auditar, renegociar y reestructurar de manera ágil las relaciones de la corporación transnacional con sus socios comerciales locales, máster franquicias regionales y canales de distribución clave, mitigando fugas financieras inmediatas.
             </div>
             <div class="action-item">
-                <strong>Gestión de la transición ejecutiva</strong>
-                Asegurar la continuidad operativa integral y preparar el terreno operativo para que, una vez concluida la fase crítica de implantación, la entrega de mando al sucesor permanente sea impecable.
+                <strong>Gestión integral de la transición ejecutiva</strong>
+                Asegurar la continuidad operativa de los procesos de punta a punta y preparar minuciosamente el terreno operativo interno para que, una vez concluida de forma exitosa la fase crítica de implantación, la entrega de mando al sucesor permanente de largo plazo sea impecable.
             </div>
         </div>
 
-        <p>El director interino opera como un puente directivo transfronterizo de alto nivel, permitiendo a las corporaciones globales **comprar velocidad de mercado** y capturar ingresos sin comprometer el control estratégico.</p>
+        <p>El Director Interino opera como un puente estratégico transfronterizo de alto nivel, permitiendo a las corporaciones globales comprar velocidad de mercado sustancial y capturar ingresos operativos reales en la región sin comprometer ni diluir el control directivo corporativo central en el proceso.</p>
 
-        <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="cta-button">Solicitar Mandato de Operación Interina</a>
+        <!-- BOTÓN DE INTERVENCIÓN -->
+        <div class="cta-action-container">
+            <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="btn-red">Conectar en LinkedIn</a>
+        </div>
 
-        <p style="margin-top: 40px; font-size: 1rem; color: #888; text-align: center;">
-            Explore también <a href="/cuando-se-necesita-un-director-interino/">cuándo se necesita</a> o vuelva al <a href="/">inicio</a>.
+        <p class="navigation-notes">
+            Explore también los escenarios corporativos de activación en <a href="/cuando-se-necesita-un-director-interino/">cuándo se necesita</a> o vuelva al <a href="/">inicio</a> de la plataforma directiva.
         </p>
     </article>
 </main>
 
 <footer>
-    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
-
-    <div class="footer-bio">
-        <p>
-            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-            Exploro la <a href="https://inteligencia.com">Inteligencia</a>, 
-            la <a href="https://liderazgointerino.com">Dirección Interina</a>, 
-            la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a> 
-            y la música como otra forma de <a href="https://musica.sergiolubezky.com">comunicar</a>.
-        </p>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h3>Sergio Lubezky A.</h3>
+            <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro cómo los sistemas complejos, los equipos de trabajo y las ideas colectivas se coordinan para transformar crisis operativas en ventajas estratégicas resilientes.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a>
+                <a href="https://x.com/slubezky" target="_blank">X</a>
+                <a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a>
+                <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Contenido</h3>
+            <ul>
+                <li><a href="/cuando-se-necesita-un-director-interino/">Cuándo se necesita</a></li>
+                <li><a href="/errores-en-una-crisis-organizacional/">Errores en crisis</a></li>
+                <li><a href="/que-hace-un-director-interino/">Qué hace un Director</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Ecosistema</h3>
+            <ul>
+                <li><a href="https://lubezky.com">Lubezky.com</a></li>
+                <li><a href="https://inteligencia.com">Inteligencia</a></li>
+                <li><a href="https://coachdefoto.com">Coach de Foto</a></li>
+                <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
+                <li><a href="https://unnuevopuntodevista.com">Un Nuevo Punto de Vista</a></li>
+                <li><a href="https://musica.sergiolubezky.com">Música</a></li>
+            </ul>
+        </div>
     </div>
-    
-    <ul class="social-nav">
-        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-        <li><a href="https://musica.sergiolubezky.com">Música</a></li>
-        <li><a href="https://coachdefoto.com">Fotografía</a></li>
-    </ul>
+    <div class="footer-bottom">
+        <p>© 2026 Sergio Lubezky A. Todos los derechos reservados.</p>
+    </div>
 </footer>
 
 </body>
