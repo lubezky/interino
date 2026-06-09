@@ -6,148 +6,38 @@
     <title>¿Qué Hace un Director Interino? | Alcance Operativo Transfronterizo</title>
     <meta name="description" content="El rol real de un director interino en la expansión internacional: asumir el control operativo, mitigar riesgos de implantación y ejecutar en el terreno de juego.">
     <meta name="author" content="Sergio Lubezky">
-
     <link rel="canonical" href="https://liderazgointerino.com/que-hace-un-director-interino/" />
 
     <style>
-        /* --- ESTÉTICA MASTER CORPORATIVA --- */
-        body { 
-            margin: 0; 
-            display: flex; 
-            flex-direction: column; 
-            min-height: 100vh; 
-            background-color: #fff; 
-            color: #1a1a1a; 
-            font-family: 'Georgia', serif; 
-            line-height: 1.8; 
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Selector de Idioma Superior Minimalista */
-        .lang-selector { 
-            max-width: 750px; 
-            margin: 30px auto 0 auto; 
-            text-align: right; 
-            padding: 0 20px; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-        }
-        .lang-link { 
-            font-size: 0.85rem; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
-            color: #888; 
-            text-decoration: none; 
-            font-weight: bold; 
-            transition: color 0.3s; 
-        }
+        body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-color: #fff; color: #1a1a1a; font-family: 'Georgia', serif; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+        .lang-selector { max-width: 750px; margin: 30px auto 0 auto; text-align: right; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        .lang-link { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: #888; text-decoration: none; font-weight: bold; transition: color 0.3s; }
         .lang-link:hover { color: #000; }
 
-        main { 
-            flex: 1; 
-            display: flex; 
-            justify-content: center; 
-            padding: 40px 20px 80px 20px; 
-        }
-
-        .content-box { 
-            width: 100%;
-            max-width: 750px; 
-            text-align: left; 
-            font-size: 1.15rem; 
-        }
-
-        h1 { 
-            font-size: 2rem;
-            font-weight: bold; 
-            margin-bottom: 10px; 
-            text-transform: uppercase; 
-            letter-spacing: 2px;
-            text-align: center;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.3;
-        }
-
-        .subtitle { 
-            font-size: 1.1rem; 
-            color: #666; 
-            text-align: center; 
-            margin-bottom: 50px; 
-            font-style: italic; 
-        }
-
-        h2 { 
-            font-size: 1.4rem; 
-            font-weight: bold; 
-            margin-top: 40px; 
-            margin-bottom: 25px; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #1a1a1a;
-        }
-
+        main { flex: 1; display: flex; justify-content: center; padding: 40px 20px 80px 20px; }
+        .content-box { width: 100%; max-width: 750px; text-align: left; font-size: 1.15rem; }
+        h1 { font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-align: center; font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.3; }
+        .subtitle { font-size: 1.1rem; color: #666; text-align: center; margin-bottom: 50px; font-style: italic; }
+        h2 { font-size: 1.4rem; font-weight: bold; margin-top: 40px; margin-bottom: 25px; font-family: 'Helvetica Neue', Arial, sans-serif; letter-spacing: 1px; text-transform: uppercase; color: #1a1a1a; }
         p { margin-bottom: 20px; text-align: justify; }
         em { font-style: italic; }
 
-        /* Lista de Acciones Indentada y Estilizada */
-        .action-list {
-            margin: 30px 0 40px 30px;
-        }
+        .action-list { margin: 30px 0 40px 30px; }
+        .action-item { margin-bottom: 30px; padding-left: 20px; border-left: 4px solid #1a1a1a; text-align: justify; }
+        .action-item strong { display: block; text-transform: uppercase; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.85rem; letter-spacing: 1px; color: #1a1a1a; margin-bottom: 8px; }
 
-        .action-item {
-            margin-bottom: 30px;
-            padding-left: 20px;
-            border-left: 4px solid #1a1a1a;
-            text-align: justify;
-        }
+        .content-box a { color: #000; text-decoration: none; font-weight: bold; border-bottom: 1px solid #ddd; transition: border-color 0.3s; }
+        .content-box a:hover { border-bottom: 1px solid #1a1a1a; }
 
-        .action-item strong {
-            display: block;
-            text-transform: uppercase;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            color: #1a1a1a;
-            margin-bottom: 8px;
-        }
-
-        .content-box a { 
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 1px solid #ddd; 
-            transition: border-color 0.3s;
-        }
-        .content-box a:hover { 
-            border-bottom: 1px solid #1a1a1a; 
-        }
-
-        /* BOTÓN DE INTERVENCIÓN (CTA LINKEDIN) */
         .cta-action-container { text-align: center; margin: 40px 0; }
-        .btn-red {
-            display: inline-block; 
-            background-color: #d32f2f; 
-            color: #fff !important; 
-            padding: 15px 35px; 
-            text-decoration: none !important; 
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-weight: bold; 
-            text-transform: uppercase; 
-            letter-spacing: 2px; 
-            font-size: 0.95rem;
-            border-radius: 4px;
-            transition: background 0.3s;
-            border: none;
-        }
+        .btn-red { display: inline-block; background-color: #d32f2f; color: #fff !important; padding: 15px 35px; text-decoration: none !important; font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 0.95rem; border-radius: 4px; transition: background 0.3s; border: none; }
         .btn-red:hover { background-color: #b71c1c; }
         
-        .navigation-notes { margin-top: 40px; text-align: center; font-size: 1rem; color: #666; }
+        .navigation-notes { margin-top: 40px; text-align: justify; }
     </style>
 </head>
-
 <body>
 
-<!-- Selector de Idioma -->
 <nav class="lang-selector">
     <a href="/en/what-does/" class="lang-link">English</a>
 </nav>
@@ -157,7 +47,7 @@
         <h1>¿Qué hace realmente un Director Interino?</h1>
         <div class="subtitle">Funciones ejecutivas avanzadas y responsabilidades en el terreno de juego regional.</div>
 
-        <p>A diferencia de un consultor de negocios tradicional, un Director Interino no limita su alcance a la entrega de reportes metodologicos detallados o recomendaciones teoricas sobre un papel. Su valor radica en la capacidad para integrarse de inmediato en las entrañas de la estructura organizacional de la filial con un objetivo muy claro: entregar una operacion completamente estabilizada, gobernanza corporativa ferrea y resultados comerciales medibles ejecutados sobre la marcha.</p>
+        <p>A diferencia de un consultor de negocios tradicional, un Director Interino no limita su alcance a la entrega de reportes metodologicos detallados o recommendations teoricas sobre un papel. Su valor radica en la capacidad para integrarse de inmediato en las entrañas de la estructura organizacional de la filial con un objetivo muy claro: entregar una operacion completamente estabilizada, gobernanza corporativa ferrea y resultados comerciales medibles ejecutados sobre la marcha.</p>
         
         <p>Su funcion primordial durante procesos criticos de <em>Soft Landing</em> y expansion internacional consiste en asumir el control operativo absoluto de la filial en cuestion de dias, respaldado por una plena autoridad delegada de manera directa por la matriz o junta corporativa durante una ventana temporal estrategica de transicion.</p>
 
@@ -184,14 +74,11 @@
 
         <p>El Director Interino opera como un puente estrategico transfronterizo de alto nivel, permitiendo a las corporaciones globales comprar velocidad de mercado sustancial y capturar ingresos operativos reales en la region sin comprometer ni diluir el control directivo corporativo central en el proceso.</p>
 
-        <!-- BOTÓN DE INTERVENCIÓN -->
         <div class="cta-action-container">
             <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="btn-red">Conectar en LinkedIn</a>
         </div>
 
-        <p class="navigation-notes">
-            Explore tambien los escenarios corporativos de activacion en <a href="/cuando-se-necesita-un-director-interino/">cuándo se necesita</a> o vuelva al <a href="/">inicio</a> de la plataforma directiva.
-        </p>
+        <p class="navigation-notes"> Explore tambien los escenarios corporativos de activacion en <a href="/cuando-se-necesita-un-director-interino/">cuándo se necesita</a> o vuelva al <a href="/">inicio</a> de la plataforma directiva. </p>
     </article>
 </main>
 
@@ -213,7 +100,8 @@
             <ul>
                 <li><a href="https://liderazgointerino.com/cuando-se-necesita-un-director-interino/">Cuándo se necesita</a></li>
                 <li><a href="https://liderazgointerino.com/errores-en-una-crisis-organizacional/">Errores en crisis</a></li>
-                <li><a href="https://liderazgointerino.com/que-hace-un-director-interino/">Qué hace un Director</a></li>
+                <li><a href="https://liderazgointerino.com/que-hace-un-director-interino/" class="current-location">Qué hace un Director</a></li>
+                <li><a href="https://lubezky.com/mapa/">Mapa del Ecosistema</a></li>
             </ul>
         </div>
         <div class="footer-col">
@@ -221,6 +109,7 @@
             <ul>
                 <li><a href="https://lubezky.com">Lubezky.com</a></li>
                 <li><a href="https://inteligencia.com">Inteligencia</a></li>
+                <li><a href="https://liderazgointerino.com/" class="current-location">Liderazgo Interino</a></li>
                 <li><a href="https://coachdefoto.com">Coach de Foto</a></li>
                 <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
                 <li><a href="https://unnuevopuntodevista.com">Un Nuevo Punto de Vista</a></li>
