@@ -6,8 +6,7 @@
     <title>Dirección Interina y Soft Landing en LATAM | Sergio Lubezky</title>
     <meta name="description" content="Dirección interina, Soft Landing y continuidad operativa para corporaciones globales en proceso de expansión, transición o crecimiento en México y Latinoamérica.">
     <meta name="author" content="Sergio Lubezky">
-
-    <link rel="canonical" href="https://liderazgointerino.com/">
+    <link rel="canonical" href="https://liderazgointerino.com/" />
 
     <meta property="og:locale" content="es_MX" />
     <meta property="og:type" content="website" />
@@ -24,179 +23,47 @@
     <meta name="twitter:image" content="https://lubezky.com/foto-sergio.jpg" />
 
     <style>
-        /* --- ESTÉTICA MASTER CORPORATIVA --- */
-        body { 
-            margin: 0; 
-            display: flex; 
-            flex-direction: column; 
-            min-height: 100vh; 
-            background-color: #fff; 
-            color: #1a1a1a; 
-            font-family: 'Georgia', serif; 
-            line-height: 1.8; 
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Selector de Idioma Superior Minimalista */
-        .lang-selector { 
-            max-width: 750px; 
-            margin: 30px auto 0 auto; 
-            text-align: right; 
-            padding: 0 20px; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-        }
-        .lang-link { 
-            font-size: 0.85rem; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
-            color: #888; 
-            text-decoration: none; 
-            font-weight: bold; 
-            transition: color 0.3s; 
-        }
+        body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-color: #fff; color: #1a1a1a; font-family: 'Georgia', serif; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+        .lang-selector { max-width: 750px; margin: 30px auto 0 auto; text-align: right; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        .lang-link { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: #888; text-decoration: none; font-weight: bold; transition: color 0.3s; }
         .lang-link:hover { color: #000; }
 
-        main { 
-            flex: 1; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            padding: 40px 20px 80px 20px; 
-        }
-
-        .content-box { 
-            width: 100%; 
-            max-width: 750px; 
-            text-align: left; 
-            font-size: 1.15rem; 
-        }
-
-        h1 { 
-            font-size: 2rem; 
-            font-weight: bold; 
-            margin-bottom: 10px; 
-            text-transform: uppercase; 
-            letter-spacing: 2px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            line-height: 1.3;
-        }
-        
-        .subtitle { 
-            font-size: 1.1rem; 
-            color: #666; 
-            text-align: center; 
-            margin-bottom: 50px; 
-            font-style: italic; 
-        }
-
-        h2 { 
-            font-size: 1.4rem; 
-            font-weight: bold; 
-            margin-top: 40px; 
-            margin-bottom: 15px; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            border-left: 4px solid #1a1a1a; 
-            padding-left: 15px; 
-        }
-
+        main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 40px 20px 80px 20px; }
+        .content-box { width: 100%; max-width: 750px; text-align: left; font-size: 1.15rem; }
+        h1 { font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-align: center; font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.3; }
+        .subtitle { font-size: 1.1rem; color: #666; text-align: center; margin-bottom: 50px; font-style: italic; }
+        h2 { font-size: 1.4rem; font-weight: bold; margin-top: 40px; margin-bottom: 15px; font-family: 'Helvetica Neue', Arial, sans-serif; border-left: 4px solid #1a1a1a; padding-left: 15px; }
         p { margin-bottom: 20px; text-align: justify; }
         em { font-style: italic; }
 
-        .content-box a { 
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 1px solid #ddd; 
-            transition: border-color 0.3s; 
-        }
+        .content-box a { color: #000; text-decoration: none; font-weight: bold; border-bottom: 1px solid #ddd; transition: border-color 0.3s; }
         .content-box a:hover { border-bottom: 1px solid #1a1a1a; }
 
-        /* Gráfica Integrada */
         .image-container { margin: 35px 0; width: 100%; }
         .image-container img { width: 100%; height: auto; border: 1px solid #eee; }
         .graph-caption { font-size: 0.9rem; color: #666; font-style: italic; margin-top: 10px; line-height: 1.5; text-align: center; }
 
-        /* Lista de Lecturas Indentada */
         .article-list { padding-left: 30px; margin-bottom: 30px; }
-        .article-list p { text-align: left; margin-bottom: 12px; }
+        .article-list p { text-align: justify; margin-bottom: 12px; }
 
-        /* Botón de Despliegue Corporativo */
         .cta-action-container { text-align: center; margin: 40px 0; }
-        .btn-red {
-            display: inline-block; 
-            background-color: #d32f2f; 
-            color: #fff !important;
-            padding: 15px 35px; 
-            text-decoration: none !important; 
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-weight: bold; 
-            text-transform: uppercase; 
-            letter-spacing: 2px;
-            font-size: 0.95rem;
-            border-radius: 4px;
-            transition: background 0.3s; 
-            border: none;
-        }
+        .btn-red { display: inline-block; background-color: #d32f2f; color: #fff !important; padding: 15px 35px; text-decoration: none !important; font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 0.95rem; border-radius: 4px; transition: background 0.3s; border: none; }
         .btn-red:hover { background-color: #b71c1c; }
 
-        /* Caja de Whitepaper Especializada */
-        .whitepaper-box {
-            background-color: #f9f9f9; 
-            border: 1px solid #eee; 
-            padding: 45px 30px;
-            margin-top: 50px; 
-            text-align: center; 
-            width: 100%; 
-            max-width: 750px;
-            box-sizing: border-box;
-        }
+        .whitepaper-box { background-color: #f9f9f9; border: 1px solid #eee; padding: 45px 30px; margin-top: 50px; text-align: center; width: 100%; max-width: 750px; box-sizing: border-box; }
         .wp-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: #888; margin-bottom: 12px; display: block; }
         .wp-title { font-size: 1.4rem; font-weight: bold; color: #1a1a1a; margin-bottom: 15px; font-family: 'Helvetica Neue', Arial, sans-serif; text-transform: none; letter-spacing: 0; line-height: 1.4; }
         .whitepaper-box p { text-align: center; font-size: 1.05rem; color: #444; margin-bottom: 25px; }
         .wp-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .btn-outline {
-            display: inline-block; 
-            border: 1px solid #1a1a1a; 
-            padding: 12px 25px;
-            text-decoration: none; 
-            color: #1a1a1a; 
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.8rem; 
-            font-weight: bold; 
-            text-transform: uppercase; 
-            letter-spacing: 1px;
-            border-radius: 4px;
-            transition: all 0.3s;
-        }
+        .btn-outline { display: inline-block; border: 1px solid #1a1a1a; padding: 12px 25px; text-decoration: none; color: #1a1a1a; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-radius: 4px; transition: all 0.3s; }
         .btn-outline:hover { background-color: #1a1a1a; color: #fff !important; }
 
-        /* Biografía Ejecutiva Inferior */
-        .professional-bio {
-            max-width: 750px; 
-            margin: 60px auto 0 auto; 
-            padding-top: 40px;
-            border-top: 1px solid #eee; 
-            text-align: left;
-        }
+        .professional-bio { max-width: 750px; margin: 60px auto 0 auto; padding-top: 40px; border-top: 1px solid #eee; text-align: left; }
         .professional-bio p { font-size: 1.1rem; }
         .download-container { text-align: center; margin-top: 25px; }
-        .cv-link {
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            font-size: 0.8rem;
-            font-weight: bold; 
-            text-transform: uppercase; 
-            letter-spacing: 1px;
-            color: #1a1a1a; 
-            text-decoration: none; 
-            border-bottom: 2px solid #eee;
-            padding-bottom: 4px; 
-            transition: border-color 0.3s; 
-            margin: 0 15px;
-        }
+        .cv-link { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #1a1a1a; text-decoration: none; border-bottom: 2px solid #eee; padding-bottom: 4px; transition: border-color 0.3s; margin: 0 15px; }
         .cv-link:hover { border-bottom: 2px solid #1a1a1a; }
 
-        /* FOOTER UNIFICADO DE 3 COLUMNAS */
         footer { padding: 60px 20px 40px 20px; background-color: #ffffff; border-top: 1px solid #f2f2f2; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.9rem; line-height: 1.6; }
         .footer-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; text-align: left; }
         @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; } }
@@ -206,14 +73,17 @@
         .footer-col ul li { margin-bottom: 12px; }
         .footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; transition: all 0.3s; }
         .footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
+        .footer-col ul li a.current-location { color: #d32f2f !important; border-bottom: 1px solid #f9ebeb; }
+        .footer-col ul li a.current-location:hover { border-bottom: 1px solid #d32f2f; }
         .footer-socials { display: flex; gap: 15px; margin-top: 20px; }
         @media (max-width: 768px) { .footer-socials { justify-content: center; } }
         .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
         .footer-socials a:hover { color: #000; }
-        .footer-bottom { max-width: 900px; margin: 50px auto 0 auto; padding-top: 20px; border-top: 1px solid #f9f9f9; text-align: center; font-size: 0.8rem; color: #999; }
+        
+        .footer-bottom { max-width: 900px; margin: 25px auto 0 auto; padding-top: 20px; border-top: 1px solid #f9f9f9; text-align: center; font-size: 0.8rem; color: #999; }
+        .footer-bottom p { text-align: center; margin: 0 auto; display: block; }
     </style>
 </head>
-
 <body>
 
 <nav class="lang-selector">
@@ -258,7 +128,7 @@
             <div class="wp-title">Agile Execution & Interim Leadership as a Strategic Advantage in Latam</div>
             <p>Un análisis ejecutivo profundo sobre cómo el liderazgo transicional y la dirección interina minimizan drásticamente los riesgos de ejecución y aceleran el retorno de inversión durante fases críticas de expansión transfronteriza y apertura de mercados en la región.</p>
             <div class="wp-buttons">
-                <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="btn-outline">Leer artículo</a>
+                <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">Leer artículo</a>
                 <a href="/pdf/interim-leadership-whitepaper-sergio-lubezky.pdf" class="btn-outline">Descargar PDF</a>
             </div>
         </div>
@@ -292,6 +162,7 @@
                 <li><a href="/cuando-se-necesita-un-director-interino/">Cuándo se necesita</a></li>
                 <li><a href="/errores-en-una-crisis-organizacional/">Errores en crisis</a></li>
                 <li><a href="/que-hace-un-director-interino/">Qué hace un Director</a></li>
+                <li><a href="https://lubezky.com/mapa/">Mapa del Ecosistema</a></li>
             </ul>
         </div>
         <div class="footer-col">
@@ -299,6 +170,7 @@
             <ul>
                 <li><a href="https://lubezky.com">Lubezky.com</a></li>
                 <li><a href="https://inteligencia.com">Inteligencia</a></li>
+                <li><a href="https://liderazgointerino.com/" class="current-location">Liderazgo Interino</a></li>
                 <li><a href="https://coachdefoto.com">Coach de Foto</a></li>
                 <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
                 <li><a href="https://unnuevopuntodevista.com">Un Nuevo Punto de Vista</a></li>
