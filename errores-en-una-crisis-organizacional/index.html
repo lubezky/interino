@@ -16,37 +16,8 @@
     <meta property="og:url" content="https://liderazgointerino.com/errores-en-una-crisis-organizacional/" />
     <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com/",
-          "sameAs": [
-            "https://www.linkedin.com/in/sergiolubezky/",
-            "https://liderazgointerino.com/",
-            "https://inteligencia.com/",
-            "https://unnuevopuntodevista.com/"
-          ]
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://liderazgointerino.com/errores-en-una-crisis-organizacional/#webpage",
-          "url": "https://liderazgointerino.com/errores-en-una-crisis-organizacional/",
-          "name": "Errores comunes en la expansión regional transfronteriza",
-          "isPartOf": { "@id": "https://liderazgointerino.com/#website" },
-          "mainEntity": { "@id": "https://lubezky.com/#sergio" },
-          "description": "Análisis de decisiones y omisiones que suelen comprometer el éxito del Soft Landing corporativo."
-        }
-      ]
-    }
-    </script>
-
     <style>
-        /* --- ESTÉTICA MASTER LUBEZKY --- */
+        /* --- ESTÉTICA MASTER CORPORATIVA --- */
         body { 
             margin: 0; 
             display: flex; 
@@ -59,41 +30,70 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        /* Selector de Idioma Superior Minimalista */
+        .lang-selector { 
+            max-width: 750px; 
+            margin: 30px auto 0 auto; 
+            text-align: right; 
+            padding: 0 20px; 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+        }
+        .lang-link { 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            color: #888; 
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: color 0.3s; 
+        }
+        .lang-link:hover { color: #000; }
+
         main { 
             flex: 1; 
             display: flex; 
             justify-content: center; 
-            padding: 60px 20px 60px; 
+            padding: 40px 20px 80px 20px; 
         }
 
         .content-box { 
-            max-width: 700px; 
-            text-align: center; 
-            font-size: 1.2rem; 
+            width: 100%;
+            max-width: 750px; 
+            text-align: left; 
+            font-size: 1.15rem; 
         }
 
         h1 { 
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bold; 
-            margin-bottom: 30px; 
+            margin-bottom: 10px; 
             text-transform: uppercase; 
             letter-spacing: 2px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.3;
         }
 
-        p { margin-bottom: 20px; text-align: justify; }
+        .subtitle { 
+            font-size: 1.1rem; 
+            color: #666; 
+            text-align: center; 
+            margin-bottom: 50px; 
+            font-style: italic; 
+        }
 
-        /* LISTA DE ERRORES ESTRUCTURADA */
+        p { margin-bottom: 20px; text-align: justify; }
+        em { font-style: italic; }
+
+        /* Lista de Errores Indentada y Estilizada */
         .error-list {
-            text-align: left;
-            margin: 40px auto;
-            max-width: 600px;
+            margin: 40px 0 40px 30px;
         }
 
         .error-list p {
-            margin-bottom: 25px;
-            padding-left: 15px;
-            border-left: 2px solid #eee;
+            margin-bottom: 30px;
+            padding-left: 20px;
+            border-left: 4px solid #d32f2f;
             text-align: justify;
         }
 
@@ -103,8 +103,8 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             font-size: 0.85rem;
             letter-spacing: 1px;
-            color: #d32f2f; 
-            margin-bottom: 5px;
+            color: #d32f2f;
+            margin-bottom: 8px;
         }
 
         .content-box a { 
@@ -114,17 +114,17 @@
             border-bottom: 1px solid #ddd; 
             transition: border-color 0.3s;
         }
-
         .content-box a:hover { 
-            border-bottom: 1px solid #000; 
+            border-bottom: 1px solid #1a1a1a; 
         }
 
-        /* BLOQUE DE ACCIÓN (CTA) */
+        /* BLOQUE DE ACCIÓN (CTA LINKEDIN) */
         .cta-section { 
-            margin: 60px 0; 
+            margin: 50px 0; 
             padding: 45px 30px; 
             background-color: #f9f9f9; 
             border: 1px solid #eee; 
+            text-align: center;
         }
 
         .cta-section h3 {
@@ -132,122 +132,118 @@
             letter-spacing: 2px;
             font-size: 1.1rem;
             margin-top: 0;
+            margin-bottom: 15px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: bold;
+        }
+        
+        .cta-section p {
+            text-align: center;
+            font-size: 1.05rem;
+            color: #333;
+            margin-bottom: 25px;
         }
 
         .cta-button { 
             display: inline-block; 
-            padding: 18px 35px; 
+            padding: 15px 35px; 
             background-color: #d32f2f; 
             color: #fff !important; 
-            text-decoration: none; 
+            text-decoration: none !important; 
             font-weight: bold; 
             text-transform: uppercase; 
             letter-spacing: 2px; 
-            margin-top: 20px; 
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 0.85rem;
+            font-size: 0.95rem;
+            border-radius: 4px;
             transition: background 0.3s;
         }
-
         .cta-button:hover { background-color: #b71c1c; }
-
-        /* FOOTER STANDARDIZADO LUBEZKY */
-        footer { 
-            padding: 60px 20px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            border-top: 1px solid #f2f2f2;
-        }
-
-        .profile-img { 
-            width: 75px; height: 75px; 
-            border-radius: 50%; margin-bottom: 10px; 
-            object-fit: cover; border: 1px solid #eee; 
-        }
-
-        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; }
-        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
-
-        .footer-bio {
-            max-width: 650px; margin: 0 auto 30px auto; 
-            font-size: 0.95rem; color: #444; line-height: 1.7;
-        }
-
-        .social-nav { 
-            list-style: none; padding: 0; margin: 0; 
-            display: flex; flex-wrap: wrap; justify-content: center; 
-            gap: 12px; font-size: 0.85rem; 
-        }
-
-        .social-nav a { color: #666; text-decoration: none; }
-        .social-nav a:hover { color: #000; }
-        .social-nav li:not(:last-child)::after { content: "-"; margin-left: 12px; color: #ccc; }
+        
+        .navigation-notes { margin-top: 40px; }
     </style>
 </head>
 
 <body>
 
+<!-- Selector de Idioma -->
+<nav class="lang-selector">
+    <a href="/en/crisis-errors/" class="lang-link">English</a>
+</nav>
+
 <main>
     <article class="content-box">
-        <h1>Errores críticos en la ejecución de la expansión regional</h1>
+        <h1>Errores críticos en la expansión regional</h1>
+        <div class="subtitle">Análisis de las decisiones y omisiones estructurales que comprometen la tracción operativa.</div>
 
-        <p>Cuando una corporación activa un plan de expansión transfronterizo o de Soft Landing en Latinoamérica, la distancia operativa suele subestimarse. Reconocer los patrones de error más comunes en la gestión local es vital para detener la pérdida de tracción comercial y proteger el retorno de inversión.</p>
+        <p>Cuando una corporación activa un plan de expansión transfronterizo o inicia un proceso de <em>Soft Landing</em> en Latinoamérica, la distancia operativa suele subestimarse críticamente desde los cuarteles generales. La asunción de que un modelo operativo de negocio exitoso en el mercado de origen se replicará mecánicamente en la región es el primer eslabón de una cadena de fallos. Reconocer y neutralizar los patrones de error más comunes en la gestión localizada es vital para detener la pérdida de tracción comercial y proteger el retorno de inversión.</p>
 
         <div class="error-list">
             <p>
                 <strong>Subestimación del entorno local</strong>
-                Ignorar las particularidades regulatorias, fiscales y logísticas del mercado destino esperando que los manuales de la matriz funcionen solos, permitiendo que las fricciones iniciales se vuelvan sistémicas.
+                Ignorar o minimizar las marcadas particularidades regulatorias, fiscales, aduaneras y logísticas del mercado destino. Tratar de forzar que los manuales corporativos de la matriz funcionen de manera automática, sin adaptaciones tácticas, permite que las fricciones operativas iniciales se arraiguen y se vuelvan sistémicas.
             </p>
             <p>
                 <strong>Parálisis por centralización burocrática</strong>
-                Refugiarse en comités corporativos distantes e interminables flujos de recolección de datos cuando el terreno de juego requiere de un mando ejecutivo local capaz de tomar decisiones y actuar con agilidad.
+                Refugiarse en comités directivos distantes y extender interminables flujos de recolección de datos y reportes semanales cuando el terreno de juego exige velocidad. La falta de un mando ejecutivo local con capacidad resolutiva real convierte las decisiones cotidianas de la filial en un laberinto burocrático inmovilista.
             </p>
             <p>
-                <strong>Falta de autoridad en el terreno</strong>
-                Operar la expansión a control remoto sin un liderazgo senior presencial estructurado. La ausencia de un mando único e inmediato aumenta la incertidumbre y fragmenta la coordinación de los aliados comerciales y distribuidores.
+                <strong>Falta de autoridad senior en el terreno</strong>
+                Operar la expansión a control remoto sin un liderazgo senior presencial con plenas facultades operativas. La ausencia de un mando único, inmediato y visible en la región aumenta la incertidumbre de los equipos locales, desgasta la cultura y fragmenta gravemente la coordinación con los aliados comerciales y distribuidores de la zona.
             </p>
             <p>
-                <strong>Atacar síntomas operacionales, no causas</strong>
-                Implementar soluciones superficiales o culpar a las dinámicas del mercado regional sin revisar la gobernanza y la cadena de suministro local. Esto es solo un parche que pospone pérdidas financieras mayores.
+                <strong>Atacar síntomas operativos, no causas raíz</strong>
+                Implementar soluciones superficiales o culpar de manera recurrente a las dinámicas macroeconómicas del mercado regional sin revisar el diseño real de la gobernanza o los cuellos de botella en la cadena de suministro local. Esto actúa solo como un parche temporal que pospone y amplifica pérdidas financieras mayores.
             </p>
         </div>
 
+        <!-- BLOQUE DE ACCIÓN (CTA LINKEDIN) -->
         <div class="cta-section">
             <h3>¿Su despliegue en la región muestra señales de ralentización?</h3>
-            <p>La objetividad de una dirección interina experimentada es la herramienta más efectiva para romper la inercia de la fricción operativa. Actuamos para estabilizar y acelerar su infraestructura regional hoy.</p>
-            <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="cta-button">Estabilizar Operación Regional</a>
+            <p>La objetividad de una dirección interina experimentada y externa es la herramienta más efectiva para romper la inercia de la fricción interna. Conéctemos en LinkedIn para estructurar un plan de estabilización que devuelva el dinamismo y la eficiencia a su infraestructura regional hoy mismo.</p>
+            <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="cta-button">Conectar en LinkedIn</a>
         </div>
 
-        <p>Puedes profundizar en las soluciones leyendo <a href="/que-hace-un-director-interino/">qué hace un director interino</a> o volver al <a href="/">inicio</a>.</p>
+        <p class="navigation-notes">Puedes profundizar en el alcance práctico de estas soluciones leyendo <a href="/que-hace-un-director-interino/">qué hace un director interino</a> o volver al <a href="/">inicio</a> de la plataforma corporativa.</p>
     </article>
 </main>
 
 <footer>
-    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
-
-    <div class="footer-bio">
-        <p>
-            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-            Exploro la <a href="https://inteligencia.com">Inteligencia</a> aplicada, 
-            la <a href="https://liderazgointerino.com">Dirección Interina</a>, 
-            la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a> 
-            y la música como otra forma de <a href="https://musica.sergiolubezky.com">comunicar</a>, 
-            bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a> 
-            para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
-        </p>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h3>Sergio Lubezky A.</h3>
+            <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro cómo los sistemas complejos, los equipos de trabajo y las ideas colectivas se coordinan para transformar crisis operativas en ventajas estratégicas resilientes.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a>
+                <a href="https://x.com/slubezky" target="_blank">X</a>
+                <a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a>
+                <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Contenido</h3>
+            <ul>
+                <li><a href="/cuando-se-necesita-un-director-interino/">Cuándo se necesita</a></li>
+                <li><a href="/errores-en-una-crisis-organizacional/">Errores en crisis</a></li>
+                <li><a href="/que-hace-un-director-interino/">Qué hace un Director</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Ecosistema</h3>
+            <ul>
+                <li><a href="https://lubezky.com">Lubezky.com</a></li>
+                <li><a href="https://inteligencia.com">Inteligencia</a></li>
+                <li><a href="https://coachdefoto.com">Coach de Foto</a></li>
+                <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
+                <li><a href="https://unnuevopuntodevista.com">Un Nuevo Punto de Vista</a></li>
+                <li><a href="https://musica.sergiolubezky.com">Música</a></li>
+            </ul>
+        </div>
     </div>
-    
-    <ul class="social-nav">
-        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
-        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
-        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
-    </ul>
+    <div class="footer-bottom">
+        <p>© 2026 Sergio Lubezky A. Todos los derechos reservados.</p>
+    </div>
 </footer>
 
 </body>
