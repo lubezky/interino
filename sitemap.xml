@@ -2,31 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://lubezky.com/</loc>
+    <loc>https://liderazgointerino.com/</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://lubezky.com/sobre-mi</loc>
+    <loc>https://liderazgointerino.com/cuando-se-necesita-un-director-interino/</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://lubezky.com/trabajo</loc>
+    <loc>https://liderazgointerino.com/errores-en-una-crisis-organizacional/</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://lubezky.com/mapa/</loc>
+    <loc>https://liderazgointerino.com/que-hace-un-director-interino/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+
+  <url>
+    <loc>https://liderazgointerino.com/en/</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://liderazgointerino.com/interim-leadership-strategic-advantage/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://liderazgointerino.com/en/when-interim-director-needed/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://liderazgointerino.com/en/mistakes-in-an-organizational-crisis/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://liderazgointerino.com/en/what-does-an-interim-director-do/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 
 </urlset>
