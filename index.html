@@ -1,231 +1,795 @@
-<!DOCTYPE html>
+html_es = """<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dirección Interina y Soft Landing en LATAM | Sergio Lubezky</title>
+    <title>liderazgointerino.com | Dirección Interina y Soft Landing en LATAM</title>
     <meta name="description" content="Dirección interina, Soft Landing y continuidad operativa para corporaciones globales en proceso de expansión, transición o crecimiento en México y Latinoamérica.">
     <meta name="author" content="Sergio Lubezky">
-    <link rel="canonical" href="https://liderazgointerino.com/" />
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://liderazgointerino.com/">
 
-    <meta property="og:locale" content="es_MX" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Dirección Interina y Soft Landing en LATAM | Sergio Lubezky" />
-    <meta property="og:description" content="Garantizar la continuidad operativa y la captura de ingresos en Latinoamérica mientras la estructura regional madura." />
-    <meta property="og:url" content="https://liderazgointerino.com/" />
-    <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
+    <!-- Favicon SVG Inline (Círculo Azul Noche con LI blanco) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230a1128'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia, serif' font-weight='bold' font-size='32' fill='%23ffffff'%3ELI%3C/text%3E%3C/svg%3E">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@slubezky" />
-    <meta name="twitter:creator" content="@slubezky" />
-    <meta name="twitter:title" content="Dirección Interina y Soft Landing en LATAM | Sergio Lubezky" />
-    <meta name="twitter:description" content="Garantizar la continuidad operativa y la captura de ingresos en Latinoamérica mientras la estructura regional madura." />
-    <meta name="twitter:image" content="https://lubezky.com/foto-sergio.jpg" />
+    <!-- Open Graph / LinkedIn / WhatsApp -->
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="liderazgointerino.com">
+    <meta property="og:title" content="liderazgointerino.com | Dirección Interina y Soft Landing en LATAM">
+    <meta property="og:description" content="Garantizamos la continuidad operativa y la captura de ingresos en Latinoamérica mientras la estructura regional madura.">
+    <meta property="og:url" content="https://liderazgointerino.com/">
+    <meta property="og:image" content="https://liderazgointerino.com/leadership-vacuum-curve-interim-leadership.png">
 
-    <!-- Marcado Estructurado JSON-LD -->
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="liderazgointerino.com | Dirección Interina y Soft Landing en LATAM">
+    <meta name="twitter:description" content="Garantizamos la continuidad operativa y la captura de ingresos en Latinoamérica mientras la estructura regional madura.">
+    <meta name="twitter:image" content="https://liderazgointerino.com/leadership-vacuum-curve-interim-leadership.png">
+
+    <!-- Datos Estructurados Schema.org (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "ProfessionalService",
+          "@id": "https://liderazgointerino.com/#organization",
+          "name": "liderazgointerino.com",
+          "url": "https://liderazgointerino.com/",
+          "email": "direccion@inteligencia.com",
+          "description": "Dirección interina, Soft Landing y continuidad operativa para corporaciones globales en proceso de expansión, transición o crecimiento en México y Latinoamérica.",
+          "areaServed": [
+            {
+              "@type": "Country",
+              "name": "Mexico"
+            },
+            {
+              "@type": "Place",
+              "name": "Latin America"
+            }
+          ],
+          "founder": {
+            "@id": "https://liderazgointerino.com/#founder"
+          },
+          "sameAs": [
+            "https://inteligencia.com",
+            "https://www.linkedin.com/in/sergiolubezky"
+          ],
+          "knowsAbout": [
+            "Interim Management",
+            "Soft Landing LATAM",
+            "Turnaround Management",
+            "Operational Continuity",
+            "Corporate Governance",
+            "P&L Management"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://liderazgointerino.com/#founder",
+          "name": "Sergio Lubezky",
+          "jobTitle": "Interim Executive & Managing Director",
+          "image": "https://liderazgointerino.com/foto-sergio.jpg",
+          "worksFor": {
+            "@id": "https://liderazgointerino.com/#organization"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/sergiolubezky",
+            "https://inteligencia.com"
+          ]
+        },
+        {
           "@type": "WebSite",
           "@id": "https://liderazgointerino.com/#website",
           "url": "https://liderazgointerino.com/",
-          "name": "Liderazgo Interino",
-          "description": "Dirección interina, Soft Landing y continuidad operativa para corporaciones globales en proceso de expansión, transición o crecimiento en México y Latinoamérica.",
-          "inLanguage": "es",
+          "name": "liderazgointerino.com",
           "publisher": {
-            "@type": "Person",
-            "@id": "https://lubezky.com/#person",
-            "name": "Sergio Lubezky",
-            "url": "https://lubezky.com/"
-          }
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://liderazgointerino.com/#webpage",
-          "url": "https://liderazgointerino.com/",
-          "name": "Dirección Interina y Soft Landing en LATAM | Sergio Lubezky",
-          "description": "Garantizar la continuidad operativa y la captura de ingresos en Latinoamérica mientras la estructura regional madura.",
-          "inLanguage": "es",
-          "isPartOf": {
-            "@id": "https://liderazgointerino.com/#website"
+            "@id": "https://liderazgointerino.com/#organization"
           },
-          "author": {
-            "@type": "Person",
-            "@id": "https://lubezky.com/#person"
-          },
-          "about": {
-            "@type": "Person",
-            "@id": "https://lubezky.com/#person"
-          }
+          "inLanguage": "es-MX"
         }
       ]
     }
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     <style>
-        body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-color: #fff; color: #1a1a1a; font-family: 'Georgia', serif; line-height: 1.8; -webkit-font-smoothing: antialiased; }
-        .lang-selector { max-width: 750px; margin: 30px auto 0 auto; text-align: right; padding: 0 20px; font-family: 'Helvetica Neue', Arial, sans-serif; }
-        .lang-link { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: #888; text-decoration: none; font-weight: bold; transition: color 0.3s; }
-        .lang-link:hover { color: #000; }
+        :root {
+            --navy-dark: #0a1128;
+            --navy-mid: #111b3a;
+            --bg-white: #ffffff;
+            --bg-offwhite: #f8f9fb;
+            --text-dark: #0f172a;
+            --text-body: #334155;
+            --text-light: #f4f6f9;
+            --text-muted-light: #a3b1cc;
+            --accent-gold: #c5a880;
+            --accent-gold-dark: #9e825a;
+            --border-light: #e2e8f0;
+            --border-dark: rgba(197, 168, 128, 0.22);
+        }
 
-        main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 40px 20px 80px 20px; }
-        .content-box { width: 100%; max-width: 750px; text-align: left; font-size: 1.15rem; }
-        h1 { font-size: 2rem; font-weight: bold; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-align: center; font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.3; }
-        .subtitle { font-size: 1.1rem; color: #666; text-align: center; margin-bottom: 50px; font-style: italic; }
-        h2 { font-size: 1.4rem; font-weight: bold; margin-top: 40px; margin-bottom: 15px; font-family: 'Helvetica Neue', Arial, sans-serif; border-left: 4px solid #1a1a1a; padding-left: 15px; }
-        p { margin-bottom: 20px; text-align: justify; }
-        em { font-style: italic; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        .content-box a { color: #000; text-decoration: none; font-weight: bold; border-bottom: 1px solid #ddd; transition: border-color 0.3s; }
-        .content-box a:hover { border-bottom: 1px solid #1a1a1a; }
+        html {
+            scroll-behavior: smooth;
+        }
 
-        .image-container { margin: 35px 0; width: 100%; }
-        .image-container img { width: 100%; height: auto; border: 1px solid #eee; }
-        .graph-caption { font-size: 0.9rem; color: #666; font-style: italic; margin-top: 10px; line-height: 1.5; text-align: center; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-white);
+            color: var(--text-body);
+            line-height: 1.7;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
 
-        .article-list { padding-left: 30px; margin-bottom: 30px; }
-        .article-list p { text-align: justify; margin-bottom: 12px; }
+        h1, h2, h3, .brand-logo {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
 
-        .cta-action-container { text-align: center; margin: 40px 0; }
-        .btn-red { display: inline-block; background-color: #d32f2f; color: #fff !important; padding: 15px 35px; text-decoration: none !important; font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 0.95rem; border-radius: 4px; transition: background 0.3s; border: none; }
-        .btn-red:hover { background-color: #b71c1c; }
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
-        .whitepaper-box { background-color: #f9f9f9; border: 1px solid #eee; padding: 45px 30px; margin-top: 50px; text-align: center; width: 100%; max-width: 750px; box-sizing: border-box; }
-        .wp-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: #888; margin-bottom: 12px; display: block; }
-        .wp-title { font-size: 1.4rem; font-weight: bold; color: #1a1a1a; margin-bottom: 15px; font-family: 'Helvetica Neue', Arial, sans-serif; text-transform: none; letter-spacing: 0; line-height: 1.4; }
-        .whitepaper-box p { text-align: center; font-size: 1.05rem; color: #444; margin-bottom: 25px; }
-        .wp-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .btn-outline { display: inline-block; border: 1px solid #1a1a1a; padding: 12px 25px; text-decoration: none; color: #1a1a1a; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-radius: 4px; transition: all 0.3s; }
-        .btn-outline:hover { background-color: #1a1a1a; color: #fff !important; }
+        /* Header y Alineación Baseline */
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border-dark);
+            position: sticky;
+            top: 0;
+            background-color: rgba(10, 17, 40, 0.97);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+        }
 
-        .professional-bio { max-width: 750px; margin: 60px auto 0 auto; padding-top: 40px; border-top: 1px solid #eee; text-align: left; }
-        .professional-bio p { font-size: 1.1rem; }
-        .download-container { text-align: center; margin-top: 25px; }
-        .cv-link { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #1a1a1a; text-decoration: none; border-bottom: 2px solid #eee; padding-bottom: 4px; transition: border-color 0.3s; margin: 0 15px; }
-        .cv-link:hover { border-bottom: 2px solid #1a1a1a; }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
 
-        footer { padding: 60px 20px 40px 20px; background-color: #ffffff; border-top: 1px solid #f2f2f2; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.9rem; line-height: 1.6; }
-        .footer-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; text-align: left; }
-        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; } }
-        .footer-col h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 0; margin-bottom: 20px; }
-        .footer-col p { color: #555; margin: 0; font-size: 0.9rem; }
-        .footer-col ul { list-style: none; padding: 0; margin: 0; }
-        .footer-col ul li { margin-bottom: 12px; }
-        .footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; transition: all 0.3s; }
-        .footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
-        .footer-col ul li a.current-location { color: #d32f2f !important; border-bottom: 1px solid #f9ebeb; }
-        .footer-col ul li a.current-location:hover { border-bottom: 1px solid #d32f2f; }
-        .footer-socials { display: flex; gap: 15px; margin-top: 20px; }
-        @media (max-width: 768px) { .footer-socials { justify-content: center; } }
-        .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
-        .footer-socials a:hover { color: #000; }
-        
-        .footer-bottom { max-width: 900px; margin: 25px auto 0 auto; padding-top: 20px; border-top: 1px solid #f9f9f9; text-align: center; font-size: 0.8rem; color: #999; }
-        .footer-bottom p { text-align: center; margin: 0 auto; display: block; }
+        .brand-logo {
+            font-size: 1.55rem;
+            line-height: 1;
+            color: var(--text-light);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            display: inline-block;
+        }
+
+        .brand-logo span {
+            color: var(--accent-gold);
+        }
+
+        nav {
+            display: flex;
+            align-items: baseline;
+            gap: 28px;
+        }
+
+        nav a {
+            color: var(--text-muted-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            line-height: 1;
+            transition: color 0.3s ease;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        nav a.lang-switch {
+            border: 1px solid var(--border-dark);
+            padding: 5px 10px;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-gold);
+        }
+
+        nav a.lang-switch:hover {
+            background-color: var(--accent-gold);
+            color: var(--navy-dark);
+        }
+
+        /* Hero Section (Azul Noche) */
+        .hero {
+            background-color: var(--navy-dark);
+            color: var(--text-light);
+            padding: 110px 0 95px;
+            border-bottom: 1px solid var(--border-dark);
+        }
+
+        .eyebrow {
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            font-size: 0.78rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            display: block;
+        }
+
+        .eyebrow-dark {
+            color: var(--accent-gold-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            font-size: 0.78rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+            line-height: 1.2;
+            max-width: 880px;
+            margin-bottom: 28px;
+            color: var(--text-light);
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-muted-light);
+            max-width: 740px;
+            margin-bottom: 42px;
+            font-weight: 300;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: var(--navy-dark);
+            padding: 15px 34px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.95rem;
+            letter-spacing: 0.03em;
+            transition: all 0.3s ease;
+            border: 1px solid var(--accent-gold);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--accent-gold);
+        }
+
+        /* Secciones Claras */
+        .section-white {
+            background-color: var(--bg-white);
+            padding: 95px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .section-offwhite {
+            background-color: var(--bg-offwhite);
+            padding: 95px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .section-header {
+            max-width: 780px;
+            margin-bottom: 48px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.85rem, 3vw, 2.5rem);
+            margin-bottom: 18px;
+            color: var(--text-dark);
+        }
+
+        .section-header p {
+            color: var(--text-body);
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+        }
+
+        /* Gráfica de Vacío de Liderazgo */
+        .chart-frame {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-light);
+            border-top: 3px solid var(--navy-dark);
+            padding: 32px;
+            box-shadow: 0 4px 20px rgba(10, 17, 40, 0.04);
+            margin-top: 32px;
+        }
+
+        .chart-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #f1f5f9;
+        }
+
+        .chart-caption {
+            font-size: 0.92rem;
+            color: #475569;
+            font-style: italic;
+            margin-top: 16px;
+            line-height: 1.6;
+        }
+
+        /* Grid Cards */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .card {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-light);
+            border-top: 3px solid var(--navy-dark);
+            padding: 38px 32px;
+            box-shadow: 0 4px 20px rgba(10, 17, 40, 0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-top-color: var(--accent-gold);
+            box-shadow: 0 12px 28px rgba(10, 17, 40, 0.08);
+        }
+
+        .card-tag {
+            font-size: 0.74rem;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--accent-gold-dark);
+            font-weight: 600;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 14px;
+            color: var(--text-dark);
+        }
+
+        .card p {
+            color: var(--text-body);
+            font-size: 0.96rem;
+            margin-bottom: 24px;
+        }
+
+        .card-link {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--navy-dark);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-gold);
+            align-self: flex-start;
+            padding-bottom: 2px;
+            transition: color 0.3s ease;
+        }
+
+        .card-link:hover {
+            color: var(--accent-gold-dark);
+        }
+
+        /* Caja Destacada Azul Noche (Sinergia & Whitepaper) */
+        .executive-box {
+            background-color: var(--navy-dark);
+            color: var(--text-light);
+            border-left: 4px solid var(--accent-gold);
+            padding: 48px;
+            display: grid;
+            grid-template-columns: 1.25fr 1fr;
+            gap: 44px;
+            align-items: center;
+            box-shadow: 0 16px 36px rgba(10, 17, 40, 0.12);
+        }
+
+        .executive-box h3 {
+            font-size: 1.75rem;
+            margin-bottom: 18px;
+            color: var(--text-light);
+        }
+
+        .executive-box p {
+            color: var(--text-muted-light);
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .executive-box a.inline-gold {
+            color: var(--accent-gold);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-gold);
+            font-weight: 500;
+        }
+
+        .doc-panel {
+            background-color: var(--navy-mid);
+            border: 1px solid var(--border-dark);
+            padding: 32px;
+        }
+
+        .doc-panel h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+
+        .doc-panel p {
+            font-size: 0.92rem;
+            color: var(--text-muted-light);
+            margin-bottom: 24px;
+        }
+
+        .doc-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Bio / Perfil Ejecutivo */
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .bio-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 22px;
+        }
+
+        .bio-photo {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-gold);
+            flex-shrink: 0;
+        }
+
+        .bio-grid h2 {
+            font-size: clamp(1.8rem, 3vw, 2.35rem);
+            color: var(--text-dark);
+            margin-bottom: 0;
+        }
+
+        .bio-grid p {
+            color: var(--text-body);
+            font-size: 1.05rem;
+            margin-bottom: 18px;
+        }
+
+        .cv-box {
+            background-color: var(--bg-offwhite);
+            border: 1px solid var(--border-light);
+            border-left: 3px solid var(--navy-dark);
+            padding: 32px;
+        }
+
+        .cv-box h3 {
+            font-size: 1.25rem;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+
+        .cv-box p {
+            font-size: 0.92rem;
+            color: var(--text-body);
+            margin-bottom: 20px;
+        }
+
+        .cv-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-dark-outline {
+            display: inline-block;
+            border: 1px solid var(--navy-dark);
+            color: var(--navy-dark);
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn-dark-outline:hover {
+            background-color: var(--navy-dark);
+            color: var(--bg-white);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            background-color: var(--navy-mid);
+            color: var(--text-light);
+            padding: 95px 0;
+            border-bottom: 1px solid var(--border-dark);
+        }
+
+        .contact-section h2 {
+            font-size: clamp(1.85rem, 3vw, 2.45rem);
+            margin-bottom: 18px;
+            color: var(--text-light);
+        }
+
+        .contact-section p {
+            color: var(--text-muted-light);
+            max-width: 640px;
+            margin: 0 auto 38px;
+            font-weight: 300;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline {
+            display: inline-block;
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold);
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent-gold);
+            color: var(--navy-dark);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--navy-dark);
+            padding: 48px 0;
+            font-size: 0.88rem;
+            color: var(--text-muted-light);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-content strong {
+            color: var(--text-light);
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-muted-light);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .linkedin-icon {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 768px) {
+            nav a:not(.lang-switch) {
+                display: none;
+            }
+            .executive-box, .bio-grid {
+                grid-template-columns: 1fr;
+                padding: 28px;
+            }
+            .bio-grid {
+                padding: 0;
+            }
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
 
-<nav class="lang-selector">
-    <a href="/en/" class="lang-link">English</a>
-</nav>
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="brand-logo">liderazgointerino<span>.com</span></a>
+            <nav>
+                <a href="#ejecucion">Ejecución y Soft Landing</a>
+                <a href="#lecturas">Análisis Directivo</a>
+                <a href="#sinergia">Whitepaper &amp; Auditoría</a>
+                <a href="#trayectoria">Dirección</a>
+                <a href="/en/" class="lang-switch">EN</a>
+            </nav>
+        </div>
+    </header>
 
-<main>
-    <div class="content-box">
-        <h1>Dirección Interina y Soft Landing</h1>
-        <div class="subtitle">Continuidad operativa y gobernanza para corporaciones globales expandiéndose en Latinoamérica.</div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="eyebrow">Continuidad Operativa y Gobernanza en LATAM</span>
+                <h1>Dirección Interina y Soft Landing para corporaciones globales en expansión.</h1>
+                <p>Asumimos el control operativo inmediato de filiales en transición, garantizando gobernanza estricta, control milimétrico del P&amp;L y captura de ingresos mientras la estructura regional madura.</p>
+                <a href="#contacto" class="btn-primary">Iniciar Conversación Ejecutiva</a>
+            </div>
+        </section>
 
-        <p>Cuando una empresa global decide abrir mercados en la región, la estrategia diseñada en la casa matriz suele enfrentarse a la cruda fricción de la realidad local. Los planes de expansión sobre el papel tropiezan con dinámicas complejas en el terreno: primero se retrasan las aprobaciones regulatorias, después surgen imprevistos en la logística transfronteriza y, finalmente, la operación pierde el impulso estratégico inicial debido a la falta de un mando localizado con capacidad de resolución inmediata.</p>
-        
-        <p>La dirección interina y los procesos estructurados de <em>Soft Landing</em> existen precisamente para absorber ese impacto. Su objetivo es asumir el control operativo inmediato de la filial, garantizando una gobernanza estricta, el control milimétrico del P&L corporativo y la continuidad absoluta del negocio mientras los equipos e infraestructura locales terminan de madurar y consolidarse.</p>
+        <section id="ejecucion" class="section-white">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow-dark">Despliegue en el Terreno</span>
+                    <h2>Ejecución Operativa, no solo Consultoría Estratégica</h2>
+                    <p>Cuando una empresa global abre mercados en Latinoamérica, la estrategia diseñada en la casa matriz suele enfrentarse a la fricción de la realidad local: retrasos regulatorios, imprevistos logísticos y pérdida de tracción inicial por falta de un mando localizado.</p>
+                    <p>La dirección interina no se limita a la observación desde la distancia. Es un modelo de involucramiento directo durante fases críticas de transición, fusiones y adquisiciones (M&amp;A) o apertura de operaciones, asegurando continuidad inmediata hasta que el liderazgo definitivo toma el relevo.</p>
+                </div>
 
-        <h2>Ejecución Operativa, no solo Consultoría Estratégica</h2>
-        <p>La dirección interina no se basa en la observación analítica desde la distancia ni en la entrega de reportes teóricos. Es un modelo de involucramiento operativo directo y despliegue inmediato en el terreno de juego durante fases críticas de transición, procesos complejos de fusiones y adquisiciones, o estrategias agresivas de penetración de mercado. El objetivo central es garantizar la continuidad de las operaciones y asegurar la captura de ingresos mientras la estructura regional definitiva alcanza su punto óptimo de madurez.</p>
+                <div class="chart-frame">
+                    <span class="card-tag">Impacto en Rentabilidad</span>
+                    <img src="leadership-vacuum-curve-interim-leadership.png" alt="Curva de fricción operativa por falta de liderazgo localizado">
+                    <p class="chart-caption">Los vacíos de ejecución local generan un impacto negativo directo en la rentabilidad del proyecto. Intervenir estructuralmente y a tiempo protege el retorno de inversión (ROI) corporativo.</p>
+                </div>
+            </div>
+        </section>
 
-        <h2>El Costo Financiero de la Incertidumbre Directiva</h2>
-        <div class="image-container">
-            <img src="leadership-vacuum-curve-interim-leadership.png" alt="Curva de fricción operativa por falta de liderazgo localizado">
-            <div class="graph-caption">
-                Esta curva ilustra cómo los vacíos de ejecución local generan un impacto negativo directo en la rentabilidad del proyecto. Intervenir structuralmente y a tiempo protege el retorno de inversión (ROI) corporativo.
+        <section id="lecturas" class="section-offwhite">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow-dark">Criterio Ejecutivo</span>
+                    <h2>Lecturas Estratégicas Avanzadas</h2>
+                    <p>Marco de referencia sobre cuándo activar una intervención interina y cómo evitar los errores más costosos durante una transición corporativa.</p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card">
+                        <div>
+                            <span class="card-tag">Escenarios de Activación</span>
+                            <h3>¿Cuándo se requiere un Director Interino?</h3>
+                            <p>Identificación temprana de vacíos de mando, procesos de Soft Landing y reestructuras comerciales que exigen autoridad inmediata en piso.</p>
+                        </div>
+                        <a href="/cuando-se-necesita-un-director-interino/" class="card-link">Leer análisis completo &rarr;</a>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <span class="card-tag">Mitigación de Riesgos</span>
+                            <h3>Errores críticos en una crisis organizacional</h3>
+                            <p>Por qué posponer decisiones operativas durante la expansión regional destruye valor y erosiona el control de la casa matriz.</p>
+                        </div>
+                        <a href="/errores-en-una-crisis-organizacional/" class="card-link">Leer análisis completo &rarr;</a>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <span class="card-tag">Alcance y Gobernanza</span>
+                            <h3>¿Qué hace realmente un Director Interino?</h3>
+                            <p>Mandato, límites operativos, estabilización de equipos locales y entrega ordenada a la dirección permanente.</p>
+                        </div>
+                        <a href="/que-hace-un-director-interino/" class="card-link">Leer análisis completo &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sinergia" class="section-white">
+            <div class="container">
+                <div class="executive-box">
+                    <div>
+                        <span class="eyebrow">Ecosistema de Control Operativo</span>
+                        <h3>De la Auditoría Forense al Mando Ejecutivo</h3>
+                        <p>Cuando una corporación requiere primero visibilidad objetiva en campo antes de intervenir una filial o red de sucursales, operamos en sinergia directa con nuestra firma hermana <a href="https://inteligencia.com" target="_blank" rel="noopener noreferrer" class="inline-gold">inteligencia.com</a>, especializada en auditoría forense de fricción operativa (CX &amp; EX).</p>
+                        <p>Diagnosticamos puntos ciegos con rigor táctico y, cuando la estabilización exige ejecución inmediata, asumimos el liderazgo interino para corregir el rumbo sin curvas de aprendizaje.</p>
+                    </div>
+                    <div class="doc-panel">
+                        <span class="eyebrow" style="margin-bottom: 10px;">Strategic Whitepaper</span>
+                        <h4>Agile Execution &amp; Interim Leadership as a Strategic Advantage in Latam</h4>
+                        <p>Análisis ejecutivo sobre cómo el liderazgo transicional minimiza riesgos de ejecución y acelera el ROI durante expansiones transfronterizas.</p>
+                        <div class="doc-actions">
+                            <a href="/WhitePaper_Interim_Leadership.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary" style="text-align: center;">Descargar Whitepaper (PDF)</a>
+                            <a href="/interim-leadership-strategic-advantage/" class="btn-outline" style="text-align: center;">Leer versión web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trayectoria" class="section-offwhite">
+            <div class="container">
+                <div class="bio-grid">
+                    <div>
+                        <span class="eyebrow-dark">Liderazgo Ejecutivo</span>
+                        <div class="bio-header">
+                            <img src="/foto-sergio.jpg" alt="Sergio Lubezky" class="bio-photo">
+                            <h2>Sergio Lubezky</h2>
+                        </div>
+                        <p>Ejecutivo internacional con más de 30 años de trayectoria coliderando el despliegue de operaciones corporativas, procesos de <em>Soft Landing</em> y reestructuras comerciales complejas en Estados Unidos, México y la región Andina.</p>
+                        <p>Especialista en asumir el control de operaciones bajo estrés, alinear equipos multiculturales con los estándares de gobernanza de la casa matriz y entregar estructuras estabilizadas y rentables.</p>
+                    </div>
+                    <div class="cv-box">
+                        <span class="card-tag">Credenciales Directivas</span>
+                        <h3>Perfil Ejecutivo</h3>
+                        <p>Descargue el resumen de trayectoria, mandatos interinos y resultados operativos en formato ejecutivo:</p>
+                        <div class="cv-links">
+                            <a href="/sergio-lubezky-perfil-ejecutivo.pdf" target="_blank" rel="noopener noreferrer" class="btn-dark-outline">Perfil Ejecutivo (Español - PDF)</a>
+                            <a href="/sergio-lubezky-executive-profile.pdf" target="_blank" rel="noopener noreferrer" class="btn-dark-outline">Executive Profile (English - PDF)</a>
+                            <a href="/sergio-lubezky-executive-profile-one-page.pdf" target="_blank" rel="noopener noreferrer" class="btn-dark-outline">Executive One-Pager (English - PDF)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <span class="eyebrow">Confidencialidad Estricta</span>
+                <h2>Inicie una Conversación Ejecutiva</h2>
+                <p>Si su organización enfrenta una transición directiva, expansión en Latinoamérica o requiere estabilizar una operación crítica, conversemos de manera confidencial.</p>
+                <div class="contact-links">
+                    <a href="mailto:direccion@inteligencia.com" class="btn-primary">direccion@inteligencia.com</a>
+                    <a href="https://www.linkedin.com/in/sergiolubezky" target="_blank" rel="noopener noreferrer" class="btn-outline">Conectar en LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                &copy; 2026 <strong>liderazgointerino.com</strong> &mdash; Sergio Lubezky. Todos los derechos reservados.
+            </div>
+            <div class="footer-links">
+                <a href="https://inteligencia.com" target="_blank" rel="noopener noreferrer">inteligencia.com</a>
+                <a href="https://www.linkedin.com/in/sergiolubezky" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Sergio Lubezky">
+                    <svg class="linkedin-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                    </svg>
+                    <span>Sergio Lubezky</span>
+                </a>
             </div>
         </div>
-        
-        <p>Como demuestra el análisis de flujos, los vacíos de ejecución y la falta de liderazgo localizado en América Latina se traducen rápidamente en pérdidas financieras directas debido a la ralentización operativa. Romper esta inercia exige un liderazgo neutral y con alta capacidad de tracción táctica corporativa.</p>
-
-        <h2>Lecturas Estratégicas Avanzadas</h2>
-        <div class="article-list">
-            <p><a href="/errores-en-una-crisis-organizacional/">Errores críticos en la ejecución de la expansión regional</a></p>
-            <p><a href="/cuando-se-necesita-un-director-interino/">¿Cuándo se requiere un director interino? Escenarios corporativos de activación</a></p>
-            <p><a href="/que-hace-un-director-interino/">¿Qué hace realmente un director interino? Alcance y límites en el terreno</a></p>
-        </div>
-
-        <div class="cta-action-container">
-            <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank" class="btn-red">Conectar en LinkedIn</a>
-        </div>
-
-        <div class="whitepaper-box">
-            <span class="wp-label">Strategic Whitepaper</span>
-            <div class="wp-title">Agile Execution & Interim Leadership as a Strategic Advantage in Latam</div>
-            <p>Un análisis ejecutivo profundo sobre cómo el liderazgo transicional y la dirección interina minimizan drásticamente los riesgos de ejecución y aceleran el retorno de inversión durante fases críticas de expansión transfronteriza y apertura de mercados en la región.</p>
-            <div class="wp-buttons">
-                <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">Leer artículo</a>
-                <a href="/pdf/interim-leadership-whitepaper-sergio-lubezky.pdf" class="btn-outline">Descargar PDF</a>
-            </div>
-        </div>
-
-        <div class="professional-bio">
-            <p><strong>Sergio Lubezky</strong> es un ejecutivo internacional con más de 30 años de trayectoria coliderando el despliegue de operaciones corporativas, Soft Landing y reestructuras comerciales complejas en los pasillos de negocio más importantes de Estados Unidos, México y la región Andina.</p>
-            <div class="download-container">
-                <a href="/pdf/sergio-lubezky-perfil-ejecutivo.pdf" class="cv-link">Perfil Ejecutivo (ES)</a>
-                <a href="/pdf/sergio-lubezky-executive-profile.pdf" class="cv-link">Executive Profile (EN)</a>
-            </div>
-        </div>
-    </div>
-</main>
-
-<footer>
-    <div class="footer-grid">
-        <div class="footer-col">
-            <h3>Sergio Lubezky A.</h3>
-            <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro cómo los sistemas complejos, los equipos de trabajo y las ideas colectivas se coordinan para transformar crisis operativas en ventajas estratégicas resilientes.</p>
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a>
-                <a href="https://x.com/slubezky" target="_blank">X</a>
-                <a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a>
-                <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a>
-            </div>
-        </div>
-        <div class="footer-col">
-            <h3>Contenido</h3>
-            <ul>
-                <li><a href="/cuando-se-necesita-un-director-interino/">Cuándo se necesita</a></li>
-                <li><a href="/errores-en-una-crisis-organizacional/">Errores en crisis</a></li>
-                <li><a href="/que-hace-un-director-interino/">Qué hace un Director</a></li>
-                <li><a href="https://lubezky.com/mapa/">Mapa del Ecosistema</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Ecosistema</h3>
-            <ul>
-                <li><a href="https://lubezky.com">Lubezky.com</a></li>
-                <li><a href="https://inteligencia.com">Inteligencia</a></li>
-                <li><a href="https://liderazgointerino.com/" class="current-location">Liderazgo Interino</a></li>
-                <li><a href="https://clasesdefoto.com">Clases de Foto</a></li>
-                <li><a href="https://coachdefoto.com">Coach de Foto</a></li>
-                <li><a href="https://lomioeslafoto.com">Lo Mío es la Foto</a></li>
-                <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
-                <li><a href="https://unnuevopuntodevista.com">Un Nuevo Punto de Vista</a></li>
-                <li><a href="https://musica.sergiolubezky.com">Música</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2026 Sergio Lubezky A. Todos los derechos reservados.</p>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
+print("FILE_READY: index.html")
