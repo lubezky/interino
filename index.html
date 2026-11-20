@@ -1,4 +1,4 @@
-html_es = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -38,6 +38,7 @@ html_es = """<!DOCTYPE html>
           "name": "liderazgointerino.com",
           "url": "https://liderazgointerino.com/",
           "email": "direccion@inteligencia.com",
+          "telephone": "+52-55-7202-2334",
           "description": "Dirección interina, Soft Landing y continuidad operativa para corporaciones globales en proceso de expansión, transición o crecimiento en México y Latinoamérica.",
           "areaServed": [
             {
@@ -547,7 +548,7 @@ html_es = """<!DOCTYPE html>
         .contact-links {
             display: flex;
             justify-content: center;
-            gap: 24px;
+            gap: 20px;
             flex-wrap: wrap;
         }
 
@@ -555,7 +556,7 @@ html_es = """<!DOCTYPE html>
             display: inline-block;
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
-            padding: 14px 30px;
+            padding: 14px 28px;
             text-decoration: none;
             font-size: 0.95rem;
             font-weight: 500;
@@ -594,16 +595,21 @@ html_es = """<!DOCTYPE html>
             flex-wrap: wrap;
         }
 
-        .footer-links a {
+        .footer-links a, .privacy-trigger {
             color: var(--text-muted-light);
             text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 8px;
             transition: color 0.3s ease;
+            background: none;
+            border: none;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: pointer;
         }
 
-        .footer-links a:hover {
+        .footer-links a:hover, .privacy-trigger:hover {
             color: var(--accent-gold);
         }
 
@@ -611,6 +617,77 @@ html_es = """<!DOCTYPE html>
             width: 18px;
             height: 18px;
             fill: currentColor;
+        }
+
+        /* Modal Transparencia y Privacidad */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background-color: rgba(10, 17, 40, 0.85);
+            backdrop-filter: blur(4px);
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-box {
+            background-color: var(--bg-white);
+            color: var(--text-body);
+            max-width: 720px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            border-top: 4px solid var(--accent-gold);
+            padding: 40px 36px;
+            position: relative;
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+            text-align: left;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 18px;
+            right: 22px;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .modal-box h3 {
+            font-size: 1.5rem;
+            color: var(--navy-dark);
+            margin-bottom: 20px;
+        }
+
+        .modal-box h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--navy-dark);
+            margin-top: 18px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .modal-box p, .modal-box li {
+            font-size: 0.92rem;
+            line-height: 1.65;
+            margin-bottom: 10px;
+        }
+
+        .modal-box ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
         }
 
         @media (max-width: 768px) {
@@ -627,6 +704,9 @@ html_es = """<!DOCTYPE html>
             .footer-content {
                 flex-direction: column;
                 text-align: center;
+            }
+            .modal-box {
+                padding: 28px 22px;
             }
         }
     </style>
@@ -767,7 +847,8 @@ html_es = """<!DOCTYPE html>
                 <p>Si su organización enfrenta una transición directiva, expansión en Latinoamérica o requiere estabilizar una operación crítica, conversemos de manera confidencial.</p>
                 <div class="contact-links">
                     <a href="mailto:direccion@inteligencia.com" class="btn-primary">direccion@inteligencia.com</a>
-                    <a href="https://www.linkedin.com/in/sergiolubezky" target="_blank" rel="noopener noreferrer" class="btn-outline">Conectar en LinkedIn</a>
+                    <a href="https://wa.me/525572022334" target="_blank" rel="noopener noreferrer" class="btn-outline">Canal Directo (WhatsApp)</a>
+                    <a href="https://www.linkedin.com/in/sergiolubezky" target="_blank" rel="noopener noreferrer" class="btn-outline">LinkedIn Dirección</a>
                 </div>
             </div>
         </section>
@@ -779,6 +860,7 @@ html_es = """<!DOCTYPE html>
                 &copy; 2026 <strong>liderazgointerino.com</strong> &mdash; Sergio Lubezky. Todos los derechos reservados.
             </div>
             <div class="footer-links">
+                <button type="button" class="privacy-trigger" onclick="document.getElementById('privacyModal').classList.add('active')">Transparencia y Políticas de Privacidad</button>
                 <a href="https://inteligencia.com" target="_blank" rel="noopener noreferrer">inteligencia.com</a>
                 <a href="https://www.linkedin.com/in/sergiolubezky" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Sergio Lubezky">
                     <svg class="linkedin-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -790,6 +872,35 @@ html_es = """<!DOCTYPE html>
         </div>
     </footer>
 
+    <!-- Modal de Transparencia y Políticas de Privacidad -->
+    <div id="privacyModal" class="modal-overlay" onclick="if(event.target === this) this.classList.remove('active')">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button type="button" class="modal-close" aria-label="Cerrar" onclick="document.getElementById('privacyModal').classList.remove('active')">&times;</button>
+            <h3 id="modalTitle">Transparencia y Políticas de Privacidad</h3>
+            
+            <h4>PRIMERO.- RESPONSABLE DE LA TRANSPARENCIA:</h4>
+            <p>Sergio Lubezky Américus, en representación directa de <strong>liderazgointerino.com</strong>, con domicilio en Fernando Espinoza 55, Colonia Santa Fe, Ciudad de México, C.P. 01210, México, emite el presente documento para informar a los usuarios sobre las políticas de navegación en nuestro sitio web, en cumplimiento con los principios de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP).</p>
+            
+            <h4>SEGUNDO.- POLÍTICA DE NO RECOPILACIÓN DE DATOS PERSONALES:</h4>
+            <p>Sergio Lubezky Américus informa de manera categórica que no recaba, almacena, trata ni transfiere ningún tipo de dato personal de los usuarios a través de este sitio web. Nuestra plataforma es de carácter exclusivamente informativo. Debido a esto:</p>
+            <ul>
+                <li>No contamos con formularios de registro, contacto ni suscripciones.</li>
+                <li>No solicitamos nombres, correos electrónicos, teléfonos, RFC ni datos de localización.</li>
+                <li>No empleamos herramientas informáticas ni cookies de seguimiento para perfilar o identificar a nuestros visitantes.</li>
+            </ul>
+            
+            <h4>TERCERO.- ENLACES A TERCEROS O CONTACTO EXTERNO:</h4>
+            <p>En caso de que el usuario decida comunicarse de manera voluntaria con Sergio Lubezky Américus a través de medios externos (como mensajes de WhatsApp, correos electrónicos directos o videollamadas por Zoom), dichos datos se tratarán única y exclusivamente para dar respuesta a su consulta directa, destruyéndose de inmediato de nuestros registros una vez concluida la comunicación. Este sitio contiene enlaces a WhatsApp, LinkedIn y otros sitios de terceros, que se rigen por sus propios avisos de privacidad, y está alojado en GitHub Pages, que puede registrar datos técnicos de conexión, como la dirección IP, conforme a su propia política.</p>
+            
+            <h4>CUARTO.- MEDIOS PARA ACLARACIONES:</h4>
+            <p>Cualquier duda o comentario respecto a esta política de transparencia puede ser dirigida al correo electrónico: <strong>direccion@inteligencia.com</strong>.<br>
+            Asimismo, se hace del conocimiento público que la autoridad encargada de vigilar el cumplimiento de los derechos de privacidad en el país es la Secretaría Anticorrupción y Buen Gobierno (SABG).</p>
+            
+            <h4>QUINTO.- ACTUALIZACIÓN:</h4>
+            <p>Esta política se mantiene vigente y bajo revisión continua para garantizar que la plataforma no vulnere la privacidad de ningún usuario.<br>
+            <em>Última actualización: Noviembre de 2026.</em></p>
+        </div>
+    </div>
+
 </body>
 </html>
-print("FILE_READY: index.html")
